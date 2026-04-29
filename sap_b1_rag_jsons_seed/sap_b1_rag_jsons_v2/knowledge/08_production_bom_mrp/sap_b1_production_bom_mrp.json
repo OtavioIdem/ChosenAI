@@ -1,0 +1,335 @@
+[
+  {
+    "id": "sap-b1-v2-prod-001",
+    "title": "Escopo de produção no SAP Business One",
+    "module": "Produção, BOM e MRP",
+    "category": "conceito",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "medium",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "produção",
+      "BOM",
+      "lista de materiais",
+      "ordem de produção",
+      "componentes",
+      "custo"
+    ],
+    "content": "Produção no SAP Business One envolve listas de materiais, ordens de produção, componentes, item pai, itens filhos, entrada/saída de componentes, custos e integração com estoque e MRP.\nAo responder dúvidas de produção, identifique se a pergunta é sobre cadastro de BOM, ordem de produção, baixa de componentes, conclusão, custo ou planejamento.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Learning - Managing Logistics in SAP Business One",
+        "url": "https://learning.sap.com/courses/managing-logistics-in-sap-business-one-br",
+        "authority": "official_sap_learning"
+      },
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-prod-002",
+    "title": "Lista de materiais e estrutura multinível",
+    "module": "Produção, BOM e MRP",
+    "category": "bom",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "BOM",
+      "lista de materiais",
+      "item pai",
+      "item filho",
+      "estrutura multinível",
+      "componentes"
+    ],
+    "content": "Uma lista de materiais define relação entre item pai e componentes. Em planejamento, estruturas multinível podem fazer o cálculo continuar pelos níveis inferiores quando componentes também têm filhos.\nA IA deve explicar que problemas de MRP e produção frequentemente exigem revisar a estrutura da BOM, quantidades, método de suprimento e dados de planejamento de cada item.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-prod-003",
+    "title": "Método de suprimento Make ou Buy",
+    "module": "Produção, BOM e MRP",
+    "category": "planejamento",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "Make",
+      "Buy",
+      "método de suprimento",
+      "MRP",
+      "cadastro de item",
+      "BOM"
+    ],
+    "content": "Em MRP, o método de suprimento determina se a recomendação segue lógica de produzir ou comprar.\nSe o método for Make, o cálculo pode continuar para subníveis e calcular componentes. Se for Buy, o sistema não precisa considerar filhos para produzir aquele item.\nVerifique o cadastro do item antes de analisar uma recomendação inesperada.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-prod-004",
+    "title": "MRP: fontes de oferta e demanda",
+    "module": "Produção, BOM e MRP",
+    "category": "mrp",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "MRP",
+      "oferta",
+      "demanda",
+      "pedido de compra",
+      "pedido de venda",
+      "previsão",
+      "ordem de produção"
+    ],
+    "content": "O MRP calcula necessidades considerando entradas/ofertas e saídas/demandas. Fontes típicas incluem estoque inicial, pedidos de compra, ordens de produção, transferências, pedidos de venda, previsões, documentos reservados e níveis de estoque definidos, conforme cenário.\nA resposta deve destacar que o resultado depende das fontes selecionadas no cenário de MRP.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-prod-005",
+    "title": "MRP: políticas de planejamento",
+    "module": "Produção, BOM e MRP",
+    "category": "mrp",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "lead time",
+      "quantidade mínima",
+      "múltiplos",
+      "dias de tolerância",
+      "política de planejamento"
+    ],
+    "content": "As recomendações de MRP consideram políticas de planejamento como lead time, quantidade mínima, múltiplos de pedido, intervalos de pedido e dias de tolerância.\nSe o MRP recomendar quantidade ou data diferente do esperado, revise esses parâmetros no cadastro do item e no cenário do assistente.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-prod-006",
+    "title": "MRP: recomendações geradas",
+    "module": "Produção, BOM e MRP",
+    "category": "mrp",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "recomendação",
+      "ordem de produção",
+      "pedido de compra",
+      "solicitação de compra",
+      "transferência"
+    ],
+    "content": "Após o cálculo, o MRP pode gerar recomendações para ordens de produção, pedidos de compra, solicitações de compra e, quando aplicável, transferências de estoque.\nA IA deve dizer que recomendações precisam ser revisadas antes da criação de documentos reais, pois dependem de cenário, dados mestres e demanda selecionada.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-prod-007",
+    "title": "MRP Wizard",
+    "module": "Produção, BOM e MRP",
+    "category": "assistente",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "MRP Wizard",
+      "assistente",
+      "cenário",
+      "horizonte",
+      "itens",
+      "depósitos"
+    ],
+    "content": "O assistente de MRP guia a criação de cenários, definição de fontes de dados, análise de resultados e revisão de recomendações.\nPara suporte, peça nome do cenário, horizonte de planejamento, itens selecionados, depósitos, fontes de demanda/oferta e dados do item antes de diagnosticar o resultado.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-prod-008",
+    "title": "Forecast e consumo de previsão no MRP",
+    "module": "Produção, BOM e MRP",
+    "category": "forecast",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "forecast",
+      "previsão",
+      "consumo de previsão",
+      "pedido de venda",
+      "dupla contagem"
+    ],
+    "content": "Previsões podem ser usadas como demanda planejada no MRP. Dependendo da configuração, pedidos de venda podem consumir previsão para evitar dupla contagem.\nSe o usuário relatar excesso de recomendação, investigue consumo de previsão, período, pedidos de venda e método usado no cenário.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-prod-009",
+    "title": "Ordem de produção gerada por MRP",
+    "module": "Produção, BOM e MRP",
+    "category": "ordem_producao",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "ordem de produção",
+      "origem MRP",
+      "componentes",
+      "estoque",
+      "BOM"
+    ],
+    "content": "Quando uma ordem de produção é criada a partir de recomendação de MRP, sua origem deve ser analisada pelo resultado do cenário e pelos parâmetros de item/BOM.\nA IA deve evitar recomendar exclusão ou alteração direta sem avaliar impacto em estoque, compras, datas, componentes e documentos vinculados.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-prod-010",
+    "title": "Diagnóstico de recomendação de MRP inesperada",
+    "module": "Produção, BOM e MRP",
+    "category": "diagnostico",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "diagnóstico MRP",
+      "checklist",
+      "estoque inicial",
+      "BOM",
+      "forecast",
+      "lead time",
+      "depósito"
+    ],
+    "content": "Checklist para MRP inesperado: item está marcado para MRP? método é Make ou Buy? BOM está correta? há estoque inicial? existem pedidos de compra/produção em aberto? pedidos de venda e previsões foram considerados? depósito está correto? parâmetros de lead time e lote estão coerentes? forecast está sendo consumido?\nEsse checklist deve ser usado antes de concluir erro de cálculo.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  }
+]

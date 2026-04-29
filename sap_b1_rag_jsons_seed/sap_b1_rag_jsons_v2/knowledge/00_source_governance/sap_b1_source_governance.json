@@ -1,0 +1,238 @@
+[
+  {
+    "id": "sap-b1-v2-source-001",
+    "title": "Hierarquia de fontes para SAP Business One no RAG",
+    "module": "Governança de Conhecimento",
+    "category": "fonte_e_confianca",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "governança",
+      "fontes",
+      "confiança",
+      "SAP Help Portal",
+      "SAP Learning",
+      "curadoria",
+      "RAG"
+    ],
+    "content": "Para uma IA especializada em SAP Business One, a recuperação deve priorizar fontes por autoridade: \n1) documentação oficial SAP Help Portal e páginas oficiais SAP; \n2) SAP Learning e guias oficiais How-To; \n3) documentação técnica oficial, como Service Layer, DI API e Integration Framework; \n4) fontes governamentais brasileiras para obrigações fiscais externas; \n5) SAP Community, blogs de parceiros e vídeos apenas como candidatos de curadoria.\nA resposta final deve indicar quando a fonte é oficial SAP, oficial governamental ou candidata de comunidade/parceiro.\nConteúdo externo não validado não deve ser promovido automaticamente para conhecimento oficial.",
+    "questions": [],
+    "answer_guidelines": [
+      "Ao responder, diferencie documentação oficial SAP de fonte governamental e fonte comunitária.",
+      "Use fontes comunitárias apenas como orientação de investigação ou candidato de treinamento."
+    ],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One | ERP Software for Small Businesses",
+        "url": "https://www.sap.com/products/erp/business-one.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-source-002",
+    "title": "Regras de confiança por tipo de fonte",
+    "module": "Governança de Conhecimento",
+    "category": "confianca",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_gov_br+official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "confianca",
+      "fonte oficial",
+      "governo",
+      "comunidade",
+      "validação humana"
+    ],
+    "content": "Classifique a confiança dos chunks conforme a fonte e o tipo de conteúdo. Documentação oficial SAP sobre funcionalidade do SAP Business One tem confiança alta para descrever comportamento do produto. \nGuias governamentais brasileiros têm confiança alta para obrigações fiscais, mas confiança média para configurar o SAP Business One, pois explicam a regra externa, não necessariamente a tela ou parametrização no ERP.\nBlogs, vídeos, fóruns e Q&A devem ser classificados como candidatos e exigir validação humana, principalmente quando descrevem erro, workaround, customização, add-on ou comportamento dependente de versão.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Portal Nacional da Nota Fiscal Eletrônica",
+        "url": "https://www.nfe.fazenda.gov.br/",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "SPED - Guia Prático da EFD ICMS IPI 3.2.2",
+        "url": "https://sped.rfb.gov.br/item/show/8112",
+        "authority": "official_gov_br"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-source-003",
+    "title": "Política para conteúdo fiscal Brasil",
+    "module": "Governança de Conhecimento",
+    "category": "fiscal_brasil",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_gov_br+official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "Brasil",
+      "fiscal",
+      "NF-e",
+      "SPED",
+      "NFS-e",
+      "Reforma Tributária",
+      "localização Brasil"
+    ],
+    "content": "Conteúdo fiscal brasileiro deve ser separado em duas camadas: \na) regra externa, baseada em fontes governamentais como Portal NF-e, SPED, Portal NFS-e e Receita Federal; \nb) comportamento ou configuração dentro do SAP Business One, baseado em documentação SAP de Localization for Brazil ou validação interna.\nA IA não deve transformar regra fiscal externa em instrução de configuração SAP sem fonte SAP ou validação de consultor fiscal.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Portal Nacional da Nota Fiscal Eletrônica",
+        "url": "https://www.nfe.fazenda.gov.br/",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "SPED - Guia Prático da EFD ICMS IPI 3.2.2",
+        "url": "https://sped.rfb.gov.br/item/show/8112",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "Portal NFS-e - Documentação Atual",
+        "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "Receita Federal - Orientações da Reforma Tributária para 2026",
+        "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026",
+        "authority": "official_gov_br"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-source-004",
+    "title": "Uso de release notes e versionamento",
+    "module": "Governança de Conhecimento",
+    "category": "versao",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "versão",
+      "patch level",
+      "feature package",
+      "Web Client",
+      "desktop client",
+      "versionamento"
+    ],
+    "content": "Em SAP Business One, muitas respostas dependem de versão, patch level, feature package, banco de dados usado e interface usada, como client desktop ou Web Client.\nChunks devem manter metadados de versão e fonte. Quando a pergunta mencionar uma versão específica, o recuperador deve priorizar chunks com a mesma versão. \nQuando a versão não for informada, a resposta deve mencionar que a orientação pode variar conforme patch level, localização e interface.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-source-005",
+    "title": "Não misturar SAP Business One com SAP S/4HANA",
+    "module": "Governança de Conhecimento",
+    "category": "escopo",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "SAP Business One",
+      "SAP B1",
+      "SAP S/4HANA",
+      "escopo",
+      "produto"
+    ],
+    "content": "SAP Business One é uma solução ERP voltada a pequenas e médias empresas. SAP S/4HANA e SAP ERP são produtos distintos e voltados a cenários diferentes.\nA IA deve evitar responder dúvidas de SAP Business One usando conteúdo de SAP S/4HANA, SAP ECC ou módulos clássicos ABAP, salvo quando a pergunta for comparativa e a fonte deixar a diferença explícita.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [
+      "Não usar transações SAP GUI de ECC/S/4HANA como se fossem menus do SAP Business One."
+    ],
+    "source": [
+      {
+        "name": "SAP Business One | ERP Software for Small Businesses",
+        "url": "https://www.sap.com/products/erp/business-one.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-source-006",
+    "title": "Metadados mínimos para todo chunk SAP B1",
+    "module": "Governança de Conhecimento",
+    "category": "metadados",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "curated_best_practice",
+    "source_authority": "curated",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "chunk",
+      "metadados",
+      "RAG",
+      "indexação",
+      "recuperação"
+    ],
+    "content": "Todo chunk de SAP Business One deve conter pelo menos: título, módulo, categoria, palavras-chave, conteúdo, fonte, tipo de fonte, autoridade da fonte, confiança, versão SAP, idioma, data de criação e indicação de validação humana.\nEsses metadados melhoram a recuperação, permitem filtros por módulo e ajudam a IA a informar o nível de confiança da resposta.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": []
+  }
+]

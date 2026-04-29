@@ -1,0 +1,221 @@
+[
+  {
+    "id": "sap-b1-v2-rel-001",
+    "title": "Versionamento por SAP Business One 10.0 e Feature Package",
+    "module": "Versão, Release e Compatibilidade",
+    "category": "versionamento",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "versão",
+      "patch level",
+      "feature package",
+      "compatibilidade",
+      "Service Layer",
+      "Web Client"
+    ],
+    "content": "SAP Business One evolui por versões, patch levels e feature packages. Web Client, Service Layer, webhooks, API e localização fiscal podem variar por versão.\nA IA deve perguntar a versão quando a pergunta envolver recurso recente, erro técnico, fiscal, Web Client ou API.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-rel-002",
+    "title": "Webhooks exigem versão compatível",
+    "module": "Versão, Release e Compatibilidade",
+    "category": "service_layer",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "webhooks",
+      "FP 2602",
+      "Service Layer",
+      "compatibilidade"
+    ],
+    "content": "Webhooks no Service Layer são documentados a partir de SAP Business One 10.0 FP 2602. Se o usuário perguntar sobre webhooks, confirme se o ambiente está nesse nível ou superior e se a funcionalidade foi habilitada.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-rel-003",
+    "title": "OData v3 deprecado e OData v4 como protocolo primário",
+    "module": "Versão, Release e Compatibilidade",
+    "category": "odata",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "OData v3",
+      "OData v4",
+      "FP 2405",
+      "depreciação",
+      "integração"
+    ],
+    "content": "Na referência atual do Service Layer, OData v3 é indicado como deprecado a partir de FP 2405, enquanto OData v4 é o protocolo primário suportado na documentação atual.\nPara integrações novas, priorize validar OData v4, mas considere backward compatibility quando houver legado.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One Service Layer API Reference",
+        "url": "https://help.sap.com/doc/056f69366b5345a386bb8149f1700c19/10.0/en-US/Service%20Layer%20API%20Reference.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-rel-004",
+    "title": "SQL Query via Service Layer depende de versão",
+    "module": "Versão, Release e Compatibilidade",
+    "category": "service_layer",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "SQL Query",
+      "FP 2011",
+      "SQL Server",
+      "SAP HANA",
+      "Service Layer"
+    ],
+    "content": "SQL Query via Service Layer é citado na documentação como disponível a partir de SAP Business One 10.0 FP 2011 para SQL Server e SAP HANA.\nAntes de orientar uso, confirme versão, banco, permissões, allowlist e governança de segurança.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-rel-005",
+    "title": "Documentação fiscal sempre com data de vigência",
+    "module": "Versão, Release e Compatibilidade",
+    "category": "fiscal",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_gov_br",
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "data de vigência",
+      "nota técnica",
+      "schema",
+      "manual",
+      "SPED",
+      "NF-e",
+      "NFS-e"
+    ],
+    "content": "Conteúdos de NF-e, NFS-e, SPED e Reforma Tributária devem guardar data de publicação, versão, vigência e ambiente.\nRespostas fiscais não devem usar informação antiga se houver versão mais recente do manual, nota técnica ou schema.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Portal NF-e - Nota Técnica 2025.002",
+        "url": "https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY%3D",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "SPED - Guia Prático da EFD ICMS IPI 3.2.2",
+        "url": "https://sped.rfb.gov.br/item/show/8112",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "Portal NFS-e - Documentação Atual",
+        "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "Receita Federal - Orientações da Reforma Tributária para 2026",
+        "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026",
+        "authority": "official_gov_br"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-rel-006",
+    "title": "Compatibilidade de Web Client por recurso",
+    "module": "Versão, Release e Compatibilidade",
+    "category": "web_client",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "Web Client",
+      "feature package",
+      "permissões",
+      "recurso",
+      "guia do usuário"
+    ],
+    "content": "Web Client documenta recursos por versão e atualizações no guia. Antes de orientar caminho exato, confirme versão/feature package e permissões.\nQuando não houver certeza, responda que a funcionalidade pode depender da versão do Web Client e que deve ser validada no ambiente.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  }
+]

@@ -1,0 +1,289 @@
+[
+  {
+    "id": "sap-b1-v2-fin-001",
+    "title": "Escopo do financeiro no SAP Business One",
+    "module": "Financeiro e Contabilidade",
+    "category": "conceito",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "financeiro",
+      "contabilidade",
+      "contas a pagar",
+      "contas a receber",
+      "bancos",
+      "reconciliação",
+      "relatórios financeiros"
+    ],
+    "content": "O financeiro do SAP Business One cobre contabilidade, controle, contas a receber, contas a pagar, bancos, reconciliação, lançamentos contábeis, relatórios e análises financeiras.\nAo responder dúvidas financeiras, diferencie processo operacional, contabilização gerada automaticamente e parametrização contábil/fiscal.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-fin-002",
+    "title": "Lançamento contábil e documentos operacionais",
+    "module": "Financeiro e Contabilidade",
+    "category": "contabilidade",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "lançamento contábil",
+      "journal entry",
+      "contabilização",
+      "determinação contábil",
+      "documento de marketing"
+    ],
+    "content": "No SAP Business One, documentos operacionais podem gerar efeitos contábeis conforme configuração e natureza do documento.\nPara perguntas sobre contabilização, a IA deve buscar fonte específica sobre o tipo de documento e orientar a validar contas contábeis, determinação contábil, período de lançamento, impostos, filial/localização e moeda.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-fin-003",
+    "title": "Períodos contábeis e bloqueio de lançamento",
+    "module": "Financeiro e Contabilidade",
+    "category": "periodo",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "período contábil",
+      "data de lançamento",
+      "bloqueio",
+      "autorização",
+      "posting period"
+    ],
+    "content": "Dúvidas sobre impossibilidade de lançar documentos podem estar relacionadas a período contábil, autorização, status do período, data de lançamento, data do documento ou data de vencimento.\nA IA deve orientar a verificar o período configurado e as autorizações do usuário antes de sugerir erro sistêmico.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-fin-004",
+    "title": "Fechamento de período e fechamento anual",
+    "module": "Financeiro e Contabilidade",
+    "category": "fechamento",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "fechamento",
+      "year-end closing",
+      "period-end closing",
+      "contas de resultado",
+      "contador"
+    ],
+    "content": "Fechamento de período e fechamento anual devem ser tratados como processos críticos, normalmente envolvendo revisão de lançamentos, reconciliações, saldos, contas de resultado e validação contábil.\nA IA pode explicar o conceito e indicar que a execução deve seguir guia oficial e validação do contador responsável, especialmente em bases produtivas.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-fin-005",
+    "title": "Contas a receber no ciclo de vendas",
+    "module": "Financeiro e Contabilidade",
+    "category": "contas_receber",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "contas a receber",
+      "cliente",
+      "recebimento",
+      "baixa",
+      "vencimento",
+      "reconciliação"
+    ],
+    "content": "Contas a receber se relaciona ao ciclo de vendas, pagamentos recebidos, documentos de cliente, vencimentos, crédito, reconciliação e relatórios.\nAo responder sobre cobrança ou recebimento, valide se a dúvida envolve documento em aberto, pagamento recebido, reconciliação, baixa, moeda, condição de pagamento ou autorização.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-fin-006",
+    "title": "Contas a pagar no ciclo de compras",
+    "module": "Financeiro e Contabilidade",
+    "category": "contas_pagar",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "contas a pagar",
+      "fornecedor",
+      "pagamento efetuado",
+      "vencimento",
+      "saldo em aberto"
+    ],
+    "content": "Contas a pagar se relaciona ao ciclo de compras, documentos de fornecedor, pagamentos efetuados, vencimentos, condições de pagamento e reconciliação.\nPara dúvidas de pagamento a fornecedor, identifique se o documento de compra está lançado, se existe saldo em aberto, se há retenção/imposto, se a data de vencimento está correta e se o pagamento já foi reconciliado.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-fin-007",
+    "title": "Determinação contábil por processo",
+    "module": "Financeiro e Contabilidade",
+    "category": "parametrizacao",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "determinação contábil",
+      "conta contábil",
+      "grupo de item",
+      "depósito",
+      "tipo de documento"
+    ],
+    "content": "Dúvidas sobre qual conta foi movimentada exigem análise de determinação contábil, item, grupo de item, depósito, parceiro, imposto, localização e tipo de documento.\nA IA não deve afirmar uma conta específica sem contexto da empresa. Responda explicando quais cadastros e parametrizações devem ser verificados.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [
+      "Não informar uma conta contábil específica sem dados da base da empresa."
+    ],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-fin-008",
+    "title": "Relatórios financeiros e análise",
+    "module": "Financeiro e Contabilidade",
+    "category": "relatorio",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "relatórios financeiros",
+      "balancete",
+      "razão",
+      "fluxo de caixa",
+      "orçamento",
+      "auditoria"
+    ],
+    "content": "Relatórios financeiros devem ser tratados como consultas baseadas em período, contas, centro de custo/projeto, moeda, filial e critérios de seleção.\nAo responder, peça ou considere o objetivo do relatório: balancete, razão, contas a pagar, contas a receber, fluxo de caixa, análise de lucro, orçamento ou auditoria.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  }
+]

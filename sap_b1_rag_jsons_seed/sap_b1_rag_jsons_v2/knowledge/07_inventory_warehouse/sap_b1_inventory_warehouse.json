@@ -1,0 +1,289 @@
+[
+  {
+    "id": "sap-b1-v2-inv-001",
+    "title": "Escopo de estoque e almoxarifado",
+    "module": "Estoque e Almoxarifado",
+    "category": "conceito",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "estoque",
+      "almoxarifado",
+      "depósito",
+      "movimentação",
+      "lote",
+      "série",
+      "custo"
+    ],
+    "content": "Estoque no SAP Business One envolve itens, depósitos, movimentações, saldos, lotes, números de série, transferências, inventário, custo e integração com compras, vendas, produção e serviço.\nAo responder perguntas de estoque, identifique se a dúvida é sobre saldo, custo, disponibilidade, movimentação, lote/série, depósito, bloqueio ou relatório.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Learning - Managing Logistics in SAP Business One",
+        "url": "https://learning.sap.com/courses/managing-logistics-in-sap-business-one-br",
+        "authority": "official_sap_learning"
+      },
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-inv-002",
+    "title": "Saldo disponível não é sempre igual ao saldo físico",
+    "module": "Estoque e Almoxarifado",
+    "category": "conceito",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "saldo físico",
+      "saldo disponível",
+      "comprometido",
+      "pedido",
+      "documentos abertos"
+    ],
+    "content": "Saldo físico, saldo disponível, comprometido e pedido podem ser diferentes, dependendo de documentos abertos, reservas, pedidos, depósitos, produção e configurações.\nA IA deve perguntar qual coluna/indicador de estoque o usuário está visualizando antes de concluir divergência.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Learning - Managing Logistics in SAP Business One",
+        "url": "https://learning.sap.com/courses/managing-logistics-in-sap-business-one-br",
+        "authority": "official_sap_learning"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-inv-003",
+    "title": "Transferência de estoque",
+    "module": "Estoque e Almoxarifado",
+    "category": "transferencia",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "transferência",
+      "depósito origem",
+      "depósito destino",
+      "lote",
+      "série",
+      "disponibilidade"
+    ],
+    "content": "Transferências de estoque movimentam quantidades entre depósitos ou localizações, podendo afetar disponibilidade e MRP conforme execução e parametrização.\nEm dúvidas sobre transferência, valide item, depósito origem, depósito destino, lote/série, quantidade, data e status do documento.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Learning - Discovering SAP Business One, Web Client Logistics",
+        "url": "https://learning.sap.com/courses/discovering-sap-business-one-web-client-logistics",
+        "authority": "official_sap_learning"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-inv-004",
+    "title": "Inventário e contagem de estoque",
+    "module": "Estoque e Almoxarifado",
+    "category": "inventario",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "inventário",
+      "contagem",
+      "ajuste de estoque",
+      "custo",
+      "autorização"
+    ],
+    "content": "Contagem e ajuste de estoque são processos críticos que alteram saldo e podem afetar custo e contabilidade.\nA IA deve orientar a seguir procedimento validado pela empresa, conferir depósito, item, lote/série, data de contagem e autorização antes de lançar ajustes.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-inv-005",
+    "title": "Itens controlados por lote ou número de série",
+    "module": "Estoque e Almoxarifado",
+    "category": "lote_serie",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "lote",
+      "número de série",
+      "batch",
+      "serial",
+      "movimentação",
+      "atribuição"
+    ],
+    "content": "Itens controlados por lote ou número de série exigem seleção/atribuição adequada em documentos de entrada, saída, transferência, produção e serviço.\nSe um documento não permite adicionar item, verifique se a quantidade possui lote/série atribuído corretamente e se o status do lote/série permite a movimentação.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-inv-006",
+    "title": "Custo de estoque e reavaliação",
+    "module": "Estoque e Almoxarifado",
+    "category": "custo",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "custo",
+      "método de avaliação",
+      "reavaliação",
+      "entrada",
+      "saída",
+      "produção"
+    ],
+    "content": "Questões de custo de estoque dependem de método de avaliação, documentos de entrada/saída, devoluções, produção, reavaliações e período.\nA IA deve tratar dúvidas de custo como sensíveis e orientar validação contábil antes de alterações em base produtiva.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-inv-007",
+    "title": "Estoque no Web Client",
+    "module": "Estoque e Almoxarifado",
+    "category": "web_client",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "Web Client",
+      "estoque",
+      "logística",
+      "interface web",
+      "permissões"
+    ],
+    "content": "O Web Client do SAP Business One oferece recursos para processos logísticos, incluindo gestão de dados mestres, vendas, compras e transações de estoque, conforme versão e permissões.\nPara respostas sobre Web Client, diferencie ações disponíveis na interface web e ações que ainda podem exigir o client desktop ou configuração específica.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Learning - Discovering SAP Business One, Web Client Logistics",
+        "url": "https://learning.sap.com/courses/discovering-sap-business-one-web-client-logistics",
+        "authority": "official_sap_learning"
+      },
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-inv-008",
+    "title": "Depósito no MRP e disponibilidade",
+    "module": "Estoque e Almoxarifado",
+    "category": "mrp",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "MRP",
+      "depósito",
+      "transferência",
+      "recomendação",
+      "oferta",
+      "demanda"
+    ],
+    "content": "Em MRP, executar cenário no nível de depósito pode tornar transferências de estoque relevantes para o cálculo.\nSe a recomendação do MRP parecer incorreta, confirme se o cenário considera toda a empresa ou depósitos específicos, e quais documentos de oferta/demanda foram incluídos.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  }
+]

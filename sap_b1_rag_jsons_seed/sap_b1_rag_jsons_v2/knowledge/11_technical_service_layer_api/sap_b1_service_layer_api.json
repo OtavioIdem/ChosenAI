@@ -1,0 +1,485 @@
+[
+  {
+    "id": "sap-b1-v2-api-001",
+    "title": "Service Layer: papel técnico",
+    "module": "Service Layer e APIs",
+    "category": "conceito",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "Service Layer",
+      "API",
+      "HTTP",
+      "OData",
+      "integração",
+      "objetos de negócio"
+    ],
+    "content": "SAP Business One Service Layer é uma API de extensão para consumir dados e serviços do SAP Business One via HTTP/OData, expondo objetos de negócio em uma camada web escalável e de alta disponibilidade.\nUse esta fonte para perguntas técnicas de integração moderna, aplicações web/mobile e consumo de entidades SAP B1.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Business One Service Layer API Reference",
+        "url": "https://help.sap.com/doc/056f69366b5345a386bb8149f1700c19/10.0/en-US/Service%20Layer%20API%20Reference.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-api-002",
+    "title": "OData v3 e v4 no Service Layer",
+    "module": "Service Layer e APIs",
+    "category": "odata",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "OData v3",
+      "OData v4",
+      "b1s/v1",
+      "b1s/v2",
+      "metadata",
+      "Service Layer"
+    ],
+    "content": "O Service Layer suporta OData v3 e v4 em versões documentadas, mas a referência atual destaca OData v4 como protocolo primário nas versões mais recentes. Os caminhos típicos de metadados diferenciam v1 para OData v3 e v2 para OData v4.\nPara novas integrações, priorize verificar a versão e a documentação oficial do ambiente.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Business One Service Layer API Reference",
+        "url": "https://help.sap.com/doc/056f69366b5345a386bb8149f1700c19/10.0/en-US/Service%20Layer%20API%20Reference.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-api-003",
+    "title": "Service Layer e DI API compartilham metadados",
+    "module": "Service Layer e APIs",
+    "category": "metadata",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "Service Layer",
+      "DI API",
+      "metadados",
+      "objetos",
+      "propriedades",
+      "DI Core"
+    ],
+    "content": "A documentação oficial indica que Service Layer e DI API compartilham a maioria dos metadados, e que o Service Layer usa um DI Core relacionado aos objetos e serviços do SAP Business One.\nEssa relação ajuda desenvolvedores familiarizados com DI API a mapear objetos e propriedades no Service Layer, mas diferenças de protocolo e implantação devem ser consideradas.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Business One Service Layer API Reference",
+        "url": "https://help.sap.com/doc/056f69366b5345a386bb8149f1700c19/10.0/en-US/Service%20Layer%20API%20Reference.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-api-004",
+    "title": "CRUD e ações no Service Layer",
+    "module": "Service Layer e APIs",
+    "category": "crud",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "CRUD",
+      "ações",
+      "funções",
+      "cancelar pedido",
+      "API Reference",
+      "entidade"
+    ],
+    "content": "No Service Layer, operações CRUD lidam com entidades expostas. Para operações que não se encaixam em CRUD padrão, como cancelar certos documentos, a API Reference documenta ações e funções específicas de serviços.\nA IA deve orientar o desenvolvedor a consultar a entidade, ação ou serviço no API Reference antes de montar a chamada.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One Service Layer API Reference",
+        "url": "https://help.sap.com/doc/056f69366b5345a386bb8149f1700c19/10.0/en-US/Service%20Layer%20API%20Reference.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-api-005",
+    "title": "Autenticação e sessão no Service Layer",
+    "module": "Service Layer e APIs",
+    "category": "sessao",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "autenticação",
+      "sessão",
+      "cookies",
+      "HTTPS",
+      "login",
+      "logout",
+      "segurança"
+    ],
+    "content": "Integrações com Service Layer normalmente envolvem autenticação, sessão e cookies/tokens de sessão, dependendo da versão e método usado.\nA IA deve evitar expor credenciais e orientar a armazenar dados sensíveis com segurança, usar HTTPS e validar tempo de sessão, logout, renovação e tratamento de erro.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-api-006",
+    "title": "Arquitetura do Service Layer",
+    "module": "Service Layer e APIs",
+    "category": "arquitetura",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "arquitetura",
+      "HTTP",
+      "OData",
+      "DI Core",
+      "session manager",
+      "OBServer",
+      "load balancer"
+    ],
+    "content": "A arquitetura do Service Layer é descrita como uma camada em que clientes se comunicam via HTTP/OData com o servidor web, que persiste dados no banco e executa lógica por componentes como DI Core, session manager e OBServer.\nPara suporte técnico, investigue cliente, load balancer, nó do Service Layer, banco, logs e objeto de negócio envolvido.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-api-007",
+    "title": "Escalabilidade e load balancing",
+    "module": "Service Layer e APIs",
+    "category": "infraestrutura",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "load balancer",
+      "alta disponibilidade",
+      "modo distribuído",
+      "sessão",
+      "firewall",
+      "logs"
+    ],
+    "content": "Service Layer pode ser implantado em modo integrado ou distribuído, e cenários de alta disponibilidade podem usar múltiplas instâncias com load balancer.\nEm problemas intermitentes, investigar stickiness de sessão, nó do Service Layer, balanceador, disponibilidade, firewall e logs.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-api-008",
+    "title": "SQL Query via Service Layer",
+    "module": "Service Layer e APIs",
+    "category": "sql_query",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "SQL Query",
+      "Service Layer",
+      "views",
+      "OData",
+      "SQL Server",
+      "SAP HANA"
+    ],
+    "content": "Documentação do Service Layer indica suporte a SQL Query em SAP Business One 10.0 FP 2011 para SQL Server e SAP HANA, permitindo consumir views para recuperar dados não expostos por OData.\nEsse recurso deve ser usado com governança, autorização e cuidado com performance e segurança.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-api-009",
+    "title": "UDT e UDO via Service Layer",
+    "module": "Service Layer e APIs",
+    "category": "customizacao",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "UDT",
+      "UDO",
+      "U_",
+      "customização",
+      "metadados",
+      "User Defined Table",
+      "User Defined Object"
+    ],
+    "content": "UDTs e UDOs podem ser manipulados via Service Layer conforme versão. UDTs são mapeadas como entidades com prefixo U_.\nPara perguntas sobre customizações, peça nomes técnicos de tabela/objeto, versão, metadados e erro exato da chamada.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-api-010",
+    "title": "Attachments no Service Layer",
+    "module": "Service Layer e APIs",
+    "category": "attachments",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "Attachments2",
+      "anexos",
+      "multipart",
+      "arquivo",
+      "upload",
+      "download"
+    ],
+    "content": "Service Layer possui operações para anexos, incluindo envio de arquivos em multipart/form-data e atualização/consulta conforme API.\nPara suporte a anexos, valide tamanho máximo, caminho de armazenamento, permissões de pasta, formato multipart, endpoint usado e logs do Service Layer.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-api-011",
+    "title": "Logs e diagnóstico no Service Layer",
+    "module": "Service Layer e APIs",
+    "category": "diagnostico",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "logs",
+      "access log",
+      "diagnóstico",
+      "HTTP",
+      "payload",
+      "código HTTP",
+      "Service Layer"
+    ],
+    "content": "A configuração do Service Layer inclui logs, access log e diagnóstico de requisições, com diretórios diferentes conforme Linux ou Windows.\nPara erros API, colete método HTTP, URL, payload sanitizado, código HTTP, resposta, usuário, empresa, horário, nó do Service Layer e log correspondente.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-api-012",
+    "title": "Webhooks no Service Layer",
+    "module": "Service Layer e APIs",
+    "category": "webhooks",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "webhooks",
+      "Service Layer",
+      "FP 2602",
+      "evento",
+      "notificação",
+      "objeto de negócio"
+    ],
+    "content": "A partir de SAP Business One 10.0 FP 2602, o Service Layer suporta webhooks para receber notificações instantâneas de eventos específicos no sistema, como criação ou atualização de objetos de negócio.\nAo responder sobre webhooks, confirme feature package, configuração, autenticação, assinatura do evento e endpoint receptor.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-api-013",
+    "title": "Não confundir Service Layer com acesso direto ao banco",
+    "module": "Service Layer e APIs",
+    "category": "seguranca",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "segurança",
+      "banco de dados",
+      "acesso direto",
+      "API",
+      "transação",
+      "governança"
+    ],
+    "content": "Service Layer é uma API de negócio e deve ser preferida a manipulações diretas no banco para operações transacionais.\nA IA não deve sugerir INSERT, UPDATE ou DELETE direto em tabelas do banco SAP B1 para alterar dados operacionais. Para leitura analítica, considerar views e recursos documentados, com governança.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [
+      "Não sugerir atualização direta em tabela SAP B1 para corrigir documento."
+    ],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-api-014",
+    "title": "API Reference como fonte para entidades e ações",
+    "module": "Service Layer e APIs",
+    "category": "referencia",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "API Reference",
+      "entidade",
+      "propriedade",
+      "ação",
+      "função",
+      "payload"
+    ],
+    "content": "Para saber entidade, propriedades, ações e funções disponíveis no Service Layer, a fonte de referência deve ser o Service Layer API Reference.\nO RAG deve recuperar chunks da referência oficial quando a pergunta mencionar endpoint, payload, entidade, cancelamento, fechamento, adição ou atualização via API.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One Service Layer API Reference",
+        "url": "https://help.sap.com/doc/056f69366b5345a386bb8149f1700c19/10.0/en-US/Service%20Layer%20API%20Reference.html",
+        "authority": "official_sap"
+      }
+    ]
+  }
+]

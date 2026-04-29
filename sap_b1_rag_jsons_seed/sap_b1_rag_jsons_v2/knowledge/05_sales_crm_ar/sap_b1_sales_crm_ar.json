@@ -1,0 +1,292 @@
+[
+  {
+    "id": "sap-b1-v2-sales-001",
+    "title": "Escopo de vendas e gestão de clientes",
+    "module": "Vendas, CRM e Contas a Receber",
+    "category": "conceito",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "vendas",
+      "CRM",
+      "cliente",
+      "oportunidade",
+      "cotação",
+      "pedido de venda",
+      "entrega",
+      "faturamento"
+    ],
+    "content": "O SAP Business One cobre o ciclo de vendas e relacionamento com clientes, desde contato inicial, oportunidade, cotação, pedido, entrega, faturamento, pós-venda, suporte e análise de vendas.\nAo responder dúvidas de vendas, identifique se a pergunta trata de CRM, documento comercial, estoque, financeiro, fiscal ou serviço.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Learning - Managing Logistics in SAP Business One",
+        "url": "https://learning.sap.com/courses/managing-logistics-in-sap-business-one-br",
+        "authority": "official_sap_learning"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-sales-002",
+    "title": "Oportunidades de venda e pipeline",
+    "module": "Vendas, CRM e Contas a Receber",
+    "category": "crm",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "oportunidade",
+      "pipeline",
+      "lead",
+      "atividade",
+      "CRM",
+      "probabilidade"
+    ],
+    "content": "Oportunidades de venda são usadas para acompanhar leads e atividades ao longo do ciclo comercial até o fechamento.\nA IA deve orientar que oportunidades não são equivalentes a documentos fiscais; elas ajudam a monitorar potencial de venda, estágio, probabilidade, atividades e relacionamento com o cliente.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Learning - Discovering SAP Business One, Web Client Logistics",
+        "url": "https://learning.sap.com/courses/discovering-sap-business-one-web-client-logistics",
+        "authority": "official_sap_learning"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-sales-003",
+    "title": "Documentos de venda como fluxo encadeado",
+    "module": "Vendas, CRM e Contas a Receber",
+    "category": "documentos",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "cotação",
+      "pedido de venda",
+      "entrega",
+      "nota",
+      "faturamento",
+      "documentos de marketing"
+    ],
+    "content": "Documentos de venda devem ser vistos como fluxo encadeado. Um processo pode partir de cotação, seguir para pedido, entrega e documento de faturamento, conforme a operação e localização.\nA resposta deve explicar que os impactos em estoque, contas a receber, impostos e contabilidade dependem do tipo de documento e da parametrização.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Learning - Managing Logistics in SAP Business One",
+        "url": "https://learning.sap.com/courses/managing-logistics-in-sap-business-one-br",
+        "authority": "official_sap_learning"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-sales-004",
+    "title": "Divergência de preço em documento de venda",
+    "module": "Vendas, CRM e Contas a Receber",
+    "category": "diagnostico",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap_learning",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "preço divergente",
+      "lista de preço",
+      "desconto",
+      "moeda",
+      "documento de venda"
+    ],
+    "content": "Se o preço em uma cotação, pedido ou documento de venda estiver diferente do esperado, verifique lista de preços do parceiro, preço do item, moeda, desconto, condição comercial, data do documento e eventuais regras de aprovação ou add-ons.\nNão assuma erro do sistema sem revisar cadastros e regras comerciais aplicáveis.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Learning - Managing Logistics in SAP Business One",
+        "url": "https://learning.sap.com/courses/managing-logistics-in-sap-business-one-br",
+        "authority": "official_sap_learning"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-sales-005",
+    "title": "Bloqueios e aprovações em vendas",
+    "module": "Vendas, CRM e Contas a Receber",
+    "category": "aprovacao",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "aprovação",
+      "autorização",
+      "limite de crédito",
+      "bloqueio",
+      "documento de venda"
+    ],
+    "content": "Pedidos e documentos comerciais podem depender de autorizações, processos de aprovação, limites comerciais, crédito do cliente, campos obrigatórios ou regras de negócio configuradas.\nAo diagnosticar impossibilidade de adicionar ou atualizar documento de venda, validar mensagem de erro, autorização, status do documento, limite de crédito, estoque, fiscal e dados obrigatórios.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-sales-006",
+    "title": "Pós-venda e suporte no ciclo comercial",
+    "module": "Vendas, CRM e Contas a Receber",
+    "category": "pos_venda",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "pós-venda",
+      "serviço",
+      "garantia",
+      "contrato",
+      "chamado",
+      "suporte"
+    ],
+    "content": "SAP Business One inclui gestão de serviço para contratos de garantia/acordo de serviço, atendimento de chamados e suporte ao cliente.\nQuando a pergunta envolver atendimento após venda, direcione para módulo de Serviço, contratos, cartões de equipamento, chamados de serviço e atividades relacionadas.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-sales-007",
+    "title": "Relatórios de vendas",
+    "module": "Vendas, CRM e Contas a Receber",
+    "category": "relatorios",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "relatório de vendas",
+      "pipeline",
+      "forecast",
+      "cliente",
+      "vendedor",
+      "rentabilidade"
+    ],
+    "content": "Relatórios e análises de vendas podem acompanhar pipeline, previsão, desempenho de vendedores, documentos, clientes, produtos, períodos e rentabilidade.\nA resposta deve solicitar critérios como período, vendedor, cliente, item, status do documento e objetivo do relatório.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-sales-008",
+    "title": "Mobile sales e acesso operacional",
+    "module": "Vendas, CRM e Contas a Receber",
+    "category": "mobile",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "mobile",
+      "vendas mobile",
+      "iOS",
+      "Android",
+      "lead",
+      "pedido",
+      "estoque"
+    ],
+    "content": "SAP Business One possui aplicações móveis que permitem gerenciar leads, contas de cliente, estoque e pedidos em dispositivos iOS ou Android, conforme disponibilidade e configuração do ambiente.\nAo responder sobre mobile, informe que recursos dependem da versão, implantação, permissões e configuração de acesso.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      }
+    ]
+  }
+]

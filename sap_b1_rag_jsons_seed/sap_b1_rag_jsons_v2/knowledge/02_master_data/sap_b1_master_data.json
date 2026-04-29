@@ -1,0 +1,220 @@
+[
+  {
+    "id": "sap-b1-v2-md-001",
+    "title": "Dados mestres no SAP Business One",
+    "module": "Cadastros e Dados Mestres",
+    "category": "conceito",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "medium",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "dados mestres",
+      "parceiros de negócio",
+      "itens",
+      "contatos",
+      "endereços",
+      "depósitos",
+      "listas de preço"
+    ],
+    "content": "Dados mestres são cadastros reutilizados por processos de compras, vendas, estoque, serviço, financeiro e relatórios.\nNo SAP Business One, os exemplos centrais são parceiros de negócio, itens, contatos, endereços, listas de preços, depósitos, contas contábeis e informações fiscais/localização.\nUma resposta sobre documento operacional deve verificar se o problema pode estar em dados mestres incompletos ou inconsistentes.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Learning - Managing Logistics in SAP Business One",
+        "url": "https://learning.sap.com/courses/managing-logistics-in-sap-business-one-br",
+        "authority": "official_sap_learning"
+      },
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-md-002",
+    "title": "Parceiros de negócio: uso transversal",
+    "module": "Cadastros e Dados Mestres",
+    "category": "business_partner",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "business partner",
+      "parceiro de negócio",
+      "cliente",
+      "fornecedor",
+      "lead",
+      "endereço",
+      "condição de pagamento"
+    ],
+    "content": "Parceiros de negócio são usados em processos de vendas, compras, CRM, serviço, pagamentos e documentos fiscais.\nAo diagnosticar erro em pedido, nota, pagamento ou chamado de serviço, valide se o parceiro possui dados obrigatórios para o processo: identificação, endereço, contato, condição de pagamento, dados fiscais/localização, moeda e relacionamento comercial.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Learning - Discovering SAP Business One, Web Client Logistics",
+        "url": "https://learning.sap.com/courses/discovering-sap-business-one-web-client-logistics",
+        "authority": "official_sap_learning"
+      },
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-md-003",
+    "title": "Itens e dados de planejamento",
+    "module": "Cadastros e Dados Mestres",
+    "category": "item_master",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "item master",
+      "cadastro de item",
+      "MRP",
+      "BOM",
+      "lead time",
+      "lote mínimo",
+      "múltiplos",
+      "método de suprimento"
+    ],
+    "content": "O cadastro de item afeta compras, vendas, estoque, produção, MRP, serviço e relatórios.\nPara MRP e produção, dados como método de planejamento, método de suprimento, lead time, lote mínimo, múltiplos, intervalo de pedido, dias de tolerância, depósito e componentes de lista de materiais são críticos.\nSe o MRP gerar recomendações inesperadas, investigue primeiro os dados do item, a estrutura da BOM, os documentos de demanda e oferta e os parâmetros do cenário.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-md-004",
+    "title": "Listas de preço e precificação",
+    "module": "Cadastros e Dados Mestres",
+    "category": "pricing",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap_learning",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "preço",
+      "lista de preço",
+      "desconto",
+      "moeda",
+      "cotação",
+      "pedido de venda"
+    ],
+    "content": "Precificação em SAP Business One depende de listas de preço, cadastros de itens, parceiros de negócio, descontos, moeda e regras comerciais.\nAo responder uma dúvida de preço divergente em cotação, pedido ou nota, oriente a validar qual lista de preços está associada ao parceiro e se há desconto, moeda ou regra específica aplicada ao documento.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Learning - Managing Logistics in SAP Business One",
+        "url": "https://learning.sap.com/courses/managing-logistics-in-sap-business-one-br",
+        "authority": "official_sap_learning"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-md-005",
+    "title": "Depósitos e estoque por localização",
+    "module": "Cadastros e Dados Mestres",
+    "category": "warehouse",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "depósito",
+      "warehouse",
+      "saldo",
+      "disponibilidade",
+      "transferência",
+      "MRP por depósito"
+    ],
+    "content": "Depósitos e localizações impactam disponibilidade, separação, transferências, compras, vendas, produção e MRP.\nPara dúvidas de saldo ou disponibilidade, a IA deve perguntar ou considerar o depósito envolvido, se a consulta é por item, depósito, lote, número de série ou período.\nEm MRP, transferências entre depósitos podem ser relevantes quando o assistente é executado no nível do depósito.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Learning - Managing Logistics in SAP Business One",
+        "url": "https://learning.sap.com/courses/managing-logistics-in-sap-business-one-br",
+        "authority": "official_sap_learning"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-md-006",
+    "title": "Campos definidos pelo usuário e tabelas definidas pelo usuário",
+    "module": "Cadastros e Dados Mestres",
+    "category": "customizacao",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "UDF",
+      "UDT",
+      "UDO",
+      "campo definido pelo usuário",
+      "tabela definida pelo usuário",
+      "customização",
+      "Service Layer"
+    ],
+    "content": "SAP Business One permite extensões por campos definidos pelo usuário, tabelas definidas pelo usuário e objetos definidos pelo usuário.\nEm integrações pelo Service Layer, UDTs podem ser expostas como entidades com prefixo U_, e UDOs também podem ser manipulados conforme suporte de versão.\nAo responder perguntas sobre campos customizados, destaque que o comportamento depende da customização, add-on e versão do ambiente.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  }
+]

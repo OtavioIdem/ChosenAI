@@ -1,0 +1,338 @@
+[
+  {
+    "id": "sap-b1-v2-svc-001",
+    "title": "Escopo do módulo de serviço",
+    "module": "Serviço e Pós-venda",
+    "category": "conceito",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "serviço",
+      "pós-venda",
+      "chamado de serviço",
+      "contrato",
+      "garantia",
+      "cartão de equipamento"
+    ],
+    "content": "O módulo de serviço do SAP Business One apoia atendimento ao cliente ou fornecedor, chamados de serviço, contratos, garantias, cartões de equipamento, atividades relacionadas e histórico de atendimento.\nPerguntas de pós-venda, garantia, assistência técnica e chamados devem ser roteadas para Serviço.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-svc-002",
+    "title": "Chamado de serviço no Web Client",
+    "module": "Serviço e Pós-venda",
+    "category": "web_client",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "chamado de serviço",
+      "Web Client",
+      "status",
+      "cliente",
+      "fornecedor",
+      "solução",
+      "histórico",
+      "agendamento"
+    ],
+    "content": "No Web Client, chamados de serviço possuem campos como tipo, cliente/fornecedor, item, status, assunto, atribuição, informações de parceiro, solução, documentos relacionados, histórico e agendamento.\nO status do chamado pode indicar aberto, pendente ou fechado. A resposta deve explicar o conceito e pedir dados do chamado para orientar diagnóstico.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-svc-003",
+    "title": "Criar chamado de serviço",
+    "module": "Serviço e Pós-venda",
+    "category": "passo_a_passo",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "criar chamado",
+      "serviço",
+      "Web Client",
+      "tipo",
+      "cliente",
+      "item",
+      "número de série",
+      "responsável"
+    ],
+    "content": "Para criar um chamado de serviço no Web Client, entre na tela de chamado por app de gerenciamento, menu principal de Serviço ou tile de criação. Selecione o tipo de atendimento, informe cliente ou fornecedor, descreva o assunto, relacione item/número de série quando aplicável, atribua responsável, registre solução ou agendamento se necessário e adicione o registro.\nEsse passo a passo é uma orientação baseada no Web Client e pode variar conforme versão, autorização e configuração.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-svc-004",
+    "title": "Cartão de equipamento",
+    "module": "Serviço e Pós-venda",
+    "category": "equipment_card",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "cartão de equipamento",
+      "equipment card",
+      "número de série",
+      "serviço",
+      "cliente",
+      "fornecedor"
+    ],
+    "content": "Cartões de equipamento permitem acompanhar itens vendidos ou comprados por número de série durante o período de serviço.\nO tipo do cartão pode representar serviço prestado ao cliente, recebido de fornecedor ou ambos, dependendo do cenário. Itens serializados e contratos de serviço podem depender desse cadastro.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-svc-005",
+    "title": "Contrato de serviço e garantia",
+    "module": "Serviço e Pós-venda",
+    "category": "contrato",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "contrato de serviço",
+      "garantia",
+      "item serializado",
+      "modelo de garantia",
+      "cobertura"
+    ],
+    "content": "Contratos de serviço podem representar cobertura de atendimento, garantia e condições de suporte. Em alguns cenários, contratos de garantia podem ser criados automaticamente para itens serializados quando há documento de venda e modelo de garantia configurado.\nA IA deve solicitar contexto de item, número de série, cliente, contrato e configuração de garantia antes de explicar comportamento específico.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-svc-006",
+    "title": "Chamado fechado e reabertura",
+    "module": "Serviço e Pós-venda",
+    "category": "status",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "chamado fechado",
+      "reabrir chamado",
+      "data de fechamento",
+      "autorização",
+      "Service Call"
+    ],
+    "content": "Um chamado fechado registra data/hora de fechamento. Se reaberto, alguns campos relacionados ao fechamento podem ser alterados conforme regras e autorização.\nPara alteração de datas de criação/fechamento, a documentação do Web Client indica necessidade de autorização completa específica no SAP Business One client.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-svc-007",
+    "title": "Documentos relacionados ao serviço",
+    "module": "Serviço e Pós-venda",
+    "category": "documentos",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "documentos relacionados",
+      "peças",
+      "mão de obra",
+      "deslocamento",
+      "parceiro de negócio"
+    ],
+    "content": "Chamados de serviço podem se relacionar a documentos como peças, mão de obra, deslocamento ou outros documentos vinculados ao parceiro de negócio.\nAo responder, explique que a visão de documentos pode ser filtrada por parceiro ou mostrar todos os documentos relacionados, conforme opção e permissão.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-proj-001",
+    "title": "Escopo do Project Management",
+    "module": "Projetos",
+    "category": "conceito",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "projetos",
+      "project management",
+      "subprojeto",
+      "tarefa",
+      "custo",
+      "receita",
+      "documentos"
+    ],
+    "content": "O módulo Project Management do SAP Business One é usado para gerenciar projetos do início ao fim, centralizando transações, documentos e recursos relacionados ao projeto.\nPerguntas de projetos devem considerar etapas, subprojetos, tarefas, custos, receitas, documentos vinculados, status e análise de rentabilidade.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Work with Project Management in SAP Business One",
+        "url": "https://help.sap.com/doc/46e99943f725466a87f40799f9761ddb/10.0/en-US/How_to_Work_with_Project_Management_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-proj-002",
+    "title": "Projetos como estrutura de acompanhamento",
+    "module": "Projetos",
+    "category": "estrutura",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "projeto",
+      "estrutura",
+      "custos",
+      "receitas",
+      "controle",
+      "centro de custo"
+    ],
+    "content": "Projetos devem ser vistos como estruturas de acompanhamento que conectam dados operacionais e financeiros. Eles podem auxiliar controle de custos, receitas, documentos e avanço.\nA IA não deve tratar projeto como substituto automático de centro de custo ou ordem de produção sem confirmação da parametrização da empresa.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Work with Project Management in SAP Business One",
+        "url": "https://help.sap.com/doc/46e99943f725466a87f40799f9761ddb/10.0/en-US/How_to_Work_with_Project_Management_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-proj-003",
+    "title": "Diagnóstico de custo ou saldo de projeto",
+    "module": "Projetos",
+    "category": "diagnostico",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "custo de projeto",
+      "receita de projeto",
+      "saldo",
+      "documentos vinculados",
+      "relatório"
+    ],
+    "content": "Quando houver divergência em custo, receita ou saldo de projeto, valide período, documentos vinculados, status do projeto, etapa/subprojeto, contas, parceiro, item, moeda, lançamentos manuais e critérios do relatório.\nRespostas devem ser orientativas e recomendar validação com responsável financeiro/projeto para ajustes em produção.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Work with Project Management in SAP Business One",
+        "url": "https://help.sap.com/doc/46e99943f725466a87f40799f9761ddb/10.0/en-US/How_to_Work_with_Project_Management_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  }
+]

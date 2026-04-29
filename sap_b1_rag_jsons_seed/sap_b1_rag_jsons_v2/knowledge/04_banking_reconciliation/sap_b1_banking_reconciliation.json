@@ -1,0 +1,201 @@
+[
+  {
+    "id": "sap-b1-v2-bank-001",
+    "title": "Escopo de bancos e pagamentos",
+    "module": "Bancos, Pagamentos e Reconciliação",
+    "category": "conceito",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "bancos",
+      "pagamentos",
+      "recebimentos",
+      "extrato",
+      "reconciliação",
+      "conciliação bancária"
+    ],
+    "content": "A área de bancos no SAP Business One está ligada a recebimentos, pagamentos, contas bancárias, extratos, reconciliação, meios de pagamento e relatórios financeiros.\nA IA deve distinguir entre criação de pagamento, compensação de documento em aberto, conciliação bancária e reconciliação contábil.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-bank-002",
+    "title": "Reconciliação interna e externa",
+    "module": "Bancos, Pagamentos e Reconciliação",
+    "category": "reconciliacao",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "reconciliação interna",
+      "reconciliação externa",
+      "extrato bancário",
+      "documentos em aberto",
+      "saldo"
+    ],
+    "content": "Reconciliação interna normalmente relaciona lançamentos/documentos dentro do sistema, enquanto reconciliação externa se relaciona à comparação com extratos bancários externos.\nAo responder dúvidas de reconciliação, identifique se o usuário fala de documentos em aberto, contas contábeis, extrato bancário, importação de arquivo ou divergência de saldo.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-bank-003",
+    "title": "Divergência entre banco e contabilidade",
+    "module": "Bancos, Pagamentos e Reconciliação",
+    "category": "diagnostico",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "divergência",
+      "saldo bancário",
+      "lançamento manual",
+      "taxa de câmbio",
+      "duplicidade"
+    ],
+    "content": "Duplicidade de pagamento, documento não reconciliado, lançamento manual, diferença de data, moeda ou taxa de câmbio podem gerar divergência entre banco e contabilidade.\nA IA deve orientar a analisar extrato, documentos pagos/recebidos, lançamentos manuais, período e reconciliações anteriores antes de concluir erro no sistema.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-bank-004",
+    "title": "Assistente de pagamentos",
+    "module": "Bancos, Pagamentos e Reconciliação",
+    "category": "pagamentos",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "assistente de pagamento",
+      "payment wizard",
+      "lote",
+      "fornecedor",
+      "documentos abertos"
+    ],
+    "content": "Processos em lote de pagamentos devem ser tratados com cuidado, pois dependem de seleção de fornecedores/clientes, documentos abertos, métodos de pagamento, bancos, vencimentos e autorizações.\nA IA pode orientar conceitualmente, mas deve solicitar validação operacional antes de gerar ou confirmar pagamentos em massa.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-bank-005",
+    "title": "Pagamentos recebidos e contas a receber",
+    "module": "Bancos, Pagamentos e Reconciliação",
+    "category": "recebimentos",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "pagamento recebido",
+      "cliente",
+      "documento aberto",
+      "parcial",
+      "moeda",
+      "reconciliação"
+    ],
+    "content": "Pagamentos recebidos devem ser vinculados aos documentos de cliente quando aplicável, impactando saldos em aberto e reconciliação.\nSe o usuário disser que uma nota continua aberta após pagamento, verifique se o pagamento foi aplicado ao documento correto, se houve pagamento parcial, reconciliação ou diferença de moeda/valor.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-bank-006",
+    "title": "Pagamentos efetuados e contas a pagar",
+    "module": "Bancos, Pagamentos e Reconciliação",
+    "category": "pagamentos_fornecedor",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "pagamento efetuado",
+      "fornecedor",
+      "saldo em aberto",
+      "retenção",
+      "adiantamento"
+    ],
+    "content": "Pagamentos efetuados devem reduzir o saldo em aberto do fornecedor quando corretamente aplicados.\nEm dúvidas sobre documento de fornecedor ainda aberto, valide se o pagamento foi lançado, aplicado ao documento, reconciliado e se há diferença de imposto, desconto, adiantamento, retenção ou taxa de câmbio.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  }
+]

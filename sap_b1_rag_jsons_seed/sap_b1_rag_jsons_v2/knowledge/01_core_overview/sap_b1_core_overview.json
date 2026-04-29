@@ -1,0 +1,236 @@
+[
+  {
+    "id": "sap-b1-v2-core-001",
+    "title": "O que é SAP Business One",
+    "module": "Visão Geral",
+    "category": "conceito",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "SAP Business One",
+      "ERP",
+      "PME",
+      "pequenas empresas",
+      "finanças",
+      "compras",
+      "estoque",
+      "vendas",
+      "CRM",
+      "relatórios"
+    ],
+    "content": "SAP Business One é uma solução ERP para pequenas e médias empresas, usada para gerenciar áreas como contabilidade, finanças, compras, estoque, vendas, relacionamento com clientes, relatórios e análises.\nEm respostas de visão geral, descreva o SAP Business One como um ERP integrado para processos de negócio, não como um módulo isolado.",
+    "questions": [
+      "Para que serve o SAP Business One?",
+      "O SAP B1 é um ERP?",
+      "Quais áreas o SAP Business One cobre?"
+    ],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One | ERP Software for Small Businesses",
+        "url": "https://www.sap.com/products/erp/business-one.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-core-002",
+    "title": "Diferença entre SAP Business One e SAP ERP/S/4HANA",
+    "module": "Visão Geral",
+    "category": "comparativo",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "SAP B1",
+      "SAP ERP",
+      "SAP S/4HANA",
+      "PME",
+      "diferença",
+      "comparativo"
+    ],
+    "content": "SAP Business One foi desenvolvido para pequenas e médias empresas, enquanto SAP ERP e SAP S/4HANA Cloud atendem organizações de maior porte ou de diferentes complexidades.\nAo explicar a diferença, foque no público-alvo e no escopo funcional. Não reutilize menus, transações ou conceitos técnicos de SAP ECC/S/4HANA como se fossem nativos do SAP Business One.",
+    "questions": [
+      "SAP Business One é igual ao SAP S/4HANA?",
+      "Qual diferença entre SAP B1 e SAP ERP?"
+    ],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One | ERP Software for Small Businesses",
+        "url": "https://www.sap.com/products/erp/business-one.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-core-003",
+    "title": "Áreas funcionais principais do SAP Business One",
+    "module": "Visão Geral",
+    "category": "mapa_modular",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "módulos",
+      "financeiro",
+      "vendas",
+      "compras",
+      "estoque",
+      "relatórios",
+      "analytics",
+      "Web Client"
+    ],
+    "content": "As áreas funcionais recorrentes do SAP Business One incluem gestão financeira, vendas e relacionamento com clientes, compras e controle de estoque, relatórios e análises, capacidades específicas de indústria, aplicativos móveis, Web Client e recursos de plataforma como analytics em SAP HANA.\nPara respostas de orientação, identifique primeiro o módulo provável da pergunta antes de detalhar o processo.",
+    "questions": [
+      "Quais são os módulos do SAP Business One?",
+      "Onde entra o Web Client no SAP B1?"
+    ],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-core-004",
+    "title": "SAP Business One como base integrada de processos",
+    "module": "Visão Geral",
+    "category": "arquitetura_funcional",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "processo integrado",
+      "impacto entre módulos",
+      "documentos de marketing",
+      "contabilidade",
+      "estoque"
+    ],
+    "content": "O SAP Business One centraliza processos operacionais para que documentos de vendas, compras, estoque, financeiro e relatórios tenham conexão entre si.\nAo responder dúvidas de processo, destaque os impactos entre módulos. Exemplo: uma entrega ou nota de venda pode impactar estoque, contas a receber, impostos e contabilidade, dependendo da parametrização.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One | ERP Software for Small Businesses",
+        "url": "https://www.sap.com/products/erp/business-one.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-core-005",
+    "title": "Quando perguntar a versão e o ambiente",
+    "module": "Visão Geral",
+    "category": "diagnostico",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "versão",
+      "patch level",
+      "SQL",
+      "HANA",
+      "Web Client",
+      "add-on",
+      "localização"
+    ],
+    "content": "Antes de responder uma dúvida específica de tela, erro ou comportamento técnico no SAP Business One, identifique se o usuário informou: versão do SAP Business One, patch level ou feature package, banco de dados SQL/HANA, interface usada, localização do país e existência de add-ons.\nSe a pergunta envolver erro, integração, fiscal ou Web Client, peça ou mencione esses dados como necessários para precisão.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-core-006",
+    "title": "Categorias de perguntas para roteamento",
+    "module": "Visão Geral",
+    "category": "roteamento",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "intenção",
+      "roteamento",
+      "classificação",
+      "Service Layer",
+      "fiscal",
+      "Web Client"
+    ],
+    "content": "Perguntas sobre SAP Business One devem ser roteadas por intenção: conceito, passo a passo operacional, parametrização, erro, integração/API, fiscal/localização, relatório/BI, Web Client/mobile ou comparação de versão.\nA intenção define o tipo de fonte priorizada. Integrações devem priorizar Service Layer, DI API e Integration Framework. Fiscal Brasil deve priorizar SAP Localization Brazil e fontes governamentais. Operação funcional deve priorizar SAP Help Portal e SAP Learning.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One Service Layer API Reference",
+        "url": "https://help.sap.com/doc/056f69366b5345a386bb8149f1700c19/10.0/en-US/Service%20Layer%20API%20Reference.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Learning - Managing Logistics in SAP Business One",
+        "url": "https://learning.sap.com/courses/managing-logistics-in-sap-business-one-br",
+        "authority": "official_sap_learning"
+      }
+    ]
+  }
+]

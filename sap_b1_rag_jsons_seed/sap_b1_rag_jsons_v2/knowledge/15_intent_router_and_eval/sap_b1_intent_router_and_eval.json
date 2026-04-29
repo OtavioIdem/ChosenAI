@@ -1,0 +1,811 @@
+[
+  {
+    "id": "sap-b1-v2-intent-001",
+    "title": "Roteamento: pergunta de visão geral",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "intent_router",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "roteamento",
+      "visão geral",
+      "módulos",
+      "features"
+    ],
+    "content": "Se a pergunta pedir 'o que é SAP B1', 'para que serve' ou 'quais módulos tem', recuperar Visão Geral, Features oficiais e SAP Learning. Responder conceitualmente e evitar detalhes de configuração.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One | ERP Software for Small Businesses",
+        "url": "https://www.sap.com/products/erp/business-one.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-intent-002",
+    "title": "Roteamento: pergunta de processo operacional",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "intent_router",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "roteamento",
+      "passo a passo",
+      "processo operacional"
+    ],
+    "content": "Se a pergunta pedir como fazer uma operação, recuperar módulo funcional correspondente, SAP Help Portal, SAP Learning e Web Client se a interface for web. Responder em passo a passo quando a fonte sustentar; se faltar tela exata, informar limitação.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Learning - Managing Logistics in SAP Business One",
+        "url": "https://learning.sap.com/courses/managing-logistics-in-sap-business-one-br",
+        "authority": "official_sap_learning"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-intent-003",
+    "title": "Roteamento: pergunta de integração/API",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "intent_router",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "roteamento",
+      "API",
+      "Service Layer",
+      "OData",
+      "DI API",
+      "B1if"
+    ],
+    "content": "Se a pergunta mencionar endpoint, API, Service Layer, OData, DI API, B1if, payload, HTTP ou integração, recuperar Service Layer API Reference, Working with Service Layer e Integration Framework antes de qualquer fonte de blog.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One Service Layer API Reference",
+        "url": "https://help.sap.com/doc/056f69366b5345a386bb8149f1700c19/10.0/en-US/Service%20Layer%20API%20Reference.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Integration Framework for SAP Business One 2.0",
+        "url": "https://help.sap.com/doc/ab09ad91688340ff81c63fd779f94b49/9.0/en-US/Integration_Framework_2_0.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-intent-004",
+    "title": "Roteamento: pergunta fiscal Brasil",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "intent_router",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_gov_br+official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "roteamento",
+      "fiscal",
+      "Brasil",
+      "NF-e",
+      "SPED",
+      "IBS",
+      "CBS"
+    ],
+    "content": "Se a pergunta mencionar NF-e, NFC-e, NFS-e, SPED, CFOP, CST, IBS, CBS, imposto ou rejeição fiscal, recuperar Localization for Brazil e fontes governamentais. Responder com ressalva de validação fiscal e versão.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Portal Nacional da Nota Fiscal Eletrônica",
+        "url": "https://www.nfe.fazenda.gov.br/",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "SPED - Guia Prático da EFD ICMS IPI 3.2.2",
+        "url": "https://sped.rfb.gov.br/item/show/8112",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "Portal NFS-e - Documentação Atual",
+        "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual",
+        "authority": "official_gov_br"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-intent-005",
+    "title": "Roteamento: pergunta de MRP",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "intent_router",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "roteamento",
+      "MRP",
+      "BOM",
+      "previsão",
+      "Make",
+      "Buy"
+    ],
+    "content": "Se a pergunta mencionar MRP, recomendação, previsão, necessidade de material, Make/Buy, BOM, compra sugerida ou produção sugerida, recuperar o guia de MRP e dados mestre de itens/BOM.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-intent-006",
+    "title": "Roteamento: pergunta de serviço/pós-venda",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "intent_router",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "roteamento",
+      "serviço",
+      "chamado",
+      "garantia",
+      "contrato",
+      "equipamento"
+    ],
+    "content": "Se a pergunta mencionar chamado, garantia, contrato de serviço, equipamento, número de série, assistência técnica ou pós-venda, recuperar Serviço e Web Client Service Calls.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-intent-007",
+    "title": "Roteamento: pergunta de projeto",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "intent_router",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "roteamento",
+      "projeto",
+      "project management",
+      "custo",
+      "receita"
+    ],
+    "content": "Se a pergunta mencionar projeto, subprojeto, tarefa, custo de projeto, receita de projeto, Gantt ou Project Management, recuperar guia de Project Management.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Work with Project Management in SAP Business One",
+        "url": "https://help.sap.com/doc/46e99943f725466a87f40799f9761ddb/10.0/en-US/How_to_Work_with_Project_Management_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-intent-008",
+    "title": "Regra de resposta: pedir contexto quando necessário",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "answer_policy",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "contexto",
+      "versão",
+      "SQL",
+      "HANA",
+      "add-on",
+      "mensagem de erro"
+    ],
+    "content": "Quando a pergunta depender de ambiente, peça ou informe necessidade de contexto: versão SAP B1, patch/feature package, SQL ou HANA, Web Client ou desktop, localização, add-ons, mensagem de erro e documento envolvido.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-gold-001",
+    "title": "Pergunta teste: O que é SAP Business One?",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "golden_test",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "curated_evaluation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "teste",
+      "avaliação",
+      "golden question",
+      "RAG"
+    ],
+    "content": "Esperado: responder que SAP B1 é ERP para pequenas e médias empresas, cobrindo contabilidade/finanças, compras, estoque, vendas/CRM, relatórios e analytics. Fonte: SAP overview/features.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One | ERP Software for Small Businesses",
+        "url": "https://www.sap.com/products/erp/business-one.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-gold-002",
+    "title": "Pergunta teste: SAP B1 é igual a S/4HANA?",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "golden_test",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "curated_evaluation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "teste",
+      "avaliação",
+      "golden question",
+      "RAG"
+    ],
+    "content": "Esperado: explicar que SAP Business One é voltado a PME e SAP ERP/S/4HANA têm outro público/escopo; não usar transações S/4 como menus B1.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One | ERP Software for Small Businesses",
+        "url": "https://www.sap.com/products/erp/business-one.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-gold-003",
+    "title": "Pergunta teste: Como saber por que o MRP sugeriu compra?",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "golden_test",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "curated_evaluation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "teste",
+      "avaliação",
+      "golden question",
+      "RAG"
+    ],
+    "content": "Esperado: orientar checklist de cenário, item, método Make/Buy, BOM, estoque, demanda, forecast, lead time, lote e depósito. Fonte: MRP guide.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One | ERP Software for Small Businesses",
+        "url": "https://www.sap.com/products/erp/business-one.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-gold-004",
+    "title": "Pergunta teste: Como criar um chamado de serviço no Web Client?",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "golden_test",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "curated_evaluation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "teste",
+      "avaliação",
+      "golden question",
+      "RAG"
+    ],
+    "content": "Esperado: passo a passo do Web Client com tipo, cliente/fornecedor, assunto, item/número de série, responsável, solução/agendamento e Add; mencionar variação por versão/permissão.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One | ERP Software for Small Businesses",
+        "url": "https://www.sap.com/products/erp/business-one.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-gold-005",
+    "title": "Pergunta teste: Como integrar via Service Layer?",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "golden_test",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "curated_evaluation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "teste",
+      "avaliação",
+      "golden question",
+      "RAG"
+    ],
+    "content": "Esperado: explicar Service Layer como HTTP/OData, verificar versão v2/OData v4, autenticação, API Reference, entidade/ação e segurança; não recomendar update direto em banco.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One | ERP Software for Small Businesses",
+        "url": "https://www.sap.com/products/erp/business-one.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-gold-006",
+    "title": "Pergunta teste: Posso atualizar tabela direto no banco para corrigir documento?",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "golden_test",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "curated_evaluation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "teste",
+      "avaliação",
+      "golden question",
+      "RAG"
+    ],
+    "content": "Esperado: negar como prática recomendada; orientar usar APIs/processos oficiais e validação SAP/consultor.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One | ERP Software for Small Businesses",
+        "url": "https://www.sap.com/products/erp/business-one.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-gold-007",
+    "title": "Pergunta teste: O que muda na NF-e com CBS/IBS?",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "golden_test",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "curated_evaluation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "teste",
+      "avaliação",
+      "golden question",
+      "RAG"
+    ],
+    "content": "Esperado: citar Reforma Tributária e NT 2025.002 como regra externa; dizer que configuração no SAP B1 depende da localização/versão/nota SAP e validação fiscal.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One | ERP Software for Small Businesses",
+        "url": "https://www.sap.com/products/erp/business-one.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-gold-008",
+    "title": "Pergunta teste: Como resolver rejeição de NF-e?",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "golden_test",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "curated_evaluation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "teste",
+      "avaliação",
+      "golden question",
+      "RAG"
+    ],
+    "content": "Esperado: pedir código, mensagem, XML, layout, UF, tipo de operação, versão SAP/localização, add-on fiscal e logs; não inventar causa.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One | ERP Software for Small Businesses",
+        "url": "https://www.sap.com/products/erp/business-one.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-gold-009",
+    "title": "Pergunta teste: Por que saldo disponível difere do saldo físico?",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "golden_test",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "curated_evaluation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "teste",
+      "avaliação",
+      "golden question",
+      "RAG"
+    ],
+    "content": "Esperado: explicar comprometido, pedido, depósitos, documentos abertos, reservas, lotes/séries; pedir qual indicador está sendo visto.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One | ERP Software for Small Businesses",
+        "url": "https://www.sap.com/products/erp/business-one.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-gold-010",
+    "title": "Pergunta teste: Como diagnosticar erro 500 no Service Layer?",
+    "module": "Roteamento e Avaliação RAG",
+    "category": "golden_test",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "curated_evaluation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "teste",
+      "avaliação",
+      "golden question",
+      "RAG"
+    ],
+    "content": "Esperado: coletar método, URL, payload sanitizado, código HTTP, resposta, usuário/empresa, horário, nó, logs e status do Service Layer/load balancer.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One | ERP Software for Small Businesses",
+        "url": "https://www.sap.com/products/erp/business-one.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      }
+    ]
+  }
+]

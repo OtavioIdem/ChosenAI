@@ -1,0 +1,214 @@
+[
+  {
+    "id": "sap-b1-v2-pur-001",
+    "title": "Escopo de compras e fornecedores",
+    "module": "Compras e Contas a Pagar",
+    "category": "conceito",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "compras",
+      "fornecedor",
+      "pedido de compra",
+      "recebimento",
+      "contas a pagar",
+      "estoque"
+    ],
+    "content": "O processo de compras no SAP Business One cobre necessidades de aquisição, fornecedores, solicitações/cotações, pedidos, recebimento, devoluções, documentos de fornecedor, contas a pagar, estoque e impacto contábil/fiscal.\nAo responder, separe a dúvida entre etapa comercial, recebimento físico, documento fiscal/financeiro e pagamento.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Learning - Managing Logistics in SAP Business One",
+        "url": "https://learning.sap.com/courses/managing-logistics-in-sap-business-one-br",
+        "authority": "official_sap_learning"
+      },
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-pur-002",
+    "title": "Fluxo de compras orientado por documento",
+    "module": "Compras e Contas a Pagar",
+    "category": "documentos",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "solicitação de compra",
+      "cotação",
+      "pedido de compra",
+      "recebimento de mercadoria",
+      "documento de fornecedor"
+    ],
+    "content": "Um fluxo comum de compras pode envolver solicitação/cotação, pedido de compra, recebimento de mercadoria e documento de fornecedor, mas o fluxo exato depende da configuração e da localização.\nA IA deve evitar afirmar que todos os documentos são obrigatórios em todos os cenários. Pergunte qual etapa e qual documento o usuário está usando.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Learning - Managing Logistics in SAP Business One",
+        "url": "https://learning.sap.com/courses/managing-logistics-in-sap-business-one-br",
+        "authority": "official_sap_learning"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-pur-003",
+    "title": "Recebimento de mercadoria e estoque",
+    "module": "Compras e Contas a Pagar",
+    "category": "estoque",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "recebimento",
+      "goods receipt PO",
+      "estoque",
+      "custo",
+      "depósito",
+      "lote",
+      "série"
+    ],
+    "content": "Recebimentos de mercadoria podem afetar saldo de estoque, custo, contas de compensação e documentos posteriores.\nEm divergência de saldo após compra, verifique o tipo de documento lançado, depósito, lote/série, item, cancelamentos, devoluções e se houve documento fiscal/contábil relacionado.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Learning - Managing Logistics in SAP Business One",
+        "url": "https://learning.sap.com/courses/managing-logistics-in-sap-business-one-br",
+        "authority": "official_sap_learning"
+      },
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-pur-004",
+    "title": "Divergência em documento de fornecedor",
+    "module": "Compras e Contas a Pagar",
+    "category": "diagnostico",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "documento de fornecedor",
+      "divergência",
+      "preço",
+      "imposto",
+      "quantidade",
+      "moeda"
+    ],
+    "content": "Divergências em documentos de fornecedor podem envolver preço, quantidade, imposto, condição de pagamento, moeda, frete, desconto, arredondamento, depósito ou referência a documento anterior.\nA IA deve orientar a comparar documento base, cadastro do fornecedor, item, fiscal/localização, moeda e contas antes de sugerir correção.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-pur-005",
+    "title": "Compras geradas a partir de MRP",
+    "module": "Compras e Contas a Pagar",
+    "category": "mrp",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "MRP",
+      "recomendação",
+      "pedido de compra",
+      "solicitação de compra",
+      "demanda",
+      "estoque"
+    ],
+    "content": "O MRP pode recomendar compras, solicitações de compra, produção e transferências conforme demanda, estoque disponível, documentos existentes, políticas de planejamento e BOM.\nQuando um pedido ou solicitação vem de MRP, a origem deve ser analisada a partir do cenário de MRP, item, data, depósito e recomendação gerada.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "How to Configure and Use MRP in SAP Business One",
+        "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-pur-006",
+    "title": "Autorizações em compras",
+    "module": "Compras e Contas a Pagar",
+    "category": "autorizacao",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "aprovação",
+      "autorização",
+      "compras",
+      "bloqueio",
+      "mensagem de erro"
+    ],
+    "content": "Bloqueios em documentos de compra podem estar relacionados a autorização do usuário, processo de aprovação, status do período, fornecedor, item, imposto, orçamento, limite comercial ou campos obrigatórios.\nPara suporte, solicite a mensagem exata do sistema, usuário, tipo de documento, etapa do fluxo e se há add-on ou localização fiscal.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - SAP Business One 10.0",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+        "authority": "official_sap"
+      }
+    ]
+  }
+]

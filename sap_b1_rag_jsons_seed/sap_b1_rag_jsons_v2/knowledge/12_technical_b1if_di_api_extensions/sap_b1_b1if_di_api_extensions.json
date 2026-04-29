@@ -1,0 +1,357 @@
+[
+  {
+    "id": "sap-b1-v2-b1if-001",
+    "title": "Integration Framework for SAP Business One",
+    "module": "Integrações, B1if, DI API e Extensibilidade",
+    "category": "conceito",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "Integration Framework",
+      "B1if",
+      "integração",
+      "IDE web",
+      "cenário",
+      "pacote"
+    ],
+    "content": "Integration Framework for SAP Business One é usado para construir e operar cenários de integração. A versão 2.0 adiciona modelo de programação com IDE web, flexibilidade, transparência e execução diretamente sobre a plataforma de integração.\nUse essa fonte para perguntas sobre cenários de integração, pacotes, steps, monitoramento e mensagens.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Integration Framework for SAP Business One 2.0",
+        "url": "https://help.sap.com/doc/ab09ad91688340ff81c63fd779f94b49/9.0/en-US/Integration_Framework_2_0.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-b1if-002",
+    "title": "Pacote, cenário e step no B1if",
+    "module": "Integrações, B1if, DI API e Extensibilidade",
+    "category": "conceito",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "scenario package",
+      "scenario",
+      "scenario step",
+      "transação",
+      "mensagem",
+      "B1if"
+    ],
+    "content": "No Integration Framework 2.0, um scenario package é a unidade logística do caso de integração; scenarios estruturam o caso de negócio, como sincronização de dados mestres ou processamento de pedidos; scenario steps executam o processamento de mensagens, e em runtime um step representa uma transação.\nEssa estrutura deve orientar respostas sobre desenho de integração.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Integration Framework 2.0 for SAP Business One - Example: How to Build a Scenario",
+        "url": "https://help.sap.com/doc/2b9cbab793d440ccb4099524713d48a7/9.0/en-US/B1iF_2_0_Building_Scenarios.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-b1if-003",
+    "title": "Construção de cenário REST para SAP Business One no B1if",
+    "module": "Integrações, B1if, DI API e Extensibilidade",
+    "category": "cenario_rest",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "REST",
+      "HTTP",
+      "payload",
+      "XSL",
+      "JavaScript",
+      "adapter call",
+      "SLD",
+      "deployment"
+    ],
+    "content": "Um cenário de integração no B1if pode receber chamada HTTP/REST, transformar payload com XSL ou JavaScript, chamar SAP Business One via adaptador e retornar uma resposta.\nEm suporte, valide o atom de entrada, transformação, adaptador, mapeamento, payload, sistema no SLD, deployment e monitoramento.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Integration Framework 2.0 for SAP Business One - Example: How to Build a Scenario",
+        "url": "https://help.sap.com/doc/2b9cbab793d440ccb4099524713d48a7/9.0/en-US/B1iF_2_0_Building_Scenarios.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-b1if-004",
+    "title": "Monitoramento no Integration Framework",
+    "module": "Integrações, B1if, DI API e Extensibilidade",
+    "category": "monitoramento",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "monitoramento",
+      "Transaction Monitor",
+      "Error Inbox",
+      "Service Monitor",
+      "Queue Monitor",
+      "B1if"
+    ],
+    "content": "O Integration Framework 2.0 documenta áreas de manutenção, monitoramento, transaction monitor, error inbox, service monitor e queue monitor.\nPara erros de integração, recuperar o status no monitor, a mensagem, o erro, o step, o payload e o sistema de destino.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Integration Framework for SAP Business One 2.0",
+        "url": "https://help.sap.com/doc/ab09ad91688340ff81c63fd779f94b49/9.0/en-US/Integration_Framework_2_0.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-b1if-005",
+    "title": "Deploy e ativação de cenários no B1if",
+    "module": "Integrações, B1if, DI API e Extensibilidade",
+    "category": "deployment",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "deployment",
+      "ativação",
+      "pacote",
+      "cliente",
+      "sistemas",
+      "URL",
+      "B1if"
+    ],
+    "content": "A ativação de pacotes no Integration Framework envolve selecionar pacote, adicionar cliente para deployment, selecionar cenários/steps, atribuir sistemas e ativar.\nEm perguntas de cenário que não executa, verifique se o pacote foi implantado, se os steps estão ativos, se os sistemas foram atribuídos e se a URL de chamada está correta.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Integration Framework for SAP Business One 2.0",
+        "url": "https://help.sap.com/doc/ab09ad91688340ff81c63fd779f94b49/9.0/en-US/Integration_Framework_2_0.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Integration Framework 2.0 for SAP Business One - Example: How to Build a Scenario",
+        "url": "https://help.sap.com/doc/2b9cbab793d440ccb4099524713d48a7/9.0/en-US/B1iF_2_0_Building_Scenarios.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-di-001",
+    "title": "DI API: papel em ambientes legados",
+    "module": "Integrações, B1if, DI API e Extensibilidade",
+    "category": "di_api",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "DI API",
+      "SDK",
+      "COM",
+      "add-on",
+      "legado",
+      "Service Layer"
+    ],
+    "content": "DI API é uma interface tradicional do SAP Business One para manipular objetos de negócio via SDK, comum em add-ons Windows e integrações legadas.\nAo responder, diferencie DI API de Service Layer: Service Layer é HTTP/OData; DI API é SDK/COM e depende do ambiente cliente/servidor. A escolha depende da arquitetura, versão, banco, add-on e suporte.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Business One Service Layer API Reference",
+        "url": "https://help.sap.com/doc/056f69366b5345a386bb8149f1700c19/10.0/en-US/Service%20Layer%20API%20Reference.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-di-002",
+    "title": "Quando priorizar Service Layer versus DI API",
+    "module": "Integrações, B1if, DI API e Extensibilidade",
+    "category": "comparativo",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "Service Layer",
+      "DI API",
+      "integração moderna",
+      "add-on",
+      "arquitetura"
+    ],
+    "content": "Para integrações web, serviços, aplicações modernas e chamadas HTTP/OData, o Service Layer tende a ser a fonte técnica principal. Para add-ons legados, automações Windows e cenários já baseados em SDK, DI API pode aparecer.\nA IA deve pedir contexto antes de recomendar arquitetura: versão, banco SQL/HANA, ambiente on-premise/cloud, volume, tipo de transação, linguagem, autenticação e suporte do parceiro.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "SAP Business One Service Layer API Reference",
+        "url": "https://help.sap.com/doc/056f69366b5345a386bb8149f1700c19/10.0/en-US/Service%20Layer%20API%20Reference.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-ext-001",
+    "title": "Add-ons e extensões",
+    "module": "Integrações, B1if, DI API e Extensibilidade",
+    "category": "addons",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "add-on",
+      "extensão",
+      "customização",
+      "campo customizado",
+      "comportamento padrão"
+    ],
+    "content": "SAP Business One possui ecossistema de add-ons e extensões. Dúvidas de comportamento customizado devem ser separadas do comportamento padrão do produto.\nQuando a pergunta envolver tela customizada, campo customizado, automação, integração fiscal ou erro após add-on, marque confiança média/baixa até haver documentação do add-on.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-ext-002",
+    "title": "API Gateway do SAP Business One",
+    "module": "Integrações, B1if, DI API e Extensibilidade",
+    "category": "api_gateway",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "API Gateway",
+      "API",
+      "Service Layer",
+      "autenticação",
+      "exposição de APIs"
+    ],
+    "content": "API Gateway deve ser tratado como camada técnica de exposição/organização de APIs conforme documentação SAP Business One disponível para o ambiente.\nA IA deve evitar substituir Service Layer/API Reference por API Gateway sem saber arquitetura. Oriente consultar guia oficial específico, endpoints expostos e política de autenticação.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-ext-003",
+    "title": "Segurança em integrações SAP B1",
+    "module": "Integrações, B1if, DI API e Extensibilidade",
+    "category": "seguranca",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "segurança",
+      "credenciais",
+      "HTTPS",
+      "usuário técnico",
+      "logs",
+      "payload"
+    ],
+    "content": "Integrações SAP B1 devem proteger credenciais, usar HTTPS quando aplicável, limitar permissões do usuário técnico, registrar logs, sanitizar payloads em suporte e respeitar autorização de negócio.\nA IA não deve solicitar ou exibir senhas, chaves ou cookies de sessão completos.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Working with SAP Business One Service Layer",
+        "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Integration Framework for SAP Business One 2.0",
+        "url": "https://help.sap.com/doc/ab09ad91688340ff81c63fd779f94b49/9.0/en-US/Integration_Framework_2_0.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  }
+]

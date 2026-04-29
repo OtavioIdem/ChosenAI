@@ -1,0 +1,472 @@
+[
+  {
+    "id": "sap-b1-v2-br-001",
+    "title": "Localization for Brazil no SAP Business One",
+    "module": "Localização Brasil e Fiscal",
+    "category": "conceito",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "localização Brasil",
+      "SAP Business One Brasil",
+      "fiscal",
+      "Localization for Brazil"
+    ],
+    "content": "A documentação Localization for Brazil do SAP Business One descreve funcionalidades e processos específicos da localização brasileira.\nPara perguntas de fiscal Brasil no SAP B1, priorize a fonte SAP Localization for Brazil para comportamento do sistema e fontes governamentais para regra externa.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-br-002",
+    "title": "Separação entre regra fiscal e configuração SAP",
+    "module": "Localização Brasil e Fiscal",
+    "category": "governanca",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_gov_br+official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "regra fiscal",
+      "configuração SAP",
+      "NF-e",
+      "SPED",
+      "NFS-e",
+      "governança"
+    ],
+    "content": "Documentos governamentais como NF-e, SPED e NFS-e explicam obrigações, leiautes, manuais e validações externas. Eles não descrevem necessariamente como configurar cada tela no SAP Business One.\nA IA deve responder: regra externa com fonte governamental; configuração SAP com fonte SAP ou validação interna.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Portal Nacional da Nota Fiscal Eletrônica",
+        "url": "https://www.nfe.fazenda.gov.br/",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "SPED - Guia Prático da EFD ICMS IPI 3.2.2",
+        "url": "https://sped.rfb.gov.br/item/show/8112",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "Portal NFS-e - Documentação Atual",
+        "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-br-003",
+    "title": "NF-e e NFC-e: fonte oficial de leiautes e notas técnicas",
+    "module": "Localização Brasil e Fiscal",
+    "category": "nfe",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_gov_br",
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "NF-e",
+      "NFC-e",
+      "nota técnica",
+      "schema XML",
+      "rejeição",
+      "layout"
+    ],
+    "content": "O Portal Nacional da Nota Fiscal Eletrônica é fonte oficial para informações da NF-e, incluindo notas técnicas, esquemas XML, manuais e pacotes de liberação.\nEm dúvidas de rejeição ou leiaute, recupere primeiro nota técnica, schema XML, versão do layout e ambiente usado, e só depois relacione ao SAP B1 se houver fonte SAP/localização ou validação interna.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Portal Nacional da Nota Fiscal Eletrônica",
+        "url": "https://www.nfe.fazenda.gov.br/",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "Portal NF-e - Nota Técnica 2025.002",
+        "url": "https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY%3D",
+        "authority": "official_gov_br"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-br-004",
+    "title": "Nota Técnica 2025.002 e Reforma Tributária do Consumo",
+    "module": "Localização Brasil e Fiscal",
+    "category": "reforma_tributaria",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_gov_br",
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "Nota Técnica 2025.002",
+      "Reforma Tributária",
+      "CBS",
+      "IBS",
+      "NF-e",
+      "NFC-e"
+    ],
+    "content": "A Nota Técnica 2025.002 trata de adequações de leiaute da NF-e e NFC-e para inclusão de campos e regras de validação relacionados à Reforma Tributária do Consumo.\nPara respostas sobre SAP B1, a IA deve marcar que a adequação depende da versão/localização SAP e atualização fiscal aplicada no ambiente.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Portal NF-e - Nota Técnica 2025.002",
+        "url": "https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY%3D",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "Receita Federal - Orientações da Reforma Tributária para 2026",
+        "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026",
+        "authority": "official_gov_br"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-br-005",
+    "title": "SPED EFD ICMS/IPI",
+    "module": "Localização Brasil e Fiscal",
+    "category": "sped",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_gov_br",
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "SPED",
+      "EFD ICMS IPI",
+      "Guia Prático",
+      "escrituração fiscal",
+      "jan/2026"
+    ],
+    "content": "O SPED/RFB publica o Guia Prático da EFD ICMS/IPI, que define orientações para escrituração fiscal digital. A versão 3.2.2 foi publicada com vigência a partir de janeiro de 2026.\nEm SAP B1, perguntas sobre geração de SPED devem considerar localização, versão, parametrização fiscal, cadastros, documentos, período e validação do arquivo.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SPED - Guia Prático da EFD ICMS IPI 3.2.2",
+        "url": "https://sped.rfb.gov.br/item/show/8112",
+        "authority": "official_gov_br"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-br-006",
+    "title": "NFS-e Nacional: documentação técnica",
+    "module": "Localização Brasil e Fiscal",
+    "category": "nfse",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_gov_br",
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "NFS-e",
+      "NFS-e Nacional",
+      "API",
+      "produção",
+      "homologação",
+      "documentação técnica"
+    ],
+    "content": "O Portal Nacional da NFS-e reúne documentação técnica, documentação atual de produção, APIs e materiais de homologação/testes.\nPara SAP B1, a IA deve diferenciar regra/integração NFS-e nacional da funcionalidade específica da localização ou add-on fiscal utilizado pelo cliente.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Portal NFS-e - Documentação Atual",
+        "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "Portal NFS-e - Documentação Técnica",
+        "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica",
+        "authority": "official_gov_br"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-br-007",
+    "title": "Reforma Tributária: destaque de CBS e IBS",
+    "module": "Localização Brasil e Fiscal",
+    "category": "reforma_tributaria",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_gov_br",
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "CBS",
+      "IBS",
+      "Reforma Tributária",
+      "documentos fiscais eletrônicos",
+      "2026",
+      "ERP"
+    ],
+    "content": "Orientações oficiais da Receita Federal indicam que, a partir de 1º de janeiro de 2026, contribuintes devem emitir documentos fiscais eletrônicos com destaque de CBS e IBS conforme regras e leiautes definidos nas notas técnicas específicas.\nPara SAP B1, a resposta deve dizer que a obrigação é fiscal e que a configuração/atualização no ERP deve ser validada na documentação SAP Localization Brazil, notas SAP, parceiro fiscal ou equipe tributária.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Receita Federal - Orientações da Reforma Tributária para 2026",
+        "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026",
+        "authority": "official_gov_br"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-br-008",
+    "title": "CFOP, CST, impostos e cadastros fiscais",
+    "module": "Localização Brasil e Fiscal",
+    "category": "cadastros_fiscais",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_gov_br+official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "CFOP",
+      "CST",
+      "CSOSN",
+      "NCM",
+      "imposto",
+      "filial",
+      "determinação fiscal"
+    ],
+    "content": "Em ambientes brasileiros, documentos fiscais dependem de cadastros como parceiro, endereço, item, código fiscal, imposto, CFOP, CST/CSOSN, NCM, operação, filial e regras de determinação.\nA IA deve tratar esses campos como hipóteses de diagnóstico e não afirmar valores sem consultar legislação, contador e parametrização da empresa.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Portal Nacional da Nota Fiscal Eletrônica",
+        "url": "https://www.nfe.fazenda.gov.br/",
+        "authority": "official_gov_br"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-br-009",
+    "title": "Rejeição de documento fiscal eletrônico",
+    "module": "Localização Brasil e Fiscal",
+    "category": "diagnostico",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_gov_br+official_sap",
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "rejeição",
+      "NF-e",
+      "NFC-e",
+      "NFS-e",
+      "XML",
+      "layout",
+      "log",
+      "add-on fiscal"
+    ],
+    "content": "Para rejeições de NF-e, NFC-e ou NFS-e, colete: código de rejeição, mensagem completa, XML enviado, versão do layout, ambiente, UF/município, tipo de operação, item, parceiro, imposto, versão do SAP B1/localização, add-on fiscal e log de integração.\nA resposta deve orientar investigação e não inventar causa sem mensagem e XML.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Portal Nacional da Nota Fiscal Eletrônica",
+        "url": "https://www.nfe.fazenda.gov.br/",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "Portal NFS-e - Documentação Atual",
+        "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-br-010",
+    "title": "Atualizações legais e curadoria contínua",
+    "module": "Localização Brasil e Fiscal",
+    "category": "atualizacao",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_gov_br",
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "atualização legal",
+      "vigência",
+      "schema XML",
+      "nota técnica",
+      "guia prático",
+      "curadoria"
+    ],
+    "content": "Conteúdo fiscal muda com frequência. A base RAG deve versionar notas técnicas, manuais, schemas XML, guias práticos e data de vigência.\nRespostas fiscais devem citar data/versão da fonte e recomendar validação com equipe fiscal quando houver impacto operacional, tributário ou obrigação acessória.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Portal NF-e - Nota Técnica 2025.002",
+        "url": "https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY%3D",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "SPED - Guia Prático da EFD ICMS IPI 3.2.2",
+        "url": "https://sped.rfb.gov.br/item/show/8112",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "Portal NFS-e - Documentação Atual",
+        "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "Receita Federal - Orientações da Reforma Tributária para 2026",
+        "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026",
+        "authority": "official_gov_br"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-br-011",
+    "title": "SPED e documentos de entrada/saída",
+    "module": "Localização Brasil e Fiscal",
+    "category": "sped",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_gov_br+official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "SPED Fiscal",
+      "PVA",
+      "documentos fiscais",
+      "período",
+      "cadastro fiscal"
+    ],
+    "content": "SPED Fiscal se relaciona a documentos fiscais, registros contábeis/fiscais, itens, parceiros, impostos e períodos de apuração.\nAo responder no contexto SAP B1, verifique se a dúvida é sobre geração do arquivo, validação no PVA, origem dos documentos, cadastro fiscal ou correção de erro.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SPED - Guia Prático da EFD ICMS IPI 3.2.2",
+        "url": "https://sped.rfb.gov.br/item/show/8112",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-br-012",
+    "title": "Fiscal Brasil como módulo de alta criticidade",
+    "module": "Localização Brasil e Fiscal",
+    "category": "seguranca",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_gov_br+official_sap",
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "alta criticidade",
+      "tributário",
+      "contador",
+      "consultor fiscal",
+      "produção",
+      "validação"
+    ],
+    "content": "Perguntas fiscais devem ser tratadas como alta criticidade. A IA pode orientar consulta, checklist e fonte, mas não deve assumir responsabilidade tributária nem recomendar alteração em produção sem validação de consultor fiscal/contador.\nPara alterações de imposto, CFOP, CST, NCM, retenção ou layout, peça validação humana.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Help Portal - Localization for Brazil",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "Portal Nacional da Nota Fiscal Eletrônica",
+        "url": "https://www.nfe.fazenda.gov.br/",
+        "authority": "official_gov_br"
+      },
+      {
+        "name": "SPED - Guia Prático da EFD ICMS IPI 3.2.2",
+        "url": "https://sped.rfb.gov.br/item/show/8112",
+        "authority": "official_gov_br"
+      }
+    ]
+  }
+]

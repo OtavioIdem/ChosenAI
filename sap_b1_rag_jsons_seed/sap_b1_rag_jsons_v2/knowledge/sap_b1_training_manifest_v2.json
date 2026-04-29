@@ -1,0 +1,174 @@
+{
+  "package": "sap_b1_rag_jsons_expanded_v2",
+  "created_at": "2026-04-29",
+  "version": "sap-b1-rag-expanded-v2",
+  "description": "Pacote ampliado de JSONs seed para treinamento RAG de IA especializada em SAP Business One.",
+  "total_files": 16,
+  "total_records": 142,
+  "intended_path": "backend/knowledge/json/sap_b1/",
+  "reindex_endpoint": "POST /api/v1/knowledge/reindex",
+  "source_policy": "Fontes oficiais SAP e governamentais têm prioridade; conteúdos fiscais e customizações exigem validação humana antes de uso produtivo.",
+  "files": [
+    {
+      "path": "00_source_governance/sap_b1_source_governance.json",
+      "records": 6
+    },
+    {
+      "path": "01_core_overview/sap_b1_core_overview.json",
+      "records": 6
+    },
+    {
+      "path": "02_master_data/sap_b1_master_data.json",
+      "records": 6
+    },
+    {
+      "path": "03_financials/sap_b1_financials.json",
+      "records": 8
+    },
+    {
+      "path": "04_banking_reconciliation/sap_b1_banking_reconciliation.json",
+      "records": 6
+    },
+    {
+      "path": "05_sales_crm_ar/sap_b1_sales_crm_ar.json",
+      "records": 8
+    },
+    {
+      "path": "06_purchasing_ap/sap_b1_purchasing_ap.json",
+      "records": 6
+    },
+    {
+      "path": "07_inventory_warehouse/sap_b1_inventory_warehouse.json",
+      "records": 8
+    },
+    {
+      "path": "08_production_bom_mrp/sap_b1_production_bom_mrp.json",
+      "records": 10
+    },
+    {
+      "path": "09_service_projects/sap_b1_service_projects.json",
+      "records": 10
+    },
+    {
+      "path": "10_reporting_web_client_mobile/sap_b1_reporting_web_client_mobile.json",
+      "records": 8
+    },
+    {
+      "path": "11_technical_service_layer_api/sap_b1_service_layer_api.json",
+      "records": 14
+    },
+    {
+      "path": "12_technical_b1if_di_api_extensions/sap_b1_b1if_di_api_extensions.json",
+      "records": 10
+    },
+    {
+      "path": "13_localization_brazil_fiscal/sap_b1_localization_brazil_fiscal.json",
+      "records": 12
+    },
+    {
+      "path": "14_release_version_governance/sap_b1_release_version_governance.json",
+      "records": 6
+    },
+    {
+      "path": "15_intent_router_and_eval/sap_b1_intent_router_and_eval.json",
+      "records": 18
+    }
+  ],
+  "sources": {
+    "sap_business_one_overview": {
+      "name": "SAP Business One | ERP Software for Small Businesses",
+      "url": "https://www.sap.com/products/erp/business-one.html",
+      "authority": "official_sap"
+    },
+    "sap_business_one_features": {
+      "name": "Features of SAP Business One",
+      "url": "https://www.sap.com/products/erp/business-one/features.html",
+      "authority": "official_sap"
+    },
+    "sap_help_b1_10": {
+      "name": "SAP Help Portal - SAP Business One 10.0",
+      "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/44c4c1cd7ca22e17e10000000a114a6b.html",
+      "authority": "official_sap"
+    },
+    "sap_learning_logistics": {
+      "name": "SAP Learning - Managing Logistics in SAP Business One",
+      "url": "https://learning.sap.com/courses/managing-logistics-in-sap-business-one-br",
+      "authority": "official_sap_learning"
+    },
+    "sap_learning_web_client_logistics": {
+      "name": "SAP Learning - Discovering SAP Business One, Web Client Logistics",
+      "url": "https://learning.sap.com/courses/discovering-sap-business-one-web-client-logistics",
+      "authority": "official_sap_learning"
+    },
+    "sap_web_client_user_guide": {
+      "name": "User Guide for SAP Business One, Web Client",
+      "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+      "authority": "official_sap"
+    },
+    "sap_service_layer_api_reference": {
+      "name": "SAP Business One Service Layer API Reference",
+      "url": "https://help.sap.com/doc/056f69366b5345a386bb8149f1700c19/10.0/en-US/Service%20Layer%20API%20Reference.html",
+      "authority": "official_sap"
+    },
+    "sap_service_layer_guide": {
+      "name": "Working with SAP Business One Service Layer",
+      "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+      "authority": "official_sap"
+    },
+    "sap_integration_framework_2": {
+      "name": "Integration Framework for SAP Business One 2.0",
+      "url": "https://help.sap.com/doc/ab09ad91688340ff81c63fd779f94b49/9.0/en-US/Integration_Framework_2_0.pdf",
+      "authority": "official_sap"
+    },
+    "sap_b1if_building_scenarios": {
+      "name": "Integration Framework 2.0 for SAP Business One - Example: How to Build a Scenario",
+      "url": "https://help.sap.com/doc/2b9cbab793d440ccb4099524713d48a7/9.0/en-US/B1iF_2_0_Building_Scenarios.pdf",
+      "authority": "official_sap"
+    },
+    "sap_mrp_guide": {
+      "name": "How to Configure and Use MRP in SAP Business One",
+      "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+      "authority": "official_sap"
+    },
+    "sap_project_management_guide": {
+      "name": "How to Work with Project Management in SAP Business One",
+      "url": "https://help.sap.com/doc/46e99943f725466a87f40799f9761ddb/10.0/en-US/How_to_Work_with_Project_Management_in_SAP_Business_One.pdf",
+      "authority": "official_sap"
+    },
+    "sap_localization_brazil": {
+      "name": "SAP Help Portal - Localization for Brazil",
+      "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+      "authority": "official_sap"
+    },
+    "nfe_portal": {
+      "name": "Portal Nacional da Nota Fiscal Eletrônica",
+      "url": "https://www.nfe.fazenda.gov.br/",
+      "authority": "official_gov_br"
+    },
+    "nfe_nt_2025_002": {
+      "name": "Portal NF-e - Nota Técnica 2025.002",
+      "url": "https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY%3D",
+      "authority": "official_gov_br"
+    },
+    "sped_efd_icms_ipi": {
+      "name": "SPED - Guia Prático da EFD ICMS IPI 3.2.2",
+      "url": "https://sped.rfb.gov.br/item/show/8112",
+      "authority": "official_gov_br"
+    },
+    "nfse_doc_atual": {
+      "name": "Portal NFS-e - Documentação Atual",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/documentacao-atual",
+      "authority": "official_gov_br"
+    },
+    "nfse_doc_tecnica": {
+      "name": "Portal NFS-e - Documentação Técnica",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica",
+      "authority": "official_gov_br"
+    },
+    "rfb_reforma_2026": {
+      "name": "Receita Federal - Orientações da Reforma Tributária para 2026",
+      "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026",
+      "authority": "official_gov_br"
+    }
+  }
+}

@@ -1,0 +1,278 @@
+[
+  {
+    "id": "sap-b1-v2-web-001",
+    "title": "Web Client do SAP Business One",
+    "module": "Web Client, Mobile e Analytics",
+    "category": "conceito",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "Web Client",
+      "navegador",
+      "documentos de marketing",
+      "dados mestres",
+      "aprovação",
+      "analytics"
+    ],
+    "content": "O Web Client oferece uma experiência de usuário baseada em navegador para processos de SAP Business One, incluindo documentos de marketing, dados mestres, atividades, processos de aprovação, criação e acompanhamento de registros e recursos analíticos, conforme versão e permissões.\nAo responder, especifique se a orientação é para Web Client ou client desktop.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-web-002",
+    "title": "Limite entre Web Client e client desktop",
+    "module": "Web Client, Mobile e Analytics",
+    "category": "escopo",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "Web Client",
+      "client desktop",
+      "interface",
+      "menu",
+      "funcionalidade"
+    ],
+    "content": "Nem toda funcionalidade do SAP Business One necessariamente está disponível da mesma forma no Web Client e no client desktop.\nSe a pergunta for de tela/menu, peça a interface usada. Quando a fonte estiver no Web Client, deixe claro que o caminho e recursos podem variar em relação ao client desktop.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-web-003",
+    "title": "Atividades no Web Client",
+    "module": "Web Client, Mobile e Analytics",
+    "category": "atividades",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap+official_sap_learning",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "atividade",
+      "CRM",
+      "parceiro de negócio",
+      "chamado",
+      "oportunidade",
+      "Web Client"
+    ],
+    "content": "Atividades são usadas para acompanhar interações, tarefas e relacionamento com parceiros, oportunidades, chamados e outros registros.\nNo Web Client e processos de CRM/serviço, atividades podem ser criadas e vinculadas a registros de negócio.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "SAP Learning - Discovering SAP Business One, Web Client Logistics",
+        "url": "https://learning.sap.com/courses/discovering-sap-business-one-web-client-logistics",
+        "authority": "official_sap_learning"
+      },
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-web-004",
+    "title": "Analytics e relatórios",
+    "module": "Web Client, Mobile e Analytics",
+    "category": "analytics",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "analytics",
+      "relatórios",
+      "gráficos",
+      "dashboard",
+      "filtros",
+      "vendas"
+    ],
+    "content": "SAP Business One inclui recursos de relatórios e análises para apoiar decisões. Na página oficial, recursos de relatórios e análises aparecem ligados a vendas, processos e visibilidade de dados, e o Web Client oferece gráficos e analytics predefinidos.\nAo responder, peça o objetivo do relatório e filtros desejados, como período, parceiro, item, vendedor, depósito, projeto ou status.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-web-005",
+    "title": "SAP HANA e analytics incorporado",
+    "module": "Web Client, Mobile e Analytics",
+    "category": "hana",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "SAP HANA",
+      "in-memory",
+      "analytics",
+      "desempenho",
+      "relatórios"
+    ],
+    "content": "Em ambientes com SAP HANA, o SAP Business One pode aproveitar recursos de analytics e desempenho em memória.\nA IA deve evitar prometer performance específica; explique que benefícios dependem de banco, infraestrutura, modelagem, relatórios e configuração.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-web-006",
+    "title": "Aplicativos móveis",
+    "module": "Web Client, Mobile e Analytics",
+    "category": "mobile",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "mobile",
+      "iOS",
+      "Android",
+      "leads",
+      "clientes",
+      "estoque",
+      "pedidos"
+    ],
+    "content": "Aplicativos móveis do SAP Business One podem dar acesso a leads, contas de clientes, estoque e pedidos em iOS ou Android, conforme configuração.\nPara dúvidas de acesso mobile, confirmar tipo de app, versão, URL/ambiente, usuário, permissões, certificado, rede e política de segurança.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-web-007",
+    "title": "Processos de aprovação no Web Client",
+    "module": "Web Client, Mobile e Analytics",
+    "category": "aprovacao",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "aprovação",
+      "documento",
+      "dados mestres",
+      "autorização",
+      "Web Client"
+    ],
+    "content": "O Web Client pode lidar com criação, atualização e processos de aprovação para documentos e dados mestres, conforme disponibilidade e configuração.\nSe um documento não avança, investigue se está pendente de aprovação, se o usuário possui autorização e se há regra de aprovação ativa.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "Features of SAP Business One",
+        "url": "https://www.sap.com/products/erp/business-one/features.html",
+        "authority": "official_sap"
+      },
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  },
+  {
+    "id": "sap-b1-v2-web-008",
+    "title": "Enterprise Search e navegação",
+    "module": "Web Client, Mobile e Analytics",
+    "category": "navegacao",
+    "language": "pt-BR",
+    "sap_version": "SAP Business One 10.0",
+    "source_type": "official_documentation",
+    "source_authority": "official_sap",
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap-b1-rag-expanded-v2",
+    "created_at": "2026-04-29",
+    "keywords": [
+      "Enterprise Search",
+      "App Finder",
+      "navegação",
+      "busca",
+      "Web Client"
+    ],
+    "content": "Versões recentes do Web Client documentam recursos de navegação e busca, como App Finder e Enterprise Search, conforme versão.\nEm suporte, confirme versão/feature package antes de orientar caminho exato de busca ou recurso visual.",
+    "questions": [],
+    "answer_guidelines": [],
+    "negative_rules": [],
+    "source": [
+      {
+        "name": "User Guide for SAP Business One, Web Client",
+        "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2405/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+        "authority": "official_sap"
+      }
+    ]
+  }
+]

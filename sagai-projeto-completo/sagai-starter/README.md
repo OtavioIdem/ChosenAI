@@ -1,13 +1,13 @@
-# SAGAI — Assistente de IA para MaxManager
+# SAGAI — Assistente de IA
 
-SAGAI é um assistente de IA especializado no MaxManager, com backend Python/FastAPI, frontend React, PostgreSQL + pgvector e LLM local via Ollama.
+SAGAI é um assistente de IA especializado, com backend Python/FastAPI, frontend React, PostgreSQL + pgvector e LLM local via Ollama.
 
 Este pacote contém a estrutura completa consolidada do projeto:
 
 - API de IA em FastAPI.
 - Frontend React em estilo chat.
 - Banco PostgreSQL com pgvector.
-- Base inicial de conhecimento JSON otimizada para MaxManager.
+- Base inicial de conhecimento JSON otimizada
 - Prompt principal otimizado.
 - Fluxo de feedback, lacunas e treinamento supervisionado.
 - Indexação automática de candidatos aprovados.
