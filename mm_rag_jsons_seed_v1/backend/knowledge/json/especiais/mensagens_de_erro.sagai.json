@@ -1,0 +1,287 @@
+[
+  {
+    "id": "overview-mensagens-de-erro",
+    "title": "Visão geral - Mensagens de Erro",
+    "category": "Especial",
+    "module": "Mensagens de Erro",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Mensagens de Erro",
+      "file": "especiais/mensagens_de_erro.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Mensagens de Erro?",
+      "Quando usar Mensagens de Erro?"
+    ],
+    "keywords": [
+      "causa raiz",
+      "diagnóstico de exceções",
+      "efd icms/ipi",
+      "erro ao gerar dados na tela gerar efd icms/ipi por conversão varchar/numérico",
+      "mensagens de erro",
+      "mensagens operacionais",
+      "mensagens-de-erro"
+    ],
+    "process": {
+      "name": "Mensagens de Erro",
+      "objective": "Orientar dúvidas relacionadas a Mensagens de Erro.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Quando a pergunta trouxer texto literal de erro, priorizar correspondência exata.",
+      "Responder no formato: ocorrência -> causa provável -> validações -> correção -> impacto."
+    ],
+    "content": "Módulo/Aba: Especial > Mensagens de Erro\n\nTipo de fonte: Especial\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 35\n\nFoco funcional:\n- diagnóstico de exceções\n- EFD ICMS/IPI\n- mensagens operacionais\n- causa raiz\n\nTópicos observados:\n- erro ao gerar dados na tela Gerar EFD ICMS/IPI por conversão varchar/numérico\n\nInstruções para resposta da IA:\n- Quando a pergunta trouxer texto literal de erro, priorizar correspondência exata.\n- Responder no formato: ocorrência -> causa provável -> validações -> correção -> impacto.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.154502Z",
+      "original_file": "especiais/mensagens_de_erro.json",
+      "confidence_level": "base_mapeada"
+    }
+  },
+  {
+    "id": "mensagens-de-erro-padrao_recomendado_de_resposta-padrao-recomendado-de-resposta",
+    "title": "padrao_recomendado_de_resposta - Mensagens de Erro",
+    "category": "Especial",
+    "module": "Mensagens de Erro",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Mensagens de Erro",
+      "file": "especiais/mensagens_de_erro.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "reference",
+    "question_examples": [
+      "Como funciona padrao_recomendado_de_resposta?",
+      "O que validar em padrao_recomendado_de_resposta?"
+    ],
+    "keywords": [
+      "erro",
+      "mensagens",
+      "orientar",
+      "padrao_recomendado_de_resposta",
+      "sobre"
+    ],
+    "process": {
+      "name": "padrao_recomendado_de_resposta",
+      "objective": "Orientar sobre padrao_recomendado_de_resposta.",
+      "steps": [
+        "ocorrência",
+        "causa provável",
+        "como validar",
+        "como corrigir",
+        "impacto se ignorado"
+      ],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Quando a pergunta trouxer texto literal de erro, priorizar correspondência exata.",
+      "Responder no formato: ocorrência -> causa provável -> validações -> correção -> impacto."
+    ],
+    "content": "Módulo/Aba: Especial > Mensagens de Erro\n\nProcesso/Assunto: padrao_recomendado_de_resposta\n\nObjetivo: Orientar sobre padrao_recomendado_de_resposta.\n\nPassos ou ordem recomendada:\n- ocorrência\n- causa provável\n- como validar\n- como corrigir\n- impacto se ignorado\n\nDetalhes estruturados:\nocorrência\ncausa provável\ncomo validar\ncomo corrigir\nimpacto se ignorado",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.154644Z",
+      "original_file": "especiais/mensagens_de_erro.json",
+      "knowledge_layer": "padrao_recomendado_de_resposta",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "mensagens-de-erro-familias_de_erro_observadas-sped-efd-gia",
+    "title": "SPED / EFD / GIA - Mensagens de Erro",
+    "category": "Especial",
+    "module": "Mensagens de Erro",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Mensagens de Erro",
+      "file": "especiais/mensagens_de_erro.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "reference",
+    "question_examples": [
+      "Como funciona SPED / EFD / GIA?",
+      "O que validar em SPED / EFD / GIA?"
+    ],
+    "keywords": [
+      "conversão",
+      "cr05",
+      "dados",
+      "data",
+      "efd",
+      "efd-reinf",
+      "encontrado",
+      "erro",
+      "filial",
+      "gerar",
+      "gia",
+      "icms",
+      "ipi",
+      "mensagens",
+      "ms1005",
+      "nesta",
+      "numérico",
+      "não",
+      "orientar",
+      "para",
+      "registro",
+      "selecionada",
+      "sobre",
+      "sped",
+      "tela",
+      "varchar"
+    ],
+    "process": {
+      "name": "SPED / EFD / GIA",
+      "objective": "Orientar sobre SPED / EFD / GIA.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Quando a pergunta trouxer texto literal de erro, priorizar correspondência exata.",
+      "Responder no formato: ocorrência -> causa provável -> validações -> correção -> impacto."
+    ],
+    "content": "Módulo/Aba: Especial > Mensagens de Erro\n\nProcesso/Assunto: SPED / EFD / GIA\n\nObjetivo: Orientar sobre SPED / EFD / GIA.\n\nExemplos observados:\n- Erro ao Gerar Dados na tela /Gerar EFD ICMS/IPI (conversão varchar para numérico)\n- Dados Não Encontrado para a Filial Selecionada nesta Data (Registro CR05)\n- EFD-Reinf MS1005\n\nDetalhes estruturados:\nfamilia: SPED / EFD / GIA\nErro ao Gerar Dados na tela /Gerar EFD ICMS/IPI (conversão varchar para numérico)\nDados Não Encontrado para a Filial Selecionada nesta Data (Registro CR05)\nEFD-Reinf MS1005",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.154724Z",
+      "original_file": "especiais/mensagens_de_erro.json",
+      "knowledge_layer": "familias_de_erro_observadas",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "mensagens-de-erro-familias_de_erro_observadas-sefaz-nf-e-rejeicoes",
+    "title": "SEFAZ / NF-e / rejeições - Mensagens de Erro",
+    "category": "Especial",
+    "module": "Mensagens de Erro",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Mensagens de Erro",
+      "file": "especiais/mensagens_de_erro.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "reference",
+    "question_examples": [
+      "Como funciona SEFAZ / NF-e / rejeições?",
+      "O que validar em SEFAZ / NF-e / rejeições?"
+    ],
+    "keywords": [
+      "611",
+      "806",
+      "ativa",
+      "cean",
+      "cest",
+      "com",
+      "destinatário",
+      "erro",
+      "está",
+      "icms-st",
+      "inválido",
+      "mensagens",
+      "nf-e",
+      "não",
+      "operação",
+      "orientar",
+      "paralisado",
+      "previsão",
+      "rejeição",
+      "rejeições",
+      "sefaz",
+      "sem",
+      "serviço",
+      "sobre"
+    ],
+    "process": {
+      "name": "SEFAZ / NF-e / rejeições",
+      "objective": "Orientar sobre SEFAZ / NF-e / rejeições.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Quando a pergunta trouxer texto literal de erro, priorizar correspondência exata.",
+      "Responder no formato: ocorrência -> causa provável -> validações -> correção -> impacto."
+    ],
+    "content": "Módulo/Aba: Especial > Mensagens de Erro\n\nProcesso/Assunto: SEFAZ / NF-e / rejeições\n\nObjetivo: Orientar sobre SEFAZ / NF-e / rejeições.\n\nExemplos observados:\n- IE do destinatário não está ativa na UF\n- Rejeição 611 cEAN inválido\n- Rejeição 806 operação com ICMS-ST sem CEST\n- Serviço Paralisado sem Previsão\n\nDetalhes estruturados:\nfamilia: SEFAZ / NF-e / rejeições\nIE do destinatário não está ativa na UF\nRejeição 611 cEAN inválido\nRejeição 806 operação com ICMS-ST sem CEST\nServiço Paralisado sem Previsão",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.154821Z",
+      "original_file": "especiais/mensagens_de_erro.json",
+      "knowledge_layer": "familias_de_erro_observadas",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "mensagens-de-erro-familias_de_erro_observadas-cadastro-e-parametrizacao",
+    "title": "Cadastro e parametrização - Mensagens de Erro",
+    "category": "Especial",
+    "module": "Mensagens de Erro",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Mensagens de Erro",
+      "file": "especiais/mensagens_de_erro.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "reference",
+    "question_examples": [
+      "Como funciona Cadastro e parametrização?",
+      "O que validar em Cadastro e parametrização?"
+    ],
+    "keywords": [
+      "ausente",
+      "cadastro",
+      "códigos",
+      "encontrada",
+      "entrada",
+      "erro",
+      "fator",
+      "fiscal",
+      "intervalo",
+      "mensagens",
+      "nota",
+      "não",
+      "números",
+      "orientar",
+      "para",
+      "parametrização",
+      "produto",
+      "sem",
+      "sobre",
+      "série",
+      "tributário",
+      "unidade",
+      "vagos"
+    ],
+    "process": {
+      "name": "Cadastro e parametrização",
+      "objective": "Orientar sobre Cadastro e parametrização.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Quando a pergunta trouxer texto literal de erro, priorizar correspondência exata.",
+      "Responder no formato: ocorrência -> causa provável -> validações -> correção -> impacto."
+    ],
+    "content": "Módulo/Aba: Especial > Mensagens de Erro\n\nProcesso/Assunto: Cadastro e parametrização\n\nObjetivo: Orientar sobre Cadastro e parametrização.\n\nExemplos observados:\n- intervalo de códigos sem números vagos para unidade\n- fator tributário ausente no cadastro do produto\n- série da nota fiscal de entrada não encontrada\n\nDetalhes estruturados:\nfamilia: Cadastro e parametrização\nintervalo de códigos sem números vagos para unidade\nfator tributário ausente no cadastro do produto\nsérie da nota fiscal de entrada não encontrada",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.154918Z",
+      "original_file": "especiais/mensagens_de_erro.json",
+      "knowledge_layer": "familias_de_erro_observadas",
+      "confidence_level": "conteudo_estruturado"
+    }
+  }
+]

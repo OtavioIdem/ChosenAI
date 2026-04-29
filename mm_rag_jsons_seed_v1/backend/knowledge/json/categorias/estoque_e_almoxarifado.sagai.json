@@ -1,0 +1,49 @@
+[
+  {
+    "id": "overview-estoque-e-almoxarifado",
+    "title": "Visão geral - Estoque e Almoxarifado",
+    "category": "Categorias",
+    "module": "Estoque e Almoxarifado",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Estoque e Almoxarifado",
+      "file": "categorias/estoque_e_almoxarifado.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Estoque e Almoxarifado?",
+      "Quando usar Estoque e Almoxarifado?"
+    ],
+    "keywords": [
+      "almoxarifado",
+      "estoque e almoxarifado",
+      "estoque-e-almoxarifado",
+      "expedição",
+      "formulação",
+      "fracionamento",
+      "herança de número de série dos produtos",
+      "novo campo arredondamento na tela cadastro formulação de produtos",
+      "número de série"
+    ],
+    "process": {
+      "name": "Estoque e Almoxarifado",
+      "objective": "Orientar dúvidas relacionadas a Estoque e Almoxarifado.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Dar atenção a rastreabilidade, estoque físico, estrutura de produto e regras de fracionamento.",
+      "Cruzar com Produção e Expedição quando houver série, lote ou formulação."
+    ],
+    "content": "Módulo/Aba: Categorias > Estoque e Almoxarifado\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 77\n\nFoco funcional:\n- número de série\n- formulação\n- fracionamento\n- almoxarifado\n- expedição\n\nTópicos observados:\n- herança de número de série dos produtos\n- novo campo arredondamento na tela cadastro formulação de produtos\n\nInstruções para resposta da IA:\n- Dar atenção a rastreabilidade, estoque físico, estrutura de produto e regras de fracionamento.\n- Cruzar com Produção e Expedição quando houver série, lote ou formulação.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.072561Z",
+      "original_file": "categorias/estoque_e_almoxarifado.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

@@ -1,0 +1,270 @@
+[
+  {
+    "id": "overview-fiscal",
+    "title": "Visão geral - Fiscal",
+    "category": "Categorias",
+    "module": "Fiscal",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Fiscal",
+      "file": "categorias/fiscal.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Fiscal?",
+      "Quando usar Fiscal?"
+    ],
+    "keywords": [
+      "apurações",
+      "efd-reinf",
+      "erro ms1005 no efd-reinf por período conflitante",
+      "fiscal",
+      "obrigações fiscais",
+      "regimes tributários",
+      "rejeições"
+    ],
+    "process": {
+      "name": "Fiscal",
+      "objective": "Orientar dúvidas relacionadas a Fiscal.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Priorizar coerência legal, períodos fiscais, obrigações acessórias e parametrização tributária.",
+      "Ao orientar correções, evitar simplificações que possam causar inconsistência fiscal."
+    ],
+    "content": "Módulo/Aba: Categorias > Fiscal\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 104\n\nFoco funcional:\n- EFD-Reinf\n- obrigações fiscais\n- regimes tributários\n- apurações\n- rejeições\n\nTópicos observados:\n- erro MS1005 no EFD-Reinf por período conflitante\n\nInstruções para resposta da IA:\n- Priorizar coerência legal, períodos fiscais, obrigações acessórias e parametrização tributária.\n- Ao orientar correções, evitar simplificações que possam causar inconsistência fiscal.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.076055Z",
+      "original_file": "categorias/fiscal.json",
+      "confidence_level": "base_mapeada"
+    }
+  },
+  {
+    "id": "fiscal-processos_chave-efd-reinf-tratamento-do-erro-ms1005",
+    "title": "EFD-Reinf - tratamento do erro MS1005 - Fiscal",
+    "category": "Categorias",
+    "module": "Fiscal",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Fiscal",
+      "file": "categorias/fiscal.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona EFD-Reinf - tratamento do erro MS1005?",
+      "O que validar em EFD-Reinf - tratamento do erro MS1005?"
+    ],
+    "keywords": [
+      "conflito",
+      "e-cac",
+      "efd-reinf",
+      "enviados",
+      "erro",
+      "existiam",
+      "fiscal",
+      "maxmanager",
+      "ms1005",
+      "outro",
+      "período",
+      "por",
+      "primeira",
+      "quando",
+      "registros",
+      "resolver",
+      "sistema",
+      "transmissão",
+      "tratamento",
+      "via"
+    ],
+    "process": {
+      "name": "EFD-Reinf - tratamento do erro MS1005",
+      "objective": "Resolver conflito de período na primeira transmissão via MaxManager quando já existiam registros enviados por outro sistema ou e-CAC.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Priorizar coerência legal, períodos fiscais, obrigações acessórias e parametrização tributária.",
+      "Ao orientar correções, evitar simplificações que possam causar inconsistência fiscal."
+    ],
+    "content": "Módulo/Aba: Categorias > Fiscal\n\nProcesso/Assunto: EFD-Reinf - tratamento do erro MS1005\n\nObjetivo: Resolver conflito de período na primeira transmissão via MaxManager quando já existiam registros enviados por outro sistema ou e-CAC.\n\nDetalhes estruturados:\nnome: EFD-Reinf - tratamento do erro MS1005\nobjetivo: Resolver conflito de período na primeira transmissão via MaxManager quando já existiam registros enviados por outro sistema ou e-CAC.\ncenario tipico: cliente inicia transmissão pelo ERP, mas já possui histórico externo para o mesmo período\nhistórico de transmissões\nperíodo conflitante\norigem anterior do envio",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.076174Z",
+      "original_file": "categorias/fiscal.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "fiscal-processos_chave-configuracao-de-regimes-tributarios",
+    "title": "Configuração de regimes tributários - Fiscal",
+    "category": "Categorias",
+    "module": "Fiscal",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Fiscal",
+      "file": "categorias/fiscal.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona Configuração de regimes tributários?",
+      "O que validar em Configuração de regimes tributários?"
+    ],
+    "keywords": [
+      "adequar",
+      "comportamento",
+      "configuração",
+      "contábil",
+      "empresa",
+      "enquadramento",
+      "erp",
+      "financeiro",
+      "fiscal",
+      "regimes",
+      "tributários"
+    ],
+    "process": {
+      "name": "Configuração de regimes tributários",
+      "objective": "Adequar o comportamento fiscal, contábil e financeiro do ERP ao enquadramento da empresa.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Priorizar coerência legal, períodos fiscais, obrigações acessórias e parametrização tributária.",
+      "Ao orientar correções, evitar simplificações que possam causar inconsistência fiscal."
+    ],
+    "content": "Módulo/Aba: Categorias > Fiscal\n\nProcesso/Assunto: Configuração de regimes tributários\n\nObjetivo: Adequar o comportamento fiscal, contábil e financeiro do ERP ao enquadramento da empresa.\n\nDetalhes estruturados:\nnome: Configuração de regimes tributários\nobjetivo: Adequar o comportamento fiscal, contábil e financeiro do ERP ao enquadramento da empresa.\nSimples Nacional\nSimples Nacional com Excesso do Sublimite\nLucro Presumido\nLucro Real",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.076230Z",
+      "original_file": "categorias/fiscal.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "fiscal-processos_chave-difal-como-debito-especial-no-sped-icms-ipi",
+    "title": "DIFAL como débito especial no SPED ICMS/IPI - Fiscal",
+    "category": "Categorias",
+    "module": "Fiscal",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Fiscal",
+      "file": "categorias/fiscal.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona DIFAL como débito especial no SPED ICMS/IPI?",
+      "O que validar em DIFAL como débito especial no SPED ICMS/IPI?"
+    ],
+    "keywords": [
+      "apuração",
+      "como",
+      "configuração",
+      "consumo",
+      "corretamente",
+      "detalhar",
+      "difal",
+      "débito",
+      "e113",
+      "especial",
+      "fiscal",
+      "icms",
+      "interestadual",
+      "ipi",
+      "lançar",
+      "registro",
+      "sped",
+      "uso"
+    ],
+    "process": {
+      "name": "DIFAL como débito especial no SPED ICMS/IPI",
+      "objective": "Lançar corretamente o DIFAL de uso e consumo interestadual como Débito Especial e detalhar no registro E113.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": [
+        "SPED",
+        "Apuração do ICMS",
+        "configuração fiscal"
+      ]
+    },
+    "answer_guidelines": [
+      "Priorizar coerência legal, períodos fiscais, obrigações acessórias e parametrização tributária.",
+      "Ao orientar correções, evitar simplificações que possam causar inconsistência fiscal."
+    ],
+    "content": "Módulo/Aba: Categorias > Fiscal\n\nProcesso/Assunto: DIFAL como débito especial no SPED ICMS/IPI\n\nObjetivo: Lançar corretamente o DIFAL de uso e consumo interestadual como Débito Especial e detalhar no registro E113.\n\nDependências / impactos:\n- SPED\n- Apuração do ICMS\n- configuração fiscal\n\nDetalhes estruturados:\nnome: DIFAL como débito especial no SPED ICMS/IPI\nobjetivo: Lançar corretamente o DIFAL de uso e consumo interestadual como Débito Especial e detalhar no registro E113.\nSPED\nApuração do ICMS\nconfiguração fiscal",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.076292Z",
+      "original_file": "categorias/fiscal.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "fiscal-processos_chave-configuracao-da-reforma-tributaria",
+    "title": "Configuração da Reforma Tributária - Fiscal",
+    "category": "Categorias",
+    "module": "Fiscal",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Fiscal",
+      "file": "categorias/fiscal.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona Configuração da Reforma Tributária?",
+      "O que validar em Configuração da Reforma Tributária?"
+    ],
+    "keywords": [
+      "cbs",
+      "configuração",
+      "fiscal",
+      "ibs",
+      "nf-e",
+      "nfc-e",
+      "novas",
+      "para",
+      "preparar",
+      "reforma",
+      "sistema",
+      "tags",
+      "tributária",
+      "xml"
+    ],
+    "process": {
+      "name": "Configuração da Reforma Tributária",
+      "objective": "Preparar o sistema para IBS, CBS e IS e para as novas tags XML da NF-e/NFC-e.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Priorizar coerência legal, períodos fiscais, obrigações acessórias e parametrização tributária.",
+      "Ao orientar correções, evitar simplificações que possam causar inconsistência fiscal."
+    ],
+    "content": "Módulo/Aba: Categorias > Fiscal\n\nProcesso/Assunto: Configuração da Reforma Tributária\n\nObjetivo: Preparar o sistema para IBS, CBS e IS e para as novas tags XML da NF-e/NFC-e.\n\nDetalhes estruturados:\nnome: Configuração da Reforma Tributária\nversao minima: 2.25.1.14153\nobjetivo: Preparar o sistema para IBS, CBS e IS e para as novas tags XML da NF-e/NFC-e.\nLC 214/2025\nNT 2025.002-RTC v1.20\nIBS\nCBS\nIS",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.076341Z",
+      "original_file": "categorias/fiscal.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  }
+]

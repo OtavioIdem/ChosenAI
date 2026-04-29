@@ -1,0 +1,186 @@
+[
+  {
+    "id": "servicos::service_management",
+    "title": "Serviços, contratos e atendimento pós-venda",
+    "category": "SAP B1 > Serviços",
+    "module": "Serviços e Pós-venda",
+    "source_type": "sap_official_web_summary_rag_seed",
+    "source": {
+      "name": "SAP Business One - features",
+      "urls": [
+        "https://www.sap.com/products/erp/business-one/features.html"
+      ],
+      "publishers": [
+        "SAP"
+      ],
+      "status": "fonte_externa_resumida_para_seed_rag",
+      "copyright_note": "Conteúdo resumido/parafraseado para treinamento RAG; não é transcrição integral da documentação."
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "SAP B1 controla chamados?",
+      "O que é contrato de serviço no SAP B1?",
+      "Como funciona atendimento pós-venda no SAP B1?"
+    ],
+    "keywords": [
+      "Service",
+      "chamado",
+      "contrato de serviço",
+      "customer equipment card",
+      "equipamento do cliente",
+      "fila de atendimento",
+      "garantia",
+      "knowledge base",
+      "service call",
+      "service contract",
+      "serviço",
+      "warranty"
+    ],
+    "process": {
+      "name": "Serviços, contratos e atendimento pós-venda",
+      "objective": "Explicar o módulo de serviços e pós-venda do SAP Business One.",
+      "steps": [
+        "Cadastrar ou localizar cliente/equipamento.",
+        "Verificar contrato ou garantia.",
+        "Abrir service call.",
+        "Atribuir fila/técnico/atividade.",
+        "Registrar solução e encerrar chamado."
+      ],
+      "critical_rules": [
+        "Se a pergunta envolver venda inicial, recuperar Vendas/CRM.",
+        "Se envolver faturamento de serviço, recuperar Vendas A/R e Financeiro.",
+        "Não prometer automação de SLA sem fonte/configuração específica."
+      ],
+      "dependencies": [
+        "Cadastros, Vendas/CRM, Financeiro, BI, Mobile."
+      ]
+    },
+    "answer_guidelines": [
+      "Responder como base de conhecimento RAG, citando que a fonte é SAP Business One quando aplicável.",
+      "Se a pergunta pedir passo a passo operacional detalhado e este chunk não trouxer a sequência exata, responder com visão geral e sinalizar necessidade de documentação específica.",
+      "Evitar misturar SAP Business One com SAP S/4HANA, SAP ECC ou Business ByDesign, salvo quando o usuário pedir comparação.",
+      "Para processos fiscais/localização, reforçar que regras dependem de país, versão, parametrização e legislação vigente."
+    ],
+    "content": "Módulo: Serviços e Pós-venda\n\nObjetivo: Explicar o módulo de serviços e pós-venda do SAP Business One.\n\nEscopo funcional:\n- O módulo de serviços apoia contratos, garantias, cartões de equipamento do cliente, chamados e respostas de atendimento.\n- Service calls registram demandas de suporte ou assistência técnica vinculadas a cliente, item/equipamento e contrato quando aplicável.\n- A base de conhecimento e histórico de serviço ajudam a responder problemas recorrentes.\n\nEntidades e documentos relevantes:\n- Service Call\n- Service Contract\n- Customer Equipment Card\n- Warranty\n- Knowledge Base\n- Queue\n- Activity\n\nFluxos principais:\n- Cadastrar ou localizar cliente/equipamento.\n- Verificar contrato ou garantia.\n- Abrir service call.\n- Atribuir fila/técnico/atividade.\n- Registrar solução e encerrar chamado.\n\nRegras e observações para resposta da IA:\n- Se a pergunta envolver venda inicial, recuperar Vendas/CRM.\n- Se envolver faturamento de serviço, recuperar Vendas A/R e Financeiro.\n- Não prometer automação de SLA sem fonte/configuração específica.\n\nDependências/correlações com outros módulos:\n- Cadastros, Vendas/CRM, Financeiro, BI, Mobile.\n\nQuando sinalizar lacuna de conhecimento:\n- Quando a dúvida exigir campo específico, atalho de tela, regra legal local ou comportamento de versão não coberto pela fonte resumida.\n- Quando houver divergência entre parametrização real do cliente e documentação genérica.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "domain": "SAP Business One",
+      "module_slug": "servicos",
+      "granularity": "module_chunk",
+      "language": "pt-BR",
+      "created_at": "2026-04-29T00:00:00Z",
+      "version": "sap_b1_seed_v1_2026-04-29",
+      "confidence_level": "média",
+      "curation_status": "seed_externo_precisa_validacao_humana_antes_de_base_oficial",
+      "source_count": 1,
+      "aliases": [
+        "SAP B1",
+        "SAP Business One",
+        "Service",
+        "Serviços e Pós-venda",
+        "chamado",
+        "contrato de serviço",
+        "customer equipment card",
+        "equipamento do cliente",
+        "fila de atendimento",
+        "garantia",
+        "knowledge base",
+        "service call",
+        "service contract",
+        "serviço",
+        "warranty"
+      ],
+      "suggested_collection": "sap_b1",
+      "import_path_recommendation": "backend/knowledge/json/sap_b1/sap_b1_10_servicos_pos_venda.sagai.json",
+      "source_license_handling": "summary_only_do_not_treat_as_full_sap_documentation",
+      "validation_required": true
+    }
+  },
+  {
+    "id": "servicos::equipamentos_garantias",
+    "title": "Cartões de equipamento, contratos e garantias",
+    "category": "SAP B1 > Serviços",
+    "module": "Serviços e Pós-venda",
+    "source_type": "sap_official_web_summary_rag_seed",
+    "source": {
+      "name": "SAP Business One - features",
+      "urls": [
+        "https://www.sap.com/products/erp/business-one/features.html"
+      ],
+      "publishers": [
+        "SAP"
+      ],
+      "status": "fonte_externa_resumida_para_seed_rag",
+      "copyright_note": "Conteúdo resumido/parafraseado para treinamento RAG; não é transcrição integral da documentação."
+    },
+    "document_type": "process_overview",
+    "question_examples": [
+      "Para que serve Customer Equipment Card?",
+      "Como rastrear garantia de item vendido?",
+      "Como ver histórico de serviço?"
+    ],
+    "keywords": [
+      "contrato de serviço",
+      "customer equipment card",
+      "equipment card",
+      "garantia",
+      "histórico de atendimento",
+      "serial number",
+      "service history",
+      "warranty"
+    ],
+    "process": {
+      "name": "Cartões de equipamento, contratos e garantias",
+      "objective": "Dar contexto para dúvidas sobre assistência técnica baseada em equipamento.",
+      "steps": [
+        "Identificar equipamento pelo cliente, item ou número de série.",
+        "Verificar contrato/garantia associado.",
+        "Abrir ou consultar chamado relacionado.",
+        "Registrar solução e manter histórico."
+      ],
+      "critical_rules": [
+        "Se houver serial/lote, correlacionar com estoque/vendas quando necessário.",
+        "Não afirmar regra de garantia sem contrato ou documentação interna."
+      ],
+      "dependencies": [
+        "Estoque, Vendas, Cadastros, Serviços."
+      ]
+    },
+    "answer_guidelines": [
+      "Responder como base de conhecimento RAG, citando que a fonte é SAP Business One quando aplicável.",
+      "Se a pergunta pedir passo a passo operacional detalhado e este chunk não trouxer a sequência exata, responder com visão geral e sinalizar necessidade de documentação específica.",
+      "Evitar misturar SAP Business One com SAP S/4HANA, SAP ECC ou Business ByDesign, salvo quando o usuário pedir comparação.",
+      "Para processos fiscais/localização, reforçar que regras dependem de país, versão, parametrização e legislação vigente."
+    ],
+    "content": "Módulo: Serviços e Pós-venda\n\nObjetivo: Dar contexto para dúvidas sobre assistência técnica baseada em equipamento.\n\nEscopo funcional:\n- Customer Equipment Card representa item/equipamento no cliente, geralmente usado para histórico, garantia e chamados.\n- Contratos de serviço podem definir cobertura, duração e regras de atendimento para equipamentos ou clientes.\n- Histórico de chamados ajuda a entender ocorrências anteriores e solução aplicada.\n\nEntidades e documentos relevantes:\n- Customer Equipment Card\n- Service Contract\n- Service Call\n- Serial Number\n- Warranty\n\nFluxos principais:\n- Identificar equipamento pelo cliente, item ou número de série.\n- Verificar contrato/garantia associado.\n- Abrir ou consultar chamado relacionado.\n- Registrar solução e manter histórico.\n\nRegras e observações para resposta da IA:\n- Se houver serial/lote, correlacionar com estoque/vendas quando necessário.\n- Não afirmar regra de garantia sem contrato ou documentação interna.\n\nDependências/correlações com outros módulos:\n- Estoque, Vendas, Cadastros, Serviços.\n\nQuando sinalizar lacuna de conhecimento:\n- Quando a dúvida exigir campo específico, atalho de tela, regra legal local ou comportamento de versão não coberto pela fonte resumida.\n- Quando houver divergência entre parametrização real do cliente e documentação genérica.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "domain": "SAP Business One",
+      "module_slug": "servicos",
+      "granularity": "module_chunk",
+      "language": "pt-BR",
+      "created_at": "2026-04-29T00:00:00Z",
+      "version": "sap_b1_seed_v1_2026-04-29",
+      "confidence_level": "média",
+      "curation_status": "seed_externo_precisa_validacao_humana_antes_de_base_oficial",
+      "source_count": 1,
+      "aliases": [
+        "SAP B1",
+        "SAP Business One",
+        "Serviços e Pós-venda",
+        "contrato de serviço",
+        "customer equipment card",
+        "equipment card",
+        "garantia",
+        "histórico de atendimento",
+        "serial number",
+        "service history",
+        "warranty"
+      ],
+      "suggested_collection": "sap_b1",
+      "import_path_recommendation": "backend/knowledge/json/sap_b1/sap_b1_10_servicos_pos_venda.sagai.json",
+      "source_license_handling": "summary_only_do_not_treat_as_full_sap_documentation",
+      "validation_required": true
+    }
+  }
+]

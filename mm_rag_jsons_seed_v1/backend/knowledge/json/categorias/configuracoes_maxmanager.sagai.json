@@ -1,0 +1,56 @@
+[
+  {
+    "id": "overview-configuracoes-maxmanager",
+    "title": "Visão geral - Configurações MaxManager",
+    "category": "Categorias",
+    "module": "Configurações MaxManager",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Configurações MaxManager",
+      "file": "categorias/configuracoes_maxmanager.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Configurações MaxManager?",
+      "Quando usar Configurações MaxManager?"
+    ],
+    "keywords": [
+      "aprovação por condição de pagamento em pedido de venda",
+      "bloqueio de fornecedor por inatividade",
+      "cadastro de centro de custo",
+      "cadastro de usuário responsável por almoxarifado",
+      "campos habilitados",
+      "configuracoes-maxmanager",
+      "configurações maxmanager",
+      "edição do layout do e-mail automático para boletos",
+      "habilitação do campo percentual do insumo",
+      "parâmetros do sistema",
+      "regimes tributários",
+      "regimes tributários no maxmanager",
+      "responsáveis",
+      "smtp",
+      "validação e suspensão de configurações smtp"
+    ],
+    "process": {
+      "name": "Configurações MaxManager",
+      "objective": "Orientar dúvidas relacionadas a Configurações MaxManager.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Priorizar impacto sistêmico: um parâmetro pode afetar vários módulos.",
+      "Quando a pergunta envolver comportamento diferente entre empresas, investigar configuração.",
+      "Se houver tema tributário, ligar configuração ao regime fiscal e obrigações acessórias."
+    ],
+    "content": "Módulo/Aba: Categorias > Configurações MaxManager\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 30\n\nFoco funcional:\n- parâmetros do sistema\n- SMTP\n- regimes tributários\n- responsáveis\n- campos habilitados\n\nTópicos observados:\n- edição do layout do e-mail automático para boletos\n- regimes tributários no MaxManager\n- validação e suspensão de configurações SMTP\n- cadastro de usuário responsável por almoxarifado\n- habilitação do campo percentual do insumo\n- cadastro de centro de custo\n- bloqueio de fornecedor por inatividade\n- aprovação por condição de pagamento em pedido de venda\n\nInstruções para resposta da IA:\n- Priorizar impacto sistêmico: um parâmetro pode afetar vários módulos.\n- Quando a pergunta envolver comportamento diferente entre empresas, investigar configuração.\n- Se houver tema tributário, ligar configuração ao regime fiscal e obrigações acessórias.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.064900Z",
+      "original_file": "categorias/configuracoes_maxmanager.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

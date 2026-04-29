@@ -1,0 +1,57 @@
+[
+  {
+    "id": "overview-contas-a-receber",
+    "title": "Visão geral - Contas a Receber",
+    "category": "Categorias",
+    "module": "Contas a Receber",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Contas a Receber",
+      "file": "categorias/contas_a_receber.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Contas a Receber?",
+      "Quando usar Contas a Receber?"
+    ],
+    "keywords": [
+      "boletos",
+      "borderô",
+      "cheques",
+      "contas a receber",
+      "contas-a-receber",
+      "edição do layout do e-mail automático para boletos de cobrança",
+      "emissão de boleto de cobrança",
+      "estorno da compensação de títulos",
+      "forma de recebimento",
+      "importação e conciliação de extrato bancário via ofx",
+      "inserção de dados de cheques recebidos no borderô",
+      "integração consistente de natureza bancária e forma de recebimento",
+      "liquidação por borderô de recebimento por título",
+      "liquidação por borderô de recebimento por valor",
+      "natureza bancária",
+      "títulos a receber",
+      "títulos a receber por categoria financeira"
+    ],
+    "process": {
+      "name": "Contas a Receber",
+      "objective": "Orientar dúvidas relacionadas a Contas a Receber.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Tratar cobrança, boleto e borderô como assuntos centrais.",
+      "Ao responder, validar origem do título: pedido, nota, baixa, cheque ou integração bancária."
+    ],
+    "content": "Módulo/Aba: Categorias > Contas a Receber\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 29\n\nFoco funcional:\n- boletos\n- borderô\n- cheques\n- títulos a receber\n- natureza bancária\n- forma de recebimento\n\nTópicos observados:\n- edição do layout do e-mail automático para boletos de cobrança\n- importação e conciliação de extrato bancário via OFX\n- títulos a receber por categoria financeira\n- liquidação por borderô de recebimento por valor\n- inserção de dados de cheques recebidos no borderô\n- liquidação por borderô de recebimento por título\n- emissão de boleto de cobrança\n- integração consistente de natureza bancária e forma de recebimento\n- estorno da compensação de títulos\n\nInstruções para resposta da IA:\n- Tratar cobrança, boleto e borderô como assuntos centrais.\n- Ao responder, validar origem do título: pedido, nota, baixa, cheque ou integração bancária.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.069475Z",
+      "original_file": "categorias/contas_a_receber.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

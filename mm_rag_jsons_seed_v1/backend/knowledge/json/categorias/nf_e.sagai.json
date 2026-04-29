@@ -1,0 +1,46 @@
+[
+  {
+    "id": "overview-nf-e",
+    "title": "Visão geral - NF-e",
+    "category": "Categorias",
+    "module": "NF-e",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > NF-e",
+      "file": "categorias/nf_e.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo NF-e?",
+      "Quando usar NF-e?"
+    ],
+    "keywords": [
+      "certificado digital",
+      "certificado digital vencido e impossibilidade de emissão de nf-e",
+      "emissão de nota",
+      "nf-e",
+      "obrigatoriedades",
+      "regras eletrônicas"
+    ],
+    "process": {
+      "name": "NF-e",
+      "objective": "Orientar dúvidas relacionadas a NF-e.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Ao responder, sempre validar requisito técnico (certificado, ambiente, schema) e requisito fiscal.",
+      "Considerar NF-e como área de alto risco operacional e tributário."
+    ],
+    "content": "Módulo/Aba: Categorias > NF-e\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 40\n\nFoco funcional:\n- certificado digital\n- emissão de nota\n- regras eletrônicas\n- obrigatoriedades\n\nTópicos observados:\n- certificado digital vencido e impossibilidade de emissão de NF-e\n\nInstruções para resposta da IA:\n- Ao responder, sempre validar requisito técnico (certificado, ambiente, schema) e requisito fiscal.\n- Considerar NF-e como área de alto risco operacional e tributário.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.082138Z",
+      "original_file": "categorias/nf_e.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

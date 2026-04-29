@@ -1,0 +1,190 @@
+[
+  {
+    "id": "producao::production_overview",
+    "title": "Produção, lista de materiais e ordens de produção",
+    "category": "SAP B1 > Produção",
+    "module": "Produção e BOM",
+    "source_type": "sap_official_web_summary_rag_seed",
+    "source": {
+      "name": "How to Work with Resources and Production in SAP Business One + SAP Business One - features",
+      "urls": [
+        "https://help.sap.com/doc/08da4f4af99f4fc5a4fbb0249a6698a6/9.3/en-US/How%20to%20Work%20with%20Resources%20and%20Production%20in%20SAP%20Business%20One.pdf",
+        "https://www.sap.com/products/erp/business-one/features.html"
+      ],
+      "publishers": [
+        "SAP",
+        "SAP Help Portal"
+      ],
+      "status": "fonte_externa_resumida_para_seed_rag",
+      "copyright_note": "Conteúdo resumido/parafraseado para treinamento RAG; não é transcrição integral da documentação."
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "SAP B1 tem produção?",
+      "O que é BOM no SAP B1?",
+      "Qual é o fluxo de ordem de produção?"
+    ],
+    "keywords": [
+      "BOM",
+      "Bill of Materials",
+      "Production",
+      "componentes",
+      "issue for production",
+      "lista de materiais",
+      "ordem de produção",
+      "production order",
+      "produção",
+      "receipt from production",
+      "resources"
+    ],
+    "process": {
+      "name": "Produção, lista de materiais e ordens de produção",
+      "objective": "Explicar o fluxo básico de fabricação no SAP Business One.",
+      "steps": [
+        "Definir BOM do item produzido.",
+        "Criar ordem de produção.",
+        "Emitir componentes para produção.",
+        "Receber produto acabado.",
+        "Fechar/analisar ordem e variações."
+      ],
+      "critical_rules": [
+        "Diferenciar BOM de ordem de produção: BOM é estrutura; ordem é execução.",
+        "Para planejamento de demanda, recuperar também MRP.",
+        "Para impacto financeiro, recuperar Estoque/Financeiro."
+      ],
+      "dependencies": [
+        "Cadastros de item, Estoque, Financeiro, MRP, Projetos e BI."
+      ]
+    },
+    "answer_guidelines": [
+      "Responder como base de conhecimento RAG, citando que a fonte é SAP Business One quando aplicável.",
+      "Se a pergunta pedir passo a passo operacional detalhado e este chunk não trouxer a sequência exata, responder com visão geral e sinalizar necessidade de documentação específica.",
+      "Evitar misturar SAP Business One com SAP S/4HANA, SAP ECC ou Business ByDesign, salvo quando o usuário pedir comparação.",
+      "Para processos fiscais/localização, reforçar que regras dependem de país, versão, parametrização e legislação vigente."
+    ],
+    "content": "Módulo: Produção e BOM\n\nObjetivo: Explicar o fluxo básico de fabricação no SAP Business One.\n\nEscopo funcional:\n- Produção usa listas de materiais para definir relação entre produto acabado, componentes, recursos e quantidades.\n- Ordens de produção planejam e controlam a fabricação, permitindo emissão/consumo de componentes e recebimento do produto produzido.\n- Custos e saldos de estoque podem ser impactados por baixa de componentes, entrada de produto acabado e encerramento de ordem.\n\nEntidades e documentos relevantes:\n- Bill of Materials\n- Production Order\n- Issue for Production\n- Receipt from Production\n- Resource\n- Route Stage\n- Component\n- By-product\n\nFluxos principais:\n- Definir BOM do item produzido.\n- Criar ordem de produção.\n- Emitir componentes para produção.\n- Receber produto acabado.\n- Fechar/analisar ordem e variações.\n\nRegras e observações para resposta da IA:\n- Diferenciar BOM de ordem de produção: BOM é estrutura; ordem é execução.\n- Para planejamento de demanda, recuperar também MRP.\n- Para impacto financeiro, recuperar Estoque/Financeiro.\n\nDependências/correlações com outros módulos:\n- Cadastros de item, Estoque, Financeiro, MRP, Projetos e BI.\n\nQuando sinalizar lacuna de conhecimento:\n- Quando a dúvida exigir campo específico, atalho de tela, regra legal local ou comportamento de versão não coberto pela fonte resumida.\n- Quando houver divergência entre parametrização real do cliente e documentação genérica.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "domain": "SAP Business One",
+      "module_slug": "producao",
+      "granularity": "module_chunk",
+      "language": "pt-BR",
+      "created_at": "2026-04-29T00:00:00Z",
+      "version": "sap_b1_seed_v1_2026-04-29",
+      "confidence_level": "média",
+      "curation_status": "seed_externo_precisa_validacao_humana_antes_de_base_oficial",
+      "source_count": 2,
+      "aliases": [
+        "BOM",
+        "Bill of Materials",
+        "Production",
+        "Produção e BOM",
+        "SAP B1",
+        "SAP Business One",
+        "componentes",
+        "issue for production",
+        "lista de materiais",
+        "ordem de produção",
+        "production order",
+        "produção",
+        "receipt from production",
+        "resources"
+      ],
+      "suggested_collection": "sap_b1",
+      "import_path_recommendation": "backend/knowledge/json/sap_b1/sap_b1_08_producao_bom.sagai.json",
+      "source_license_handling": "summary_only_do_not_treat_as_full_sap_documentation",
+      "validation_required": true
+    }
+  },
+  {
+    "id": "producao::bom_recursos_custos",
+    "title": "BOM, recursos, custos e rastreabilidade na produção",
+    "category": "SAP B1 > Produção",
+    "module": "Produção e BOM",
+    "source_type": "sap_official_web_summary_rag_seed",
+    "source": {
+      "name": "How to Work with Resources and Production in SAP Business One",
+      "urls": [
+        "https://help.sap.com/doc/08da4f4af99f4fc5a4fbb0249a6698a6/9.3/en-US/How%20to%20Work%20with%20Resources%20and%20Production%20in%20SAP%20Business%20One.pdf"
+      ],
+      "publishers": [
+        "SAP Help Portal"
+      ],
+      "status": "fonte_externa_resumida_para_seed_rag",
+      "copyright_note": "Conteúdo resumido/parafraseado para treinamento RAG; não é transcrição integral da documentação."
+    },
+    "document_type": "process_overview",
+    "question_examples": [
+      "Como alterar componentes de uma BOM?",
+      "Como rastrear lote produzido?",
+      "O que influencia custo de produção?"
+    ],
+    "keywords": [
+      "BOM management",
+      "by-product",
+      "component cost",
+      "custo de produção",
+      "produção",
+      "produção por lote",
+      "recursos",
+      "resource cost",
+      "serial batch trace",
+      "variance"
+    ],
+    "process": {
+      "name": "BOM, recursos, custos e rastreabilidade na produção",
+      "objective": "Dar contexto para dúvidas de estrutura, componentes e custos de produção.",
+      "steps": [
+        "Identificar BOM ou ordem envolvida.",
+        "Verificar componentes, recursos, armazéns e quantidades.",
+        "Analisar emissão/recebimento e custo.",
+        "Rastrear lote/série quando necessário."
+      ],
+      "critical_rules": [
+        "Não orientar alteração em massa de BOM sem validação em ambiente seguro.",
+        "Não assumir método de cálculo de custo sem configuração do cliente."
+      ],
+      "dependencies": [
+        "Estoque, MRP, Financeiro, Cadastros."
+      ]
+    },
+    "answer_guidelines": [
+      "Responder como base de conhecimento RAG, citando que a fonte é SAP Business One quando aplicável.",
+      "Se a pergunta pedir passo a passo operacional detalhado e este chunk não trouxer a sequência exata, responder com visão geral e sinalizar necessidade de documentação específica.",
+      "Evitar misturar SAP Business One com SAP S/4HANA, SAP ECC ou Business ByDesign, salvo quando o usuário pedir comparação.",
+      "Para processos fiscais/localização, reforçar que regras dependem de país, versão, parametrização e legislação vigente."
+    ],
+    "content": "Módulo: Produção e BOM\n\nObjetivo: Dar contexto para dúvidas de estrutura, componentes e custos de produção.\n\nEscopo funcional:\n- A gestão de BOM permite atualizar componentes, cabeçalhos e estruturas usadas por ordens de produção.\n- Recursos e estágios podem representar capacidade, máquinas, mão de obra ou etapas, conforme parametrização.\n- Rastreabilidade por lote/série ajuda a relacionar componentes consumidos e produtos acabados.\n\nEntidades e documentos relevantes:\n- BOM header\n- BOM line\n- component\n- resource\n- route stage\n- batch\n- serial\n- variance\n\nFluxos principais:\n- Identificar BOM ou ordem envolvida.\n- Verificar componentes, recursos, armazéns e quantidades.\n- Analisar emissão/recebimento e custo.\n- Rastrear lote/série quando necessário.\n\nRegras e observações para resposta da IA:\n- Não orientar alteração em massa de BOM sem validação em ambiente seguro.\n- Não assumir método de cálculo de custo sem configuração do cliente.\n\nDependências/correlações com outros módulos:\n- Estoque, MRP, Financeiro, Cadastros.\n\nQuando sinalizar lacuna de conhecimento:\n- Quando a dúvida exigir campo específico, atalho de tela, regra legal local ou comportamento de versão não coberto pela fonte resumida.\n- Quando houver divergência entre parametrização real do cliente e documentação genérica.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "domain": "SAP Business One",
+      "module_slug": "producao",
+      "granularity": "module_chunk",
+      "language": "pt-BR",
+      "created_at": "2026-04-29T00:00:00Z",
+      "version": "sap_b1_seed_v1_2026-04-29",
+      "confidence_level": "média",
+      "curation_status": "seed_externo_precisa_validacao_humana_antes_de_base_oficial",
+      "source_count": 1,
+      "aliases": [
+        "BOM management",
+        "Produção e BOM",
+        "SAP B1",
+        "SAP Business One",
+        "by-product",
+        "component cost",
+        "custo de produção",
+        "produção",
+        "produção por lote",
+        "recursos",
+        "resource cost",
+        "serial batch trace",
+        "variance"
+      ],
+      "suggested_collection": "sap_b1",
+      "import_path_recommendation": "backend/knowledge/json/sap_b1/sap_b1_08_producao_bom.sagai.json",
+      "source_license_handling": "summary_only_do_not_treat_as_full_sap_documentation",
+      "validation_required": true
+    }
+  }
+]

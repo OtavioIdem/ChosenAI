@@ -1,0 +1,50 @@
+[
+  {
+    "id": "overview-bancos-e-caixa",
+    "title": "Visão geral - Bancos e Caixa",
+    "category": "Categorias",
+    "module": "Bancos e Caixa",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Bancos e Caixa",
+      "file": "categorias/bancos_e_caixa.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Bancos e Caixa?",
+      "Quando usar Bancos e Caixa?"
+    ],
+    "keywords": [
+      "bancos e caixa",
+      "bancos-e-caixa",
+      "cadastro de banco",
+      "cadastro de histórico bancário para transferência",
+      "conciliação bancária",
+      "histórico bancário",
+      "importação e conciliação de extrato bancário via ofx",
+      "nova tela de cadastro de banco",
+      "ofx",
+      "transferências"
+    ],
+    "process": {
+      "name": "Bancos e Caixa",
+      "objective": "Orientar dúvidas relacionadas a Bancos e Caixa.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Relacionar OFX, extratos e conciliação com financeiro, contas a pagar e contas a receber.",
+      "Diferenciar cadastros mestres bancários de rotinas operacionais de baixa, retorno e remessa."
+    ],
+    "content": "Módulo/Aba: Categorias > Bancos e Caixa\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 6\n\nFoco funcional:\n- OFX\n- conciliação bancária\n- cadastro de banco\n- histórico bancário\n- transferências\n\nTópicos observados:\n- importação e conciliação de extrato bancário via OFX\n- nova tela de cadastro de banco\n- cadastro de histórico bancário para transferência\n\nInstruções para resposta da IA:\n- Relacionar OFX, extratos e conciliação com financeiro, contas a pagar e contas a receber.\n- Diferenciar cadastros mestres bancários de rotinas operacionais de baixa, retorno e remessa.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.061146Z",
+      "original_file": "categorias/bancos_e_caixa.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

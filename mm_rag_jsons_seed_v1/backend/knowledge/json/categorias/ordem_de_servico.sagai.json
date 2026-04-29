@@ -1,0 +1,46 @@
+[
+  {
+    "id": "overview-ordem-de-servico",
+    "title": "Visão geral - Ordem de Serviço",
+    "category": "Categorias",
+    "module": "Ordem de Serviço",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Ordem de Serviço",
+      "file": "categorias/ordem_de_servico.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Ordem de Serviço?",
+      "Quando usar Ordem de Serviço?"
+    ],
+    "keywords": [
+      "gestão de serviços",
+      "listagem de os",
+      "módulo de ordem de serviços",
+      "nova tela de listagem de ordens de serviço",
+      "novo módulo de ordem de serviços",
+      "ordem de serviço",
+      "ordem-de-servico"
+    ],
+    "process": {
+      "name": "Ordem de Serviço",
+      "objective": "Orientar dúvidas relacionadas a Ordem de Serviço.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Responder com foco em gestão operacional de serviços, consultas e centralização de dados."
+    ],
+    "content": "Módulo/Aba: Categorias > Ordem de Serviço\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 9\n\nFoco funcional:\n- listagem de OS\n- gestão de serviços\n- módulo de ordem de serviços\n\nTópicos observados:\n- nova tela de listagem de ordens de serviço\n- novo módulo de ordem de serviços\n\nInstruções para resposta da IA:\n- Responder com foco em gestão operacional de serviços, consultas e centralização de dados.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.084760Z",
+      "original_file": "categorias/ordem_de_servico.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "overview-alimentar",
+    "title": "Visão geral - Alimentar",
+    "category": "Categorias",
+    "module": "Alimentar",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Alimentar",
+      "file": "categorias/alimentar.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Alimentar?",
+      "Quando usar Alimentar?"
+    ],
+    "keywords": [
+      "alimentar",
+      "análise de custo per-capta por gênero nos pré-custos",
+      "cardápio",
+      "envio automático de e-mails de relatórios de fornecimento de refeições coletivas",
+      "importação de planilha de pré-custo para gerar solicitações de compras",
+      "marcação de dia especial em cardápio",
+      "pré-custo",
+      "races",
+      "refeições coletivas",
+      "solicitações de compra por planilha",
+      "uso e exclusão de races oficializado"
+    ],
+    "process": {
+      "name": "Alimentar",
+      "objective": "Orientar dúvidas relacionadas a Alimentar.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Tratar esta aba como especializada em operações de alimentação coletiva.",
+      "Ao responder, priorizar cardápio, pré-custo, custos por gênero e rastreabilidade documental do RACES.",
+      "Quando a pergunta envolver compras originadas do módulo alimentar, relacionar pré-custo com geração de solicitações."
+    ],
+    "content": "Módulo/Aba: Categorias > Alimentar\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 6\n\nFoco funcional:\n- refeições coletivas\n- pré-custo\n- cardápio\n- RACES\n- solicitações de compra por planilha\n\nTópicos observados:\n- envio automático de e-mails de relatórios de fornecimento de refeições coletivas\n- análise de custo per-capta por gênero nos pré-custos\n- marcação de dia especial em cardápio\n- importação de planilha de pré-custo para gerar solicitações de compras\n- uso e exclusão de RACES oficializado\n\nInstruções para resposta da IA:\n- Tratar esta aba como especializada em operações de alimentação coletiva.\n- Ao responder, priorizar cardápio, pré-custo, custos por gênero e rastreabilidade documental do RACES.\n- Quando a pergunta envolver compras originadas do módulo alimentar, relacionar pré-custo com geração de solicitações.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.059986Z",
+      "original_file": "categorias/alimentar.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

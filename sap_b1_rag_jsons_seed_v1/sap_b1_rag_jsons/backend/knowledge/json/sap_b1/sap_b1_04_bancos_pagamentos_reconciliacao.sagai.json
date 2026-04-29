@@ -1,0 +1,183 @@
+[
+  {
+    "id": "bancos::pagamentos_entradas_saidas",
+    "title": "Pagamentos recebidos e efetuados",
+    "category": "SAP B1 > Bancos",
+    "module": "Bancos, Pagamentos e Reconciliação",
+    "source_type": "sap_official_web_summary_rag_seed",
+    "source": {
+      "name": "SAP Business One - features",
+      "urls": [
+        "https://www.sap.com/products/erp/business-one/features.html"
+      ],
+      "publishers": [
+        "SAP"
+      ],
+      "status": "fonte_externa_resumida_para_seed_rag",
+      "copyright_note": "Conteúdo resumido/parafraseado para treinamento RAG; não é transcrição integral da documentação."
+    },
+    "document_type": "process_overview",
+    "question_examples": [
+      "Como registrar pagamento recebido no SAP B1?",
+      "Como registrar pagamento a fornecedor?",
+      "Quais meios de pagamento existem no SAP B1?"
+    ],
+    "keywords": [
+      "Banking",
+      "banco",
+      "caixa",
+      "cartão",
+      "cheque",
+      "dinheiro",
+      "incoming payment",
+      "outgoing payment",
+      "pagamento efetuado",
+      "pagamento recebido",
+      "transferência bancária"
+    ],
+    "process": {
+      "name": "Pagamentos recebidos e efetuados",
+      "objective": "Explicar o papel dos pagamentos no fechamento financeiro de clientes e fornecedores.",
+      "steps": [
+        "Selecionar parceiro ou conta.",
+        "Relacionar documento em aberto quando aplicável.",
+        "Informar meio de pagamento.",
+        "Adicionar o pagamento.",
+        "Acompanhar saldo e reconciliação."
+      ],
+      "critical_rules": [
+        "Não orientar envio bancário específico sem documentação de banco/localização/add-on.",
+        "Se o usuário relatar saldo em aberto após pagamento, investigar reconciliação e seleção de documentos."
+      ],
+      "dependencies": [
+        "Financeiro, Vendas A/R, Compras A/P e Cadastros."
+      ]
+    },
+    "answer_guidelines": [
+      "Responder como base de conhecimento RAG, citando que a fonte é SAP Business One quando aplicável.",
+      "Se a pergunta pedir passo a passo operacional detalhado e este chunk não trouxer a sequência exata, responder com visão geral e sinalizar necessidade de documentação específica.",
+      "Evitar misturar SAP Business One com SAP S/4HANA, SAP ECC ou Business ByDesign, salvo quando o usuário pedir comparação.",
+      "Para processos fiscais/localização, reforçar que regras dependem de país, versão, parametrização e legislação vigente."
+    ],
+    "content": "Módulo: Bancos, Pagamentos e Reconciliação\n\nObjetivo: Explicar o papel dos pagamentos no fechamento financeiro de clientes e fornecedores.\n\nEscopo funcional:\n- Pagamentos recebidos liquidam valores de clientes, normalmente relacionados a documentos de venda ou lançamentos financeiros.\n- Pagamentos efetuados liquidam obrigações com fornecedores, colaboradores ou contas contábeis, conforme processo configurado.\n- O SAP B1 suporta diferentes meios de pagamento e integra esses movimentos com contabilidade e reconciliação.\n\nEntidades e documentos relevantes:\n- incoming payment\n- outgoing payment\n- cliente\n- fornecedor\n- conta contábil\n- meio de pagamento\n- banco\n\nFluxos principais:\n- Selecionar parceiro ou conta.\n- Relacionar documento em aberto quando aplicável.\n- Informar meio de pagamento.\n- Adicionar o pagamento.\n- Acompanhar saldo e reconciliação.\n\nRegras e observações para resposta da IA:\n- Não orientar envio bancário específico sem documentação de banco/localização/add-on.\n- Se o usuário relatar saldo em aberto após pagamento, investigar reconciliação e seleção de documentos.\n\nDependências/correlações com outros módulos:\n- Financeiro, Vendas A/R, Compras A/P e Cadastros.\n\nQuando sinalizar lacuna de conhecimento:\n- Quando a dúvida exigir campo específico, atalho de tela, regra legal local ou comportamento de versão não coberto pela fonte resumida.\n- Quando houver divergência entre parametrização real do cliente e documentação genérica.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "domain": "SAP Business One",
+      "module_slug": "bancos",
+      "granularity": "module_chunk",
+      "language": "pt-BR",
+      "created_at": "2026-04-29T00:00:00Z",
+      "version": "sap_b1_seed_v1_2026-04-29",
+      "confidence_level": "média",
+      "curation_status": "seed_externo_precisa_validacao_humana_antes_de_base_oficial",
+      "source_count": 1,
+      "aliases": [
+        "Bancos, Pagamentos e Reconciliação",
+        "Banking",
+        "SAP B1",
+        "SAP Business One",
+        "banco",
+        "caixa",
+        "cartão",
+        "cheque",
+        "dinheiro",
+        "incoming payment",
+        "outgoing payment",
+        "pagamento efetuado",
+        "pagamento recebido",
+        "transferência bancária"
+      ],
+      "suggested_collection": "sap_b1",
+      "import_path_recommendation": "backend/knowledge/json/sap_b1/sap_b1_04_bancos_pagamentos_reconciliacao.sagai.json",
+      "source_license_handling": "summary_only_do_not_treat_as_full_sap_documentation",
+      "validation_required": true
+    }
+  },
+  {
+    "id": "bancos::reconciliacao_bancaria",
+    "title": "Reconciliação bancária e processamento de extrato",
+    "category": "SAP B1 > Bancos",
+    "module": "Bancos, Pagamentos e Reconciliação",
+    "source_type": "sap_official_web_summary_rag_seed",
+    "source": {
+      "name": "SAP Business One - features",
+      "urls": [
+        "https://www.sap.com/products/erp/business-one/features.html"
+      ],
+      "publishers": [
+        "SAP"
+      ],
+      "status": "fonte_externa_resumida_para_seed_rag",
+      "copyright_note": "Conteúdo resumido/parafraseado para treinamento RAG; não é transcrição integral da documentação."
+    },
+    "document_type": "process_overview",
+    "question_examples": [
+      "O que é reconciliação bancária no SAP B1?",
+      "Como comparar extrato com SAP B1?",
+      "Qual diferença entre reconciliação interna e externa?"
+    ],
+    "keywords": [
+      "bank reconciliation",
+      "bank statement processing",
+      "conciliação bancária",
+      "conta banco",
+      "external reconciliation",
+      "extrato bancário",
+      "internal reconciliation",
+      "transação bancária"
+    ],
+    "process": {
+      "name": "Reconciliação bancária e processamento de extrato",
+      "objective": "Mapear o processo de conciliar lançamentos internos com extratos bancários externos.",
+      "steps": [
+        "Importar ou informar extrato.",
+        "Buscar candidatos de documentos/pagamentos/lançamentos.",
+        "Revisar correspondências.",
+        "Confirmar reconciliação e eventuais lançamentos."
+      ],
+      "critical_rules": [
+        "Quando houver divergência, verificar data, valor, moeda, taxa, banco, parceiro e documento base.",
+        "Não assumir layout bancário sem fonte específica."
+      ],
+      "dependencies": [
+        "Financeiro, Contas a Receber/Pagar, Localização e Integrações."
+      ]
+    },
+    "answer_guidelines": [
+      "Responder como base de conhecimento RAG, citando que a fonte é SAP Business One quando aplicável.",
+      "Se a pergunta pedir passo a passo operacional detalhado e este chunk não trouxer a sequência exata, responder com visão geral e sinalizar necessidade de documentação específica.",
+      "Evitar misturar SAP Business One com SAP S/4HANA, SAP ECC ou Business ByDesign, salvo quando o usuário pedir comparação.",
+      "Para processos fiscais/localização, reforçar que regras dependem de país, versão, parametrização e legislação vigente."
+    ],
+    "content": "Módulo: Bancos, Pagamentos e Reconciliação\n\nObjetivo: Mapear o processo de conciliar lançamentos internos com extratos bancários externos.\n\nEscopo funcional:\n- Reconciliação bancária compara movimentos registrados no SAP B1 com dados externos do banco.\n- O processamento de extrato pode apoiar identificação de pagamentos, lançamentos e correspondências conforme critérios configurados.\n- A conciliação é importante para confirmar que caixa/banco, parceiro e contabilidade refletem a realidade bancária.\n\nEntidades e documentos relevantes:\n- extrato bancário\n- linha do extrato\n- pagamento\n- lançamento contábil\n- proposta de lançamento\n- reconciliação externa\n- reconciliação interna\n\nFluxos principais:\n- Importar ou informar extrato.\n- Buscar candidatos de documentos/pagamentos/lançamentos.\n- Revisar correspondências.\n- Confirmar reconciliação e eventuais lançamentos.\n\nRegras e observações para resposta da IA:\n- Quando houver divergência, verificar data, valor, moeda, taxa, banco, parceiro e documento base.\n- Não assumir layout bancário sem fonte específica.\n\nDependências/correlações com outros módulos:\n- Financeiro, Contas a Receber/Pagar, Localização e Integrações.\n\nQuando sinalizar lacuna de conhecimento:\n- Quando a dúvida exigir campo específico, atalho de tela, regra legal local ou comportamento de versão não coberto pela fonte resumida.\n- Quando houver divergência entre parametrização real do cliente e documentação genérica.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "domain": "SAP Business One",
+      "module_slug": "bancos",
+      "granularity": "module_chunk",
+      "language": "pt-BR",
+      "created_at": "2026-04-29T00:00:00Z",
+      "version": "sap_b1_seed_v1_2026-04-29",
+      "confidence_level": "média",
+      "curation_status": "seed_externo_precisa_validacao_humana_antes_de_base_oficial",
+      "source_count": 1,
+      "aliases": [
+        "Bancos, Pagamentos e Reconciliação",
+        "SAP B1",
+        "SAP Business One",
+        "bank reconciliation",
+        "bank statement processing",
+        "conciliação bancária",
+        "conta banco",
+        "external reconciliation",
+        "extrato bancário",
+        "internal reconciliation",
+        "transação bancária"
+      ],
+      "suggested_collection": "sap_b1",
+      "import_path_recommendation": "backend/knowledge/json/sap_b1/sap_b1_04_bancos_pagamentos_reconciliacao.sagai.json",
+      "source_license_handling": "summary_only_do_not_treat_as_full_sap_documentation",
+      "validation_required": true
+    }
+  }
+]

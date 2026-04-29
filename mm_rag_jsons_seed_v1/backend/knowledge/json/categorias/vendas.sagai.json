@@ -1,0 +1,58 @@
+[
+  {
+    "id": "overview-vendas",
+    "title": "Visão geral - Vendas",
+    "category": "Categorias",
+    "module": "Vendas",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Vendas",
+      "file": "categorias/vendas.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Vendas?",
+      "Quando usar Vendas?"
+    ],
+    "keywords": [
+      "aprovação",
+      "aprovação por condição de pagamento",
+      "atualização de preço para pedidos em aberto",
+      "cancelamento de romaneio com título vinculado à remessa",
+      "comissões",
+      "indicador/marketplace nas operações de venda",
+      "margem praticada por pedido de venda",
+      "marketplace",
+      "orçamento",
+      "orçamento de venda",
+      "pedido de venda",
+      "preço",
+      "pré-cadastro de clientes com maxsales e maxmanager",
+      "relatório de conferência de digitação de pedidos",
+      "romaneio",
+      "tabela de comissão por faixa de desconto",
+      "venda de kit no orçamento",
+      "vendas"
+    ],
+    "process": {
+      "name": "Vendas",
+      "objective": "Orientar dúvidas relacionadas a Vendas.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Responder considerando o fluxo comercial completo: orçamento -> pedido -> faturamento/cobrança.",
+      "Se houver impacto financeiro ou fiscal, explicitar dependências."
+    ],
+    "content": "Módulo/Aba: Categorias > Vendas\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 25\n\nFoco funcional:\n- orçamento\n- pedido de venda\n- comissões\n- romaneio\n- aprovação\n- preço\n- marketplace\n\nTópicos observados:\n- orçamento de venda\n- tabela de comissão por faixa de desconto\n- pré-cadastro de clientes com MaxSales e MaxManager\n- margem praticada por pedido de venda\n- venda de kit no orçamento\n- cancelamento de romaneio com título vinculado à remessa\n- atualização de preço para pedidos em aberto\n- indicador/marketplace nas operações de venda\n- relatório de conferência de digitação de pedidos\n- aprovação por condição de pagamento\n\nInstruções para resposta da IA:\n- Responder considerando o fluxo comercial completo: orçamento -> pedido -> faturamento/cobrança.\n- Se houver impacto financeiro ou fiscal, explicitar dependências.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.092610Z",
+      "original_file": "categorias/vendas.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

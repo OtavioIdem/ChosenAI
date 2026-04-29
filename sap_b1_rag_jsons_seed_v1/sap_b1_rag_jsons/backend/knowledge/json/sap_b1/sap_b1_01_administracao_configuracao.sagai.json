@@ -1,0 +1,187 @@
+[
+  {
+    "id": "administracao::parametrizacao_empresa",
+    "title": "Administração e parametrização da empresa",
+    "category": "SAP B1 > Administração",
+    "module": "Administração",
+    "source_type": "sap_official_web_summary_rag_seed",
+    "source": {
+      "name": "SAP Business One - technical information + SAP Business One - features",
+      "urls": [
+        "https://www.sap.com/products/erp/business-one/technical-information.html",
+        "https://www.sap.com/products/erp/business-one/features.html"
+      ],
+      "publishers": [
+        "SAP"
+      ],
+      "status": "fonte_externa_resumida_para_seed_rag",
+      "copyright_note": "Conteúdo resumido/parafraseado para treinamento RAG; não é transcrição integral da documentação."
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que configurar primeiro no SAP B1?",
+      "Onde entram usuários e autorizações?",
+      "Como orientar dúvida de parametrização no SAP B1?"
+    ],
+    "keywords": [
+      "Administração",
+      "approval process",
+      "autorizações",
+      "configuração inicial",
+      "document settings",
+      "empresa",
+      "numeração de documentos",
+      "parâmetros",
+      "períodos contábeis",
+      "usuários"
+    ],
+    "process": {
+      "name": "Administração e parametrização da empresa",
+      "objective": "Mapear o papel do módulo Administração como base de configuração do ambiente SAP B1.",
+      "steps": [
+        "Identificar o parâmetro ou processo afetado.",
+        "Validar módulo impactado e dependências.",
+        "Orientar revisão por administrador/consultor quando houver risco contábil, fiscal ou de segurança."
+      ],
+      "critical_rules": [
+        "Nunca orientar mudança crítica sem ressalva de validação em ambiente de homologação.",
+        "Quando a dúvida envolver autorização, perguntar ou inferir se é limitação de permissão antes de sugerir erro de sistema."
+      ],
+      "dependencies": [
+        "Financeiro: períodos, contas contábeis, determinações e moedas.",
+        "Vendas/Compras: séries, aprovação, impressão, impostos e documentos.",
+        "Estoque/Produção: armazéns, métodos, unidades, lotes/séries e recursos."
+      ]
+    },
+    "answer_guidelines": [
+      "Responder como base de conhecimento RAG, citando que a fonte é SAP Business One quando aplicável.",
+      "Se a pergunta pedir passo a passo operacional detalhado e este chunk não trouxer a sequência exata, responder com visão geral e sinalizar necessidade de documentação específica.",
+      "Evitar misturar SAP Business One com SAP S/4HANA, SAP ECC ou Business ByDesign, salvo quando o usuário pedir comparação.",
+      "Para processos fiscais/localização, reforçar que regras dependem de país, versão, parametrização e legislação vigente."
+    ],
+    "content": "Módulo: Administração\n\nObjetivo: Mapear o papel do módulo Administração como base de configuração do ambiente SAP B1.\n\nEscopo funcional:\n- Reúne configurações da empresa, usuários, autorizações, documentos, alertas, aprovações e parâmetros gerais.\n- Define comportamentos que afetam todos os módulos, como numeração de documentos, permissões, moedas, períodos e regras de aprovação.\n- É a camada de governança do sistema; alterações podem impactar contabilização, fiscal, estoque e operação.\n\nEntidades e documentos relevantes:\n- usuário\n- grupo de autorização\n- período contábil\n- série de numeração\n- document settings\n- alertas\n- processo de aprovação\n\nFluxos principais:\n- Identificar o parâmetro ou processo afetado.\n- Validar módulo impactado e dependências.\n- Orientar revisão por administrador/consultor quando houver risco contábil, fiscal ou de segurança.\n\nRegras e observações para resposta da IA:\n- Nunca orientar mudança crítica sem ressalva de validação em ambiente de homologação.\n- Quando a dúvida envolver autorização, perguntar ou inferir se é limitação de permissão antes de sugerir erro de sistema.\n\nDependências/correlações com outros módulos:\n- Financeiro: períodos, contas contábeis, determinações e moedas.\n- Vendas/Compras: séries, aprovação, impressão, impostos e documentos.\n- Estoque/Produção: armazéns, métodos, unidades, lotes/séries e recursos.\n\nQuando sinalizar lacuna de conhecimento:\n- Quando a dúvida exigir campo específico, atalho de tela, regra legal local ou comportamento de versão não coberto pela fonte resumida.\n- Quando houver divergência entre parametrização real do cliente e documentação genérica.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "domain": "SAP Business One",
+      "module_slug": "administracao",
+      "granularity": "module_chunk",
+      "language": "pt-BR",
+      "created_at": "2026-04-29T00:00:00Z",
+      "version": "sap_b1_seed_v1_2026-04-29",
+      "confidence_level": "média",
+      "curation_status": "seed_externo_precisa_validacao_humana_antes_de_base_oficial",
+      "source_count": 2,
+      "aliases": [
+        "Administração",
+        "SAP B1",
+        "SAP Business One",
+        "approval process",
+        "autorizações",
+        "configuração inicial",
+        "document settings",
+        "empresa",
+        "numeração de documentos",
+        "parâmetros",
+        "períodos contábeis",
+        "usuários"
+      ],
+      "suggested_collection": "sap_b1",
+      "import_path_recommendation": "backend/knowledge/json/sap_b1/sap_b1_01_administracao_configuracao.sagai.json",
+      "source_license_handling": "summary_only_do_not_treat_as_full_sap_documentation",
+      "validation_required": true
+    }
+  },
+  {
+    "id": "administracao::boas_praticas_rag_sap_b1",
+    "title": "Boas práticas para treinar RAG com documentação SAP B1",
+    "category": "SAP B1 > Administração",
+    "module": "Administração",
+    "source_type": "sap_official_web_summary_rag_seed",
+    "source": {
+      "name": "SAP Business One - product overview + SAP Business One - technical information",
+      "urls": [
+        "https://www.sap.com/products/erp/business-one.html",
+        "https://www.sap.com/products/erp/business-one/technical-information.html"
+      ],
+      "publishers": [
+        "SAP"
+      ],
+      "status": "fonte_externa_resumida_para_seed_rag",
+      "copyright_note": "Conteúdo resumido/parafraseado para treinamento RAG; não é transcrição integral da documentação."
+    },
+    "document_type": "rag_guideline",
+    "question_examples": [
+      "Como devo indexar documentação do SAP B1?",
+      "Como evitar resposta errada em SAP B1?",
+      "Como organizar JSON por módulo?"
+    ],
+    "keywords": [
+      "RAG",
+      "SAP Help Portal",
+      "chunk",
+      "curadoria",
+      "fonte oficial",
+      "localização",
+      "treinamento",
+      "validação humana",
+      "versão 10.0"
+    ],
+    "process": {
+      "name": "Boas práticas para treinar RAG com documentação SAP B1",
+      "objective": "Orientar a ingestão segura e auditável de documentação SAP B1 no SAGAI.",
+      "steps": [
+        "Coletar fontes oficiais SAP.",
+        "Resumir/parafrasear por módulo.",
+        "Gerar JSON compatível com backend/knowledge/json.",
+        "Reindexar e testar perguntas por módulo.",
+        "Aprovar somente conteúdos validados para base oficial."
+      ],
+      "critical_rules": [
+        "Não copiar documentação integral protegida; usar resumo funcional com referência de fonte.",
+        "Não misturar releases sem informar versão.",
+        "Tratar localização Brasil como módulo próprio, pois regras fiscais são sensíveis."
+      ],
+      "dependencies": [
+        "Pipeline de ingestão do SAGAI.",
+        "Curadoria humana antes de uso em atendimento real."
+      ]
+    },
+    "answer_guidelines": [
+      "Responder como base de conhecimento RAG, citando que a fonte é SAP Business One quando aplicável.",
+      "Se a pergunta pedir passo a passo operacional detalhado e este chunk não trouxer a sequência exata, responder com visão geral e sinalizar necessidade de documentação específica.",
+      "Evitar misturar SAP Business One com SAP S/4HANA, SAP ECC ou Business ByDesign, salvo quando o usuário pedir comparação.",
+      "Para processos fiscais/localização, reforçar que regras dependem de país, versão, parametrização e legislação vigente."
+    ],
+    "content": "Módulo: Administração\n\nObjetivo: Orientar a ingestão segura e auditável de documentação SAP B1 no SAGAI.\n\nEscopo funcional:\n- Separar conhecimento por módulo e por processo funcional, evitando chunks mistos e muito amplos.\n- Guardar URL, versão, data de consulta, localização e nível de confiança em cada registro.\n- Marcar conteúdo resumido de fonte externa como seed que precisa de validação antes de virar conhecimento oficial.\n\nEntidades e documentos relevantes:\n- chunk\n- fonte\n- metadados\n- versão\n- confiança\n- curadoria\n\nFluxos principais:\n- Coletar fontes oficiais SAP.\n- Resumir/parafrasear por módulo.\n- Gerar JSON compatível com backend/knowledge/json.\n- Reindexar e testar perguntas por módulo.\n- Aprovar somente conteúdos validados para base oficial.\n\nRegras e observações para resposta da IA:\n- Não copiar documentação integral protegida; usar resumo funcional com referência de fonte.\n- Não misturar releases sem informar versão.\n- Tratar localização Brasil como módulo próprio, pois regras fiscais são sensíveis.\n\nDependências/correlações com outros módulos:\n- Pipeline de ingestão do SAGAI.\n- Curadoria humana antes de uso em atendimento real.\n\nQuando sinalizar lacuna de conhecimento:\n- Quando a dúvida exigir campo específico, atalho de tela, regra legal local ou comportamento de versão não coberto pela fonte resumida.\n- Quando houver divergência entre parametrização real do cliente e documentação genérica.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "domain": "SAP Business One",
+      "module_slug": "administracao",
+      "granularity": "module_chunk",
+      "language": "pt-BR",
+      "created_at": "2026-04-29T00:00:00Z",
+      "version": "sap_b1_seed_v1_2026-04-29",
+      "confidence_level": "alta",
+      "curation_status": "seed_externo_precisa_validacao_humana_antes_de_base_oficial",
+      "source_count": 2,
+      "aliases": [
+        "Administração",
+        "RAG",
+        "SAP B1",
+        "SAP Business One",
+        "SAP Help Portal",
+        "chunk",
+        "curadoria",
+        "fonte oficial",
+        "localização",
+        "treinamento",
+        "validação humana",
+        "versão 10.0"
+      ],
+      "suggested_collection": "sap_b1",
+      "import_path_recommendation": "backend/knowledge/json/sap_b1/sap_b1_01_administracao_configuracao.sagai.json",
+      "source_license_handling": "summary_only_do_not_treat_as_full_sap_documentation",
+      "validation_required": true
+    }
+  }
+]

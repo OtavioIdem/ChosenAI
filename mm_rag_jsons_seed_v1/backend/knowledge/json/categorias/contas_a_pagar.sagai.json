@@ -1,0 +1,49 @@
+[
+  {
+    "id": "overview-contas-a-pagar",
+    "title": "Visão geral - Contas a Pagar",
+    "category": "Categorias",
+    "module": "Contas a Pagar",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Contas a Pagar",
+      "file": "categorias/contas_a_pagar.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Contas a Pagar?",
+      "Quando usar Contas a Pagar?"
+    ],
+    "keywords": [
+      "compensação",
+      "contas a pagar",
+      "contas-a-pagar",
+      "desintegração",
+      "importação e conciliação de extrato bancário via ofx",
+      "lançamento de previsões no contas a pagar",
+      "ofx",
+      "previsões financeiras",
+      "títulos a pagar"
+    ],
+    "process": {
+      "name": "Contas a Pagar",
+      "objective": "Orientar dúvidas relacionadas a Contas a Pagar.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Separar previsão de obrigação efetiva/documentada.",
+      "Quando houver integração com recebimento de mercadorias, considerar títulos financeiros vinculados."
+    ],
+    "content": "Módulo/Aba: Categorias > Contas a Pagar\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 21\n\nFoco funcional:\n- previsões financeiras\n- títulos a pagar\n- OFX\n- desintegração\n- compensação\n\nTópicos observados:\n- lançamento de previsões no contas a pagar\n- importação e conciliação de extrato bancário via OFX\n\nInstruções para resposta da IA:\n- Separar previsão de obrigação efetiva/documentada.\n- Quando houver integração com recebimento de mercadorias, considerar títulos financeiros vinculados.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.068471Z",
+      "original_file": "categorias/contas_a_pagar.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

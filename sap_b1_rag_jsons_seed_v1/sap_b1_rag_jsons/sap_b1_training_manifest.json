@@ -1,0 +1,233 @@
+{
+  "package": "SAP Business One RAG seed JSONs",
+  "version": "sap_b1_seed_v1_2026-04-29",
+  "created_at": "2026-04-29T00:00:00Z",
+  "language": "pt-BR",
+  "target_project": "SAGAI / backend/knowledge/json",
+  "description": "Pacote inicial de JSONs resumidos e parafraseados, separados por módulos, para teste RAG com SAP Business One.",
+  "important_notice": "Conteúdo gerado como seed de treinamento RAG a partir de fontes oficiais SAP consultadas. Validar antes de usar como base oficial de atendimento.",
+  "files": [
+    {
+      "file": "backend/knowledge/json/sap_b1/sap_b1_00_visao_geral.sagai.json",
+      "records": 2,
+      "modules": [
+        "Visão Geral"
+      ],
+      "sha256": "096fee96beb0a176794b334d6ba203e2dc2afc2f7f0348ce383a096b42ad7d0e"
+    },
+    {
+      "file": "backend/knowledge/json/sap_b1/sap_b1_01_administracao_configuracao.sagai.json",
+      "records": 2,
+      "modules": [
+        "Administração"
+      ],
+      "sha256": "44f81888cf0fa8d5e6675d5580842fb379d68712a1541e6e8d0f998f958585aa"
+    },
+    {
+      "file": "backend/knowledge/json/sap_b1/sap_b1_02_cadastros_dados_mestres.sagai.json",
+      "records": 3,
+      "modules": [
+        "Cadastros e Dados Mestres"
+      ],
+      "sha256": "c811de771f53409285166b745378cc3bde5d856c898d37716bd6d59ea65a858c"
+    },
+    {
+      "file": "backend/knowledge/json/sap_b1/sap_b1_03_financeiro_contabilidade.sagai.json",
+      "records": 3,
+      "modules": [
+        "Financeiro e Contabilidade"
+      ],
+      "sha256": "6c528f79de2c52a2f79016b90e0089b622c0f215adc3cbb2e684dec38e911059"
+    },
+    {
+      "file": "backend/knowledge/json/sap_b1/sap_b1_04_bancos_pagamentos_reconciliacao.sagai.json",
+      "records": 2,
+      "modules": [
+        "Bancos, Pagamentos e Reconciliação"
+      ],
+      "sha256": "d3c96f3367d05e84dec08c296df9ed303b0baad9e9367c8951f071d3265ad359"
+    },
+    {
+      "file": "backend/knowledge/json/sap_b1/sap_b1_05_vendas_crm_ar.sagai.json",
+      "records": 3,
+      "modules": [
+        "Vendas, CRM e Contas a Receber"
+      ],
+      "sha256": "e92e497c19743f25594c2c803622e2555b2aabcd1e5557ed22537d0ae01a7856"
+    },
+    {
+      "file": "backend/knowledge/json/sap_b1/sap_b1_06_compras_ap.sagai.json",
+      "records": 2,
+      "modules": [
+        "Compras e Contas a Pagar"
+      ],
+      "sha256": "c87fe55fb54d5115e4cb6d2e8917b509b6232ac5dce6596147f2a23beff60c50"
+    },
+    {
+      "file": "backend/knowledge/json/sap_b1/sap_b1_07_estoque_almoxarifado.sagai.json",
+      "records": 2,
+      "modules": [
+        "Estoque e Almoxarifado"
+      ],
+      "sha256": "f30b2d1e4ccf5f42302343ce0737d99118fd99d107c5452d800497b7024ce6e9"
+    },
+    {
+      "file": "backend/knowledge/json/sap_b1/sap_b1_08_producao_bom.sagai.json",
+      "records": 2,
+      "modules": [
+        "Produção e BOM"
+      ],
+      "sha256": "f8d7c783a8f43d1cb02c2645aad7c514758bca19ddc45adcd7cbe2e9ca135512"
+    },
+    {
+      "file": "backend/knowledge/json/sap_b1/sap_b1_09_mrp_planejamento.sagai.json",
+      "records": 2,
+      "modules": [
+        "MRP e Planejamento"
+      ],
+      "sha256": "8e8ee174a394e7ac764a2a039e9810374e97a1c4bcbd86dad8f043c6c62fdb1b"
+    },
+    {
+      "file": "backend/knowledge/json/sap_b1/sap_b1_10_servicos_pos_venda.sagai.json",
+      "records": 2,
+      "modules": [
+        "Serviços e Pós-venda"
+      ],
+      "sha256": "326ef6ebf91af182771f39a6c7a6148f51da960416c6b12ae1ab1e8822178c2d"
+    },
+    {
+      "file": "backend/knowledge/json/sap_b1/sap_b1_11_projetos.sagai.json",
+      "records": 2,
+      "modules": [
+        "Projetos"
+      ],
+      "sha256": "56e6e15f0f3f2e9bc353530fdfefa81fe6d46a3d146190ff5f0abcf5814a477d"
+    },
+    {
+      "file": "backend/knowledge/json/sap_b1/sap_b1_12_bi_relatorios_analytics.sagai.json",
+      "records": 2,
+      "modules": [
+        "BI, Relatórios e Analytics"
+      ],
+      "sha256": "a2f6da96690fdc2c8e46f81da8aa0b0d0622c849098832eaca4d4ecb662a74ba"
+    },
+    {
+      "file": "backend/knowledge/json/sap_b1/sap_b1_13_web_mobile_extensibilidade.sagai.json",
+      "records": 3,
+      "modules": [
+        "Web Client, Mobile e Extensibilidade"
+      ],
+      "sha256": "9a84ec33d56bf2a43bb02c5f8a8ee74dda471f988e4f45db39f63806c73055ba"
+    },
+    {
+      "file": "backend/knowledge/json/sap_b1/sap_b1_14_fiscal_localizacao_brasil.sagai.json",
+      "records": 2,
+      "modules": [
+        "Fiscal e Localização Brasil"
+      ],
+      "sha256": "8b6c57d1b7ca5266c6317f3b78e869e9058b621592e73142f6453fdc99bccf54"
+    },
+    {
+      "file": "backend/knowledge/json/sap_b1/sap_b1_99_intencoes_perguntas_frequentes.sagai.json",
+      "records": 2,
+      "modules": [
+        "Roteamento e FAQ"
+      ],
+      "sha256": "47b1763739ed1bdc6086dba71c0fedc99f9bf25c14a8cda47556fac826b5ee00"
+    }
+  ],
+  "sources": {
+    "sap_product_overview": {
+      "name": "SAP Business One - product overview",
+      "url": "https://www.sap.com/products/erp/business-one.html",
+      "publisher": "SAP",
+      "source_date_checked": "2026-04-29",
+      "notes": "Página oficial de produto da SAP."
+    },
+    "sap_product_features": {
+      "name": "SAP Business One - features",
+      "url": "https://www.sap.com/products/erp/business-one/features.html",
+      "publisher": "SAP",
+      "source_date_checked": "2026-04-29",
+      "notes": "Página oficial de funcionalidades da SAP."
+    },
+    "sap_technical_info": {
+      "name": "SAP Business One - technical information",
+      "url": "https://www.sap.com/products/erp/business-one/technical-information.html",
+      "publisher": "SAP",
+      "source_date_checked": "2026-04-29",
+      "notes": "Página oficial de informações técnicas, integração e extensibilidade."
+    },
+    "sap_help_sales_process": {
+      "name": "SAP Business One 10.0 - Sales Process",
+      "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/450a574437ca1f2ce10000000a1553f6.html",
+      "publisher": "SAP Help Portal",
+      "source_date_checked": "2026-04-29",
+      "notes": "Página de ajuda oficial sobre processo de vendas."
+    },
+    "sap_help_inventory_item_master": {
+      "name": "SAP Business One 10.0 - Item Master Data: Inventory Data Tab",
+      "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/451fa75c8ffb4a2fe10000000a11466f.html",
+      "publisher": "SAP Help Portal",
+      "source_date_checked": "2026-04-29",
+      "notes": "Página oficial sobre dados de estoque no cadastro de item."
+    },
+    "sap_help_goods_receipt_po": {
+      "name": "SAP Business One 10.0 - Goods Receipt PO",
+      "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/87e1767ca7584b8f8d60775347637b07/a818ea9f70234f35a9fa0fcacacde8af.html",
+      "publisher": "SAP Help Portal",
+      "source_date_checked": "2026-04-29",
+      "notes": "Página oficial sobre recebimento de mercadorias com pedido de compra."
+    },
+    "sap_help_mrp": {
+      "name": "How to Configure and Use MRP in SAP Business One 10.0",
+      "url": "https://help.sap.com/doc/df83341c66ca42f492d7c5f611b042a8/10.0/en-US/How_to_Configure_and_Use_MRP_in_SAP_Business_One.pdf",
+      "publisher": "SAP Help Portal",
+      "source_date_checked": "2026-04-29",
+      "notes": "Guia oficial sobre configuração e uso de MRP."
+    },
+    "sap_help_project_management": {
+      "name": "How to Work with Project Management in SAP Business One",
+      "url": "https://help.sap.com/doc/46e99943f725466a87f40799f9761ddb/10.0/en-US/How_to_Work_with_Project_Management_in_SAP_Business_One.pdf",
+      "publisher": "SAP Help Portal",
+      "source_date_checked": "2026-04-29",
+      "notes": "Guia oficial sobre gestão de projetos."
+    },
+    "sap_help_production_resources": {
+      "name": "How to Work with Resources and Production in SAP Business One",
+      "url": "https://help.sap.com/doc/08da4f4af99f4fc5a4fbb0249a6698a6/9.3/en-US/How%20to%20Work%20with%20Resources%20and%20Production%20in%20SAP%20Business%20One.pdf",
+      "publisher": "SAP Help Portal",
+      "source_date_checked": "2026-04-29",
+      "notes": "Guia oficial sobre recursos, listas de materiais e ordens de produção."
+    },
+    "sap_help_service_layer": {
+      "name": "Working with SAP Business One Service Layer",
+      "url": "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf",
+      "publisher": "SAP Help Portal",
+      "source_date_checked": "2026-04-29",
+      "notes": "Guia oficial da API Service Layer."
+    },
+    "sap_help_brazil_localization": {
+      "name": "SAP Business One 10.0 - Localization for Brazil",
+      "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+      "publisher": "SAP Help Portal",
+      "source_date_checked": "2026-04-29",
+      "notes": "Página oficial sobre localização Brasil."
+    },
+    "sap_help_brazil_nota_fiscal": {
+      "name": "SAP Business One 10.0 - Nota Fiscal: Brazil",
+      "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/c87d5602d5ba4850864cba8e5a3e571e.html",
+      "publisher": "SAP Help Portal",
+      "source_date_checked": "2026-04-29",
+      "notes": "Página oficial sobre Nota Fiscal na localização Brasil."
+    },
+    "sap_help_brazil_cfop": {
+      "name": "SAP Business One 10.0 - CFOP Codes: Brazil",
+      "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/c8fbc54d53cb4c24b102124406f41bf2.html",
+      "publisher": "SAP Help Portal",
+      "source_date_checked": "2026-04-29",
+      "notes": "Página oficial sobre janela de cadastro de CFOP."
+    }
+  },
+  "reindex_endpoint": "POST /api/v1/knowledge/reindex"
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SAGAI Knowledge Document",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "category",
+    "module",
+    "source_type",
+    "source",
+    "document_type",
+    "keywords",
+    "content",
+    "metadata"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "module": {
+      "type": "string"
+    },
+    "source_type": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object"
+    },
+    "document_type": {
+      "type": "string"
+    },
+    "question_examples": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "process": {
+      "type": "object"
+    },
+    "answer_guidelines": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "content": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "id": "overview-contabilidade",
+    "title": "Visão geral - Contabilidade",
+    "category": "Categorias",
+    "module": "Contabilidade",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Contabilidade",
+      "file": "categorias/contabilidade.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Contabilidade?",
+      "Quando usar Contabilidade?"
+    ],
+    "keywords": [
+      "classificação contábil",
+      "classificação contábil de clientes, fornecedores e transportadoras",
+      "contabilidade",
+      "integração com cadastros",
+      "lançamentos contábeis"
+    ],
+    "process": {
+      "name": "Contabilidade",
+      "objective": "Orientar dúvidas relacionadas a Contabilidade.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Sempre relacionar entidades operacionais às classificações contábeis correspondentes.",
+      "Se a pergunta envolver integração contábil, verificar origem cadastral e evento financeiro/fiscal."
+    ],
+    "content": "Módulo/Aba: Categorias > Contabilidade\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 31\n\nFoco funcional:\n- classificação contábil\n- lançamentos contábeis\n- integração com cadastros\n\nTópicos observados:\n- classificação contábil de clientes, fornecedores e transportadoras\n\nInstruções para resposta da IA:\n- Sempre relacionar entidades operacionais às classificações contábeis correspondentes.\n- Se a pergunta envolver integração contábil, verificar origem cadastral e evento financeiro/fiscal.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.067472Z",
+      "original_file": "categorias/contabilidade.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

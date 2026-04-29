@@ -1,0 +1,46 @@
+[
+  {
+    "id": "overview-sped",
+    "title": "Visão geral - SPED",
+    "category": "Categorias",
+    "module": "SPED",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > SPED",
+      "file": "categorias/sped.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo SPED?",
+      "Quando usar SPED?"
+    ],
+    "keywords": [
+      "configuração do difal como débito especial no sped icms/ipi",
+      "difal",
+      "débito especial",
+      "obrigações acessórias",
+      "sped",
+      "sped icms/ipi"
+    ],
+    "process": {
+      "name": "SPED",
+      "objective": "Orientar dúvidas relacionadas a SPED.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Dar tratamento tributário rigoroso.",
+      "Sempre considerar período, apuração e reflexo em obrigações acessórias."
+    ],
+    "content": "Módulo/Aba: Categorias > SPED\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 17\n\nFoco funcional:\n- SPED ICMS/IPI\n- DIFAL\n- débito especial\n- obrigações acessórias\n\nTópicos observados:\n- configuração do DIFAL como débito especial no SPED ICMS/IPI\n\nInstruções para resposta da IA:\n- Dar tratamento tributário rigoroso.\n- Sempre considerar período, apuração e reflexo em obrigações acessórias.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.089062Z",
+      "original_file": "categorias/sped.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

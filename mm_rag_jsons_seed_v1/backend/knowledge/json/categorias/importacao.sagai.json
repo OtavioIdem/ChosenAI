@@ -1,0 +1,47 @@
+[
+  {
+    "id": "overview-importacao",
+    "title": "Visão geral - Importação",
+    "category": "Categorias",
+    "module": "Importação",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Importação",
+      "file": "categorias/importacao.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Importação?",
+      "Quando usar Importação?"
+    ],
+    "keywords": [
+      "conceitos de uma nota fiscal de importação",
+      "importacao",
+      "importação",
+      "imposto de importação",
+      "imposto de importação no valor dos produtos na nf-e em sp",
+      "nf de importação",
+      "valor total dos produtos"
+    ],
+    "process": {
+      "name": "Importação",
+      "objective": "Orientar dúvidas relacionadas a Importação.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Usar esta aba para dúvidas pontuais de importação com forte viés fiscal/documental.",
+      "Cruzar com Comércio Exterior, NF-e e Recebimentos."
+    ],
+    "content": "Módulo/Aba: Categorias > Importação\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 2\n\nFoco funcional:\n- NF de importação\n- imposto de importação\n- valor total dos produtos\n\nTópicos observados:\n- conceitos de uma nota fiscal de importação\n- imposto de importação no valor dos produtos na NF-e em SP\n\nInstruções para resposta da IA:\n- Usar esta aba para dúvidas pontuais de importação com forte viés fiscal/documental.\n- Cruzar com Comércio Exterior, NF-e e Recebimentos.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.077454Z",
+      "original_file": "categorias/importacao.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

@@ -1,0 +1,87 @@
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: sagai-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-sagai}
+      POSTGRES_USER: ${POSTGRES_USER:-sagai}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change_this_password}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./ops/postgres/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-sagai} -d ${POSTGRES_DB:-sagai}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  ai-api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: sagai-ai-api
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      APP_NAME: ${APP_NAME:-SAGAI API}
+      ENVIRONMENT: ${ENVIRONMENT:-development}
+      HOST: ${HOST:-0.0.0.0}
+      PORT: ${PORT:-8000}
+      DATABASE_URL: ${DATABASE_URL:-postgresql+psycopg://sagai:change_this_password@postgres:5432/sagai}
+      CORS_ALLOWED_ORIGINS: ${CORS_ALLOWED_ORIGINS:-http://localhost:3000}
+      KNOWLEDGE_DIR: ${KNOWLEDGE_DIR:-/app/knowledge}
+      PROMPT_FILE: ${PROMPT_FILE:-/app/knowledge/prompt/system_prompt.md}
+      EMBEDDINGS_PROVIDER: ${EMBEDDINGS_PROVIDER:-hash}
+      VECTOR_DIMENSIONS: ${VECTOR_DIMENSIONS:-256}
+      RETRIEVAL_TOP_K: ${RETRIEVAL_TOP_K:-5}
+      CONFIDENCE_THRESHOLD_HIGH: ${CONFIDENCE_THRESHOLD_HIGH:-0.85}
+      CONFIDENCE_THRESHOLD_MEDIUM: ${CONFIDENCE_THRESHOLD_MEDIUM:-0.70}
+      TRAINING_AUTO_APPROVE_MIN_CONFIDENCE: ${TRAINING_AUTO_APPROVE_MIN_CONFIDENCE:-0.60}
+      MAX_CHUNK_SIZE: ${MAX_CHUNK_SIZE:-1000}
+      CHUNK_OVERLAP: ${CHUNK_OVERLAP:-150}
+      LLM_PROVIDER: ${LLM_PROVIDER:-mock}
+      LLM_MODEL: ${LLM_MODEL:-qwen2.5:7b-instruct}
+      LLM_BASE_URL: ${LLM_BASE_URL:-http://host.docker.internal:11434}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_TIMEOUT_SECONDS: ${LLM_TIMEOUT_SECONDS:-60}
+      ADMIN_API_KEY: ${ADMIN_API_KEY:-change_this_admin_key}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/app:/app/app
+      - ./backend/knowledge:/app/knowledge
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8000/health/liveness || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: sagai-frontend
+    restart: unless-stopped
+    environment:
+      VITE_API_BASE_URL: ${VITE_API_BASE_URL:-http://localhost:8000}
+      VITE_APP_NAME: ${VITE_APP_NAME:-SAGAI}
+    depends_on:
+      ai-api:
+        condition: service_started
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
+volumes:
+  postgres_data:

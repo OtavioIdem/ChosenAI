@@ -1,0 +1,46 @@
+[
+  {
+    "id": "overview-credito-de-clientes",
+    "title": "Visão geral - Crédito de Clientes",
+    "category": "Categorias",
+    "module": "Crédito de Clientes",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Crédito de Clientes",
+      "file": "categorias/credito_de_clientes.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Crédito de Clientes?",
+      "Quando usar Crédito de Clientes?"
+    ],
+    "keywords": [
+      "aprovação de crédito",
+      "configurações e aprovação de pré-cadastro de clientes no maxsales e maxmanager",
+      "credito-de-clientes",
+      "crédito de clientes",
+      "fluxo comercial",
+      "pré-cadastro"
+    ],
+    "process": {
+      "name": "Crédito de Clientes",
+      "objective": "Orientar dúvidas relacionadas a Crédito de Clientes.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Tratar análise e aprovação de cliente como ponto de controle comercial e financeiro.",
+      "Cruzar com MaxSales, Vendas e Cadastros quando o tema for onboarding de cliente."
+    ],
+    "content": "Módulo/Aba: Categorias > Crédito de Clientes\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 5\n\nFoco funcional:\n- pré-cadastro\n- aprovação de crédito\n- fluxo comercial\n\nTópicos observados:\n- configurações e aprovação de pré-cadastro de clientes no MaxSales e MaxManager\n\nInstruções para resposta da IA:\n- Tratar análise e aprovação de cliente como ponto de controle comercial e financeiro.\n- Cruzar com MaxSales, Vendas e Cadastros quando o tema for onboarding de cliente.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.070565Z",
+      "original_file": "categorias/credito_de_clientes.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

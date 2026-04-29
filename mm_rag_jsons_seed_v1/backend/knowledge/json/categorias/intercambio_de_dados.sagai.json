@@ -1,0 +1,50 @@
+[
+  {
+    "id": "overview-intercambio-de-dados",
+    "title": "Visão geral - Intercâmbio de Dados",
+    "category": "Categorias",
+    "module": "Intercâmbio de Dados",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Intercâmbio de Dados",
+      "file": "categorias/intercambio_de_dados.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Intercâmbio de Dados?",
+      "Quando usar Intercâmbio de Dados?"
+    ],
+    "keywords": [
+      "arquivos eletrônicos",
+      "cnab",
+      "geração de arquivo de remessa de cobrança padrão cnab",
+      "importação de arquivo de retorno de cobrança",
+      "integrações bancárias",
+      "intercambio-de-dados",
+      "intercâmbio de dados",
+      "relatório das remessas de cobrança",
+      "remessa",
+      "retorno"
+    ],
+    "process": {
+      "name": "Intercâmbio de Dados",
+      "objective": "Orientar dúvidas relacionadas a Intercâmbio de Dados.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Considerar arquivos de troca eletrônica como fronteira entre ERP e parceiros externos.",
+      "Ao explicar problemas, validar layout, sequência operacional e conferência pós-processamento."
+    ],
+    "content": "Módulo/Aba: Categorias > Intercâmbio de Dados\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 12\n\nFoco funcional:\n- CNAB\n- remessa\n- retorno\n- integrações bancárias\n- arquivos eletrônicos\n\nTópicos observados:\n- geração de arquivo de remessa de cobrança padrão CNAB\n- relatório das remessas de cobrança\n- importação de arquivo de retorno de cobrança\n\nInstruções para resposta da IA:\n- Considerar arquivos de troca eletrônica como fronteira entre ERP e parceiros externos.\n- Ao explicar problemas, validar layout, sequência operacional e conferência pós-processamento.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.078382Z",
+      "original_file": "categorias/intercambio_de_dados.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

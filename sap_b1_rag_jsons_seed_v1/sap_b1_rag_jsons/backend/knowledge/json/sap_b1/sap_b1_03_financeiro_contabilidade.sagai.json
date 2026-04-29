@@ -1,0 +1,273 @@
+[
+  {
+    "id": "financeiro::financial_management_overview",
+    "title": "Gestão financeira no SAP Business One",
+    "category": "SAP B1 > Financeiro",
+    "module": "Financeiro e Contabilidade",
+    "source_type": "sap_official_web_summary_rag_seed",
+    "source": {
+      "name": "SAP Business One - features + SAP Business One - product overview",
+      "urls": [
+        "https://www.sap.com/products/erp/business-one/features.html",
+        "https://www.sap.com/products/erp/business-one.html"
+      ],
+      "publishers": [
+        "SAP"
+      ],
+      "status": "fonte_externa_resumida_para_seed_rag",
+      "copyright_note": "Conteúdo resumido/parafraseado para treinamento RAG; não é transcrição integral da documentação."
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo financeiro do SAP B1?",
+      "SAP B1 controla contabilidade?",
+      "Quais processos financeiros existem no SAP B1?"
+    ],
+    "keywords": [
+      "Financials",
+      "accounts payable",
+      "accounts receivable",
+      "ativo fixo",
+      "contabilidade",
+      "cost accounting",
+      "financeiro",
+      "journal entry",
+      "lançamento contábil",
+      "orçamento",
+      "relatório financeiro"
+    ],
+    "process": {
+      "name": "Gestão financeira no SAP Business One",
+      "objective": "Explicar o conjunto de recursos financeiros e contábeis do SAP Business One.",
+      "steps": [
+        "Registrar lançamentos manuais quando necessário.",
+        "Receber impactos automáticos de documentos de marketing.",
+        "Acompanhar saldos, vencimentos, reconciliações e relatórios."
+      ],
+      "critical_rules": [
+        "Separar contas a receber/pagar de documentos comerciais: venda/compra origina obrigação; financeiro liquida, reconcilia e reporta.",
+        "Para erros de contabilização, recuperar também cadastros e administração."
+      ],
+      "dependencies": [
+        "Vendas A/R, Compras A/P, Bancos, Cadastros, Estoque e Fiscal."
+      ]
+    },
+    "answer_guidelines": [
+      "Responder como base de conhecimento RAG, citando que a fonte é SAP Business One quando aplicável.",
+      "Se a pergunta pedir passo a passo operacional detalhado e este chunk não trouxer a sequência exata, responder com visão geral e sinalizar necessidade de documentação específica.",
+      "Evitar misturar SAP Business One com SAP S/4HANA, SAP ECC ou Business ByDesign, salvo quando o usuário pedir comparação.",
+      "Para processos fiscais/localização, reforçar que regras dependem de país, versão, parametrização e legislação vigente."
+    ],
+    "content": "Módulo: Financeiro e Contabilidade\n\nObjetivo: Explicar o conjunto de recursos financeiros e contábeis do SAP Business One.\n\nEscopo funcional:\n- O módulo financeiro cobre contabilidade, contas a receber, contas a pagar, ativos fixos, orçamento, controle de caixa, custos e relatórios.\n- Documentos de vendas e compras podem gerar impactos financeiros e contábeis de forma integrada.\n- Relatórios financeiros usam dados em tempo real para apoiar auditoria, planejamento e gestão.\n\nEntidades e documentos relevantes:\n- lançamento contábil\n- conta contábil\n- contas a receber\n- contas a pagar\n- ativo fixo\n- orçamento\n- centro de custo\n- relatório financeiro\n\nFluxos principais:\n- Registrar lançamentos manuais quando necessário.\n- Receber impactos automáticos de documentos de marketing.\n- Acompanhar saldos, vencimentos, reconciliações e relatórios.\n\nRegras e observações para resposta da IA:\n- Separar contas a receber/pagar de documentos comerciais: venda/compra origina obrigação; financeiro liquida, reconcilia e reporta.\n- Para erros de contabilização, recuperar também cadastros e administração.\n\nDependências/correlações com outros módulos:\n- Vendas A/R, Compras A/P, Bancos, Cadastros, Estoque e Fiscal.\n\nQuando sinalizar lacuna de conhecimento:\n- Quando a dúvida exigir campo específico, atalho de tela, regra legal local ou comportamento de versão não coberto pela fonte resumida.\n- Quando houver divergência entre parametrização real do cliente e documentação genérica.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "domain": "SAP Business One",
+      "module_slug": "financeiro",
+      "granularity": "module_chunk",
+      "language": "pt-BR",
+      "created_at": "2026-04-29T00:00:00Z",
+      "version": "sap_b1_seed_v1_2026-04-29",
+      "confidence_level": "alta",
+      "curation_status": "seed_externo_precisa_validacao_humana_antes_de_base_oficial",
+      "source_count": 2,
+      "aliases": [
+        "Financeiro e Contabilidade",
+        "Financials",
+        "SAP B1",
+        "SAP Business One",
+        "accounts payable",
+        "accounts receivable",
+        "ativo fixo",
+        "contabilidade",
+        "cost accounting",
+        "financeiro",
+        "journal entry",
+        "lançamento contábil",
+        "orçamento",
+        "relatório financeiro"
+      ],
+      "suggested_collection": "sap_b1",
+      "import_path_recommendation": "backend/knowledge/json/sap_b1/sap_b1_03_financeiro_contabilidade.sagai.json",
+      "source_license_handling": "summary_only_do_not_treat_as_full_sap_documentation",
+      "validation_required": true
+    }
+  },
+  {
+    "id": "financeiro::contas_receber_pagar",
+    "title": "Contas a receber e contas a pagar integrados aos documentos comerciais",
+    "category": "SAP B1 > Financeiro",
+    "module": "Financeiro e Contabilidade",
+    "source_type": "sap_official_web_summary_rag_seed",
+    "source": {
+      "name": "SAP Business One - features",
+      "urls": [
+        "https://www.sap.com/products/erp/business-one/features.html"
+      ],
+      "publishers": [
+        "SAP"
+      ],
+      "status": "fonte_externa_resumida_para_seed_rag",
+      "copyright_note": "Conteúdo resumido/parafraseado para treinamento RAG; não é transcrição integral da documentação."
+    },
+    "document_type": "process_overview",
+    "question_examples": [
+      "Quando nasce uma conta a receber no SAP B1?",
+      "Quando nasce uma conta a pagar?",
+      "Qual a relação entre fatura e pagamento?"
+    ],
+    "keywords": [
+      "A/P invoice",
+      "A/R invoice",
+      "contas a pagar",
+      "contas a receber",
+      "fatura cliente",
+      "fatura fornecedor",
+      "pagamento efetuado",
+      "pagamento recebido",
+      "saldo parceiro",
+      "vencimento"
+    ],
+    "process": {
+      "name": "Contas a receber e contas a pagar integrados aos documentos comerciais",
+      "objective": "Orientar dúvidas sobre obrigações financeiras originadas por vendas e compras.",
+      "steps": [
+        "Documento comercial cria título/saldo.",
+        "Pagamento liquida ou reduz saldo.",
+        "Reconciliação confirma fechamento contábil/financeiro."
+      ],
+      "critical_rules": [
+        "Se a pergunta envolver “boleto”, “banco”, “extrato” ou “conciliação”, recuperar também Bancos/Pagamentos.",
+        "Não assumir regras de cobrança bancária local sem documentação da localização/add-on."
+      ],
+      "dependencies": [
+        "Bancos, Vendas A/R, Compras A/P, Cadastros e Localização."
+      ]
+    },
+    "answer_guidelines": [
+      "Responder como base de conhecimento RAG, citando que a fonte é SAP Business One quando aplicável.",
+      "Se a pergunta pedir passo a passo operacional detalhado e este chunk não trouxer a sequência exata, responder com visão geral e sinalizar necessidade de documentação específica.",
+      "Evitar misturar SAP Business One com SAP S/4HANA, SAP ECC ou Business ByDesign, salvo quando o usuário pedir comparação.",
+      "Para processos fiscais/localização, reforçar que regras dependem de país, versão, parametrização e legislação vigente."
+    ],
+    "content": "Módulo: Financeiro e Contabilidade\n\nObjetivo: Orientar dúvidas sobre obrigações financeiras originadas por vendas e compras.\n\nEscopo funcional:\n- A/R Invoice representa cobrança/receita de cliente e alimenta saldo a receber conforme configuração contábil e fiscal.\n- A/P Invoice representa obrigação com fornecedor e alimenta saldo a pagar.\n- Pagamentos recebidos e efetuados liquidam ou conciliam valores em aberto, dependendo do fluxo usado.\n\nEntidades e documentos relevantes:\n- A/R Invoice\n- A/P Invoice\n- incoming payment\n- outgoing payment\n- credit memo\n- down payment\n- saldo em aberto\n\nFluxos principais:\n- Documento comercial cria título/saldo.\n- Pagamento liquida ou reduz saldo.\n- Reconciliação confirma fechamento contábil/financeiro.\n\nRegras e observações para resposta da IA:\n- Se a pergunta envolver “boleto”, “banco”, “extrato” ou “conciliação”, recuperar também Bancos/Pagamentos.\n- Não assumir regras de cobrança bancária local sem documentação da localização/add-on.\n\nDependências/correlações com outros módulos:\n- Bancos, Vendas A/R, Compras A/P, Cadastros e Localização.\n\nQuando sinalizar lacuna de conhecimento:\n- Quando a dúvida exigir campo específico, atalho de tela, regra legal local ou comportamento de versão não coberto pela fonte resumida.\n- Quando houver divergência entre parametrização real do cliente e documentação genérica.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "domain": "SAP Business One",
+      "module_slug": "financeiro",
+      "granularity": "module_chunk",
+      "language": "pt-BR",
+      "created_at": "2026-04-29T00:00:00Z",
+      "version": "sap_b1_seed_v1_2026-04-29",
+      "confidence_level": "média",
+      "curation_status": "seed_externo_precisa_validacao_humana_antes_de_base_oficial",
+      "source_count": 1,
+      "aliases": [
+        "A/P invoice",
+        "A/R invoice",
+        "Financeiro e Contabilidade",
+        "SAP B1",
+        "SAP Business One",
+        "contas a pagar",
+        "contas a receber",
+        "fatura cliente",
+        "fatura fornecedor",
+        "pagamento efetuado",
+        "pagamento recebido",
+        "saldo parceiro",
+        "vencimento"
+      ],
+      "suggested_collection": "sap_b1",
+      "import_path_recommendation": "backend/knowledge/json/sap_b1/sap_b1_03_financeiro_contabilidade.sagai.json",
+      "source_license_handling": "summary_only_do_not_treat_as_full_sap_documentation",
+      "validation_required": true
+    }
+  },
+  {
+    "id": "financeiro::ativos_orcamentos_custos",
+    "title": "Ativos fixos, orçamento e controle de custos",
+    "category": "SAP B1 > Financeiro",
+    "module": "Financeiro e Contabilidade",
+    "source_type": "sap_official_web_summary_rag_seed",
+    "source": {
+      "name": "SAP Business One - features",
+      "urls": [
+        "https://www.sap.com/products/erp/business-one/features.html"
+      ],
+      "publishers": [
+        "SAP"
+      ],
+      "status": "fonte_externa_resumida_para_seed_rag",
+      "copyright_note": "Conteúdo resumido/parafraseado para treinamento RAG; não é transcrição integral da documentação."
+    },
+    "document_type": "process_overview",
+    "question_examples": [
+      "SAP B1 controla ativo fixo?",
+      "Como o SAP B1 trata orçamento?",
+      "O que é controle de custos no SAP B1?"
+    ],
+    "keywords": [
+      "ativo fixo",
+      "budget",
+      "centro de custo",
+      "cost accounting",
+      "custos de projeto",
+      "fixed assets",
+      "orçamento",
+      "project costs",
+      "regra de distribuição"
+    ],
+    "process": {
+      "name": "Ativos fixos, orçamento e controle de custos",
+      "objective": "Mapear recursos de controle financeiro além de contas a pagar e receber.",
+      "steps": [
+        "Definir estrutura de custo/orçamento.",
+        "Registrar ou integrar lançamentos.",
+        "Analisar desvios e relatórios por período/dimensão."
+      ],
+      "critical_rules": [
+        "Para custos de projeto, recuperar também módulo Projetos.",
+        "Para custos de produção, recuperar Produção e Estoque."
+      ],
+      "dependencies": [
+        "Projetos, Produção, BI/Relatórios e Administração."
+      ]
+    },
+    "answer_guidelines": [
+      "Responder como base de conhecimento RAG, citando que a fonte é SAP Business One quando aplicável.",
+      "Se a pergunta pedir passo a passo operacional detalhado e este chunk não trouxer a sequência exata, responder com visão geral e sinalizar necessidade de documentação específica.",
+      "Evitar misturar SAP Business One com SAP S/4HANA, SAP ECC ou Business ByDesign, salvo quando o usuário pedir comparação.",
+      "Para processos fiscais/localização, reforçar que regras dependem de país, versão, parametrização e legislação vigente."
+    ],
+    "content": "Módulo: Financeiro e Contabilidade\n\nObjetivo: Mapear recursos de controle financeiro além de contas a pagar e receber.\n\nEscopo funcional:\n- Ativos fixos podem ser controlados como parte do conjunto financeiro, reduzindo trabalho manual repetitivo.\n- Orçamentos, projetos e custos permitem acompanhamento de margem, despesa e desempenho por dimensão gerencial.\n- Relatórios e análises financeiras ajudam no acompanhamento de receitas, custos, caixa e auditoria.\n\nEntidades e documentos relevantes:\n- ativo fixo\n- orçamento\n- projeto\n- centro de custo\n- regra de distribuição\n- relatório\n\nFluxos principais:\n- Definir estrutura de custo/orçamento.\n- Registrar ou integrar lançamentos.\n- Analisar desvios e relatórios por período/dimensão.\n\nRegras e observações para resposta da IA:\n- Para custos de projeto, recuperar também módulo Projetos.\n- Para custos de produção, recuperar Produção e Estoque.\n\nDependências/correlações com outros módulos:\n- Projetos, Produção, BI/Relatórios e Administração.\n\nQuando sinalizar lacuna de conhecimento:\n- Quando a dúvida exigir campo específico, atalho de tela, regra legal local ou comportamento de versão não coberto pela fonte resumida.\n- Quando houver divergência entre parametrização real do cliente e documentação genérica.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "domain": "SAP Business One",
+      "module_slug": "financeiro",
+      "granularity": "module_chunk",
+      "language": "pt-BR",
+      "created_at": "2026-04-29T00:00:00Z",
+      "version": "sap_b1_seed_v1_2026-04-29",
+      "confidence_level": "alta",
+      "curation_status": "seed_externo_precisa_validacao_humana_antes_de_base_oficial",
+      "source_count": 1,
+      "aliases": [
+        "Financeiro e Contabilidade",
+        "SAP B1",
+        "SAP Business One",
+        "ativo fixo",
+        "budget",
+        "centro de custo",
+        "cost accounting",
+        "custos de projeto",
+        "fixed assets",
+        "orçamento",
+        "project costs",
+        "regra de distribuição"
+      ],
+      "suggested_collection": "sap_b1",
+      "import_path_recommendation": "backend/knowledge/json/sap_b1/sap_b1_03_financeiro_contabilidade.sagai.json",
+      "source_license_handling": "summary_only_do_not_treat_as_full_sap_documentation",
+      "validation_required": true
+    }
+  }
+]

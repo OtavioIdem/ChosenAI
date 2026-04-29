@@ -1,0 +1,280 @@
+[
+  {
+    "id": "tecnico::web_client_mobile",
+    "title": "Web Client e aplicativos móveis do SAP Business One",
+    "category": "SAP B1 > Técnico e Acesso",
+    "module": "Web Client, Mobile e Extensibilidade",
+    "source_type": "sap_official_web_summary_rag_seed",
+    "source": {
+      "name": "SAP Business One - features + SAP Business One - technical information",
+      "urls": [
+        "https://www.sap.com/products/erp/business-one/features.html",
+        "https://www.sap.com/products/erp/business-one/technical-information.html"
+      ],
+      "publishers": [
+        "SAP"
+      ],
+      "status": "fonte_externa_resumida_para_seed_rag",
+      "copyright_note": "Conteúdo resumido/parafraseado para treinamento RAG; não é transcrição integral da documentação."
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "SAP B1 tem web client?",
+      "Posso usar SAP B1 no celular?",
+      "Quais funções existem no app mobile?"
+    ],
+    "keywords": [
+      "Android",
+      "Web Client",
+      "acesso móvel",
+      "analytics",
+      "approval process",
+      "documentos de marketing",
+      "iOS",
+      "master data",
+      "mobile app",
+      "vendas mobile"
+    ],
+    "process": {
+      "name": "Web Client e aplicativos móveis do SAP Business One",
+      "objective": "Explicar canais de acesso web e mobile do SAP Business One.",
+      "steps": [
+        "Identificar se usuário fala do cliente desktop, web client ou mobile.",
+        "Validar módulo e autorização disponíveis.",
+        "Responder com orientação geral e sinalizar diferenças por versão."
+      ],
+      "critical_rules": [
+        "Nunca afirmar que uma tela existe em mobile sem versão/app específico.",
+        "Para limitações técnicas, recuperar também documentação técnica e autorizações."
+      ],
+      "dependencies": [
+        "Administração, Vendas, Compras, Estoque, Serviços, BI."
+      ]
+    },
+    "answer_guidelines": [
+      "Responder como base de conhecimento RAG, citando que a fonte é SAP Business One quando aplicável.",
+      "Se a pergunta pedir passo a passo operacional detalhado e este chunk não trouxer a sequência exata, responder com visão geral e sinalizar necessidade de documentação específica.",
+      "Evitar misturar SAP Business One com SAP S/4HANA, SAP ECC ou Business ByDesign, salvo quando o usuário pedir comparação.",
+      "Para processos fiscais/localização, reforçar que regras dependem de país, versão, parametrização e legislação vigente."
+    ],
+    "content": "Módulo: Web Client, Mobile e Extensibilidade\n\nObjetivo: Explicar canais de acesso web e mobile do SAP Business One.\n\nEscopo funcional:\n- SAP Business One possui Web Client para criar, processar e atualizar documentos de marketing e dados mestres, com recursos de aprovação, atividades e analytics.\n- Aplicativos móveis permitem acesso a dados relevantes como leads, contas de cliente, estoque e pedidos, dependendo do app/licença/configuração.\n- A disponibilidade de funções varia por versão, plataforma, autorização e configuração.\n\nEntidades e documentos relevantes:\n- Web Client\n- mobile app\n- marketing document\n- master data\n- approval process\n- analytics\n- activity\n\nFluxos principais:\n- Identificar se usuário fala do cliente desktop, web client ou mobile.\n- Validar módulo e autorização disponíveis.\n- Responder com orientação geral e sinalizar diferenças por versão.\n\nRegras e observações para resposta da IA:\n- Nunca afirmar que uma tela existe em mobile sem versão/app específico.\n- Para limitações técnicas, recuperar também documentação técnica e autorizações.\n\nDependências/correlações com outros módulos:\n- Administração, Vendas, Compras, Estoque, Serviços, BI.\n\nQuando sinalizar lacuna de conhecimento:\n- Quando a dúvida exigir campo específico, atalho de tela, regra legal local ou comportamento de versão não coberto pela fonte resumida.\n- Quando houver divergência entre parametrização real do cliente e documentação genérica.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "domain": "SAP Business One",
+      "module_slug": "tecnico",
+      "granularity": "module_chunk",
+      "language": "pt-BR",
+      "created_at": "2026-04-29T00:00:00Z",
+      "version": "sap_b1_seed_v1_2026-04-29",
+      "confidence_level": "média",
+      "curation_status": "seed_externo_precisa_validacao_humana_antes_de_base_oficial",
+      "source_count": 2,
+      "aliases": [
+        "Android",
+        "SAP B1",
+        "SAP Business One",
+        "Web Client",
+        "Web Client, Mobile e Extensibilidade",
+        "acesso móvel",
+        "analytics",
+        "approval process",
+        "documentos de marketing",
+        "iOS",
+        "master data",
+        "mobile app",
+        "vendas mobile"
+      ],
+      "suggested_collection": "sap_b1",
+      "import_path_recommendation": "backend/knowledge/json/sap_b1/sap_b1_13_web_mobile_extensibilidade.sagai.json",
+      "source_license_handling": "summary_only_do_not_treat_as_full_sap_documentation",
+      "validation_required": true
+    }
+  },
+  {
+    "id": "tecnico::integracao_extensibilidade",
+    "title": "Integração, extensibilidade e APIs do SAP Business One",
+    "category": "SAP B1 > Técnico e Integração",
+    "module": "Web Client, Mobile e Extensibilidade",
+    "source_type": "sap_official_web_summary_rag_seed",
+    "source": {
+      "name": "SAP Business One - technical information + Working with SAP Business One Service Layer",
+      "urls": [
+        "https://www.sap.com/products/erp/business-one/technical-information.html",
+        "https://help.sap.com/doc/fc2f5477516c404c8bf9ad1315a17238/10.0/en-US/Working_with_SAP_Business_One_Service_Layer.pdf"
+      ],
+      "publishers": [
+        "SAP",
+        "SAP Help Portal"
+      ],
+      "status": "fonte_externa_resumida_para_seed_rag",
+      "copyright_note": "Conteúdo resumido/parafraseado para treinamento RAG; não é transcrição integral da documentação."
+    },
+    "document_type": "technical_overview",
+    "question_examples": [
+      "Como integrar com SAP B1?",
+      "O que é Service Layer?",
+      "SAP B1 aceita add-ons?",
+      "Como conectar sistemas externos ao SAP B1?"
+    ],
+    "keywords": [
+      "DI API",
+      "HANA",
+      "Integration Framework",
+      "SAP Store",
+      "SDK",
+      "SQL Server",
+      "Service Layer",
+      "add-on",
+      "extensão",
+      "integração",
+      "web services"
+    ],
+    "process": {
+      "name": "Integração, extensibilidade e APIs do SAP Business One",
+      "objective": "Mapear as opções técnicas de integração e extensão do SAP Business One.",
+      "steps": [
+        "Identificar tipo de integração: leitura, escrita, automação, sincronização ou relatório.",
+        "Escolher mecanismo compatível com versão e infraestrutura.",
+        "Validar autenticação, autorização, volume e auditoria.",
+        "Testar em homologação antes de produção."
+      ],
+      "critical_rules": [
+        "Não sugerir acesso direto ao banco para escrita transacional.",
+        "Para integração que altera dados, recomendar API oficial/add-on validado e logs.",
+        "Não expor credenciais, tokens ou serviços sem proteção."
+      ],
+      "dependencies": [
+        "Administração, Segurança, Infraestrutura, todos os módulos de negócio."
+      ]
+    },
+    "answer_guidelines": [
+      "Responder como base de conhecimento RAG, citando que a fonte é SAP Business One quando aplicável.",
+      "Se a pergunta pedir passo a passo operacional detalhado e este chunk não trouxer a sequência exata, responder com visão geral e sinalizar necessidade de documentação específica.",
+      "Evitar misturar SAP Business One com SAP S/4HANA, SAP ECC ou Business ByDesign, salvo quando o usuário pedir comparação.",
+      "Para processos fiscais/localização, reforçar que regras dependem de país, versão, parametrização e legislação vigente."
+    ],
+    "content": "Módulo: Web Client, Mobile e Extensibilidade\n\nObjetivo: Mapear as opções técnicas de integração e extensão do SAP Business One.\n\nEscopo funcional:\n- SAP B1 oferece ferramentas de extensão e integração, incluindo APIs, Service Layer, Integration Framework e add-ons de parceiros.\n- O Service Layer é uma API voltada ao consumo de dados e serviços do SAP B1, relevante para integrações modernas.\n- Extensões devem respeitar segurança, autenticação, versionamento, autorização e impacto transacional.\n\nEntidades e documentos relevantes:\n- Service Layer\n- DI API\n- Integration Framework\n- SDK\n- add-on\n- SAP Store\n- web service\n- endpoint\n\nFluxos principais:\n- Identificar tipo de integração: leitura, escrita, automação, sincronização ou relatório.\n- Escolher mecanismo compatível com versão e infraestrutura.\n- Validar autenticação, autorização, volume e auditoria.\n- Testar em homologação antes de produção.\n\nRegras e observações para resposta da IA:\n- Não sugerir acesso direto ao banco para escrita transacional.\n- Para integração que altera dados, recomendar API oficial/add-on validado e logs.\n- Não expor credenciais, tokens ou serviços sem proteção.\n\nDependências/correlações com outros módulos:\n- Administração, Segurança, Infraestrutura, todos os módulos de negócio.\n\nQuando sinalizar lacuna de conhecimento:\n- Quando a dúvida exigir campo específico, atalho de tela, regra legal local ou comportamento de versão não coberto pela fonte resumida.\n- Quando houver divergência entre parametrização real do cliente e documentação genérica.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "domain": "SAP Business One",
+      "module_slug": "tecnico",
+      "granularity": "module_chunk",
+      "language": "pt-BR",
+      "created_at": "2026-04-29T00:00:00Z",
+      "version": "sap_b1_seed_v1_2026-04-29",
+      "confidence_level": "alta",
+      "curation_status": "seed_externo_precisa_validacao_humana_antes_de_base_oficial",
+      "source_count": 2,
+      "aliases": [
+        "DI API",
+        "HANA",
+        "Integration Framework",
+        "SAP B1",
+        "SAP Business One",
+        "SAP Store",
+        "SDK",
+        "SQL Server",
+        "Service Layer",
+        "Web Client, Mobile e Extensibilidade",
+        "add-on",
+        "extensão",
+        "integração",
+        "web services"
+      ],
+      "suggested_collection": "sap_b1",
+      "import_path_recommendation": "backend/knowledge/json/sap_b1/sap_b1_13_web_mobile_extensibilidade.sagai.json",
+      "source_license_handling": "summary_only_do_not_treat_as_full_sap_documentation",
+      "validation_required": true
+    }
+  },
+  {
+    "id": "tecnico::deployment_security",
+    "title": "Implantação, segurança e opções de deployment",
+    "category": "SAP B1 > Técnico e Infraestrutura",
+    "module": "Web Client, Mobile e Extensibilidade",
+    "source_type": "sap_official_web_summary_rag_seed",
+    "source": {
+      "name": "SAP Business One - technical information",
+      "urls": [
+        "https://www.sap.com/products/erp/business-one/technical-information.html"
+      ],
+      "publishers": [
+        "SAP"
+      ],
+      "status": "fonte_externa_resumida_para_seed_rag",
+      "copyright_note": "Conteúdo resumido/parafraseado para treinamento RAG; não é transcrição integral da documentação."
+    },
+    "document_type": "technical_overview",
+    "question_examples": [
+      "SAP B1 roda em nuvem?",
+      "SAP B1 pode ser on-premises?",
+      "Quais cuidados técnicos no SAP B1?"
+    ],
+    "keywords": [
+      "HANA",
+      "SQL Server",
+      "cloud",
+      "compliance",
+      "data security",
+      "deployment",
+      "hardware requirements",
+      "infraestrutura",
+      "on premises",
+      "security"
+    ],
+    "process": {
+      "name": "Implantação, segurança e opções de deployment",
+      "objective": "Dar contexto de infraestrutura e segurança para perguntas técnicas.",
+      "steps": [
+        "Entender modelo de implantação.",
+        "Validar requisitos técnicos oficiais e suporte do parceiro.",
+        "Revisar segurança, backup, integrações e acesso."
+      ],
+      "critical_rules": [
+        "Não estimar sizing sem hardware guide e escopo real.",
+        "Não recomendar exposição pública de serviços internos sem arquitetura segura."
+      ],
+      "dependencies": [
+        "Administração, Integrações, Segurança."
+      ]
+    },
+    "answer_guidelines": [
+      "Responder como base de conhecimento RAG, citando que a fonte é SAP Business One quando aplicável.",
+      "Se a pergunta pedir passo a passo operacional detalhado e este chunk não trouxer a sequência exata, responder com visão geral e sinalizar necessidade de documentação específica.",
+      "Evitar misturar SAP Business One com SAP S/4HANA, SAP ECC ou Business ByDesign, salvo quando o usuário pedir comparação.",
+      "Para processos fiscais/localização, reforçar que regras dependem de país, versão, parametrização e legislação vigente."
+    ],
+    "content": "Módulo: Web Client, Mobile e Extensibilidade\n\nObjetivo: Dar contexto de infraestrutura e segurança para perguntas técnicas.\n\nEscopo funcional:\n- SAP B1 pode ser implantado em modelos como cloud ou on-premises, conforme oferta, parceiro e requisitos do cliente.\n- Informações técnicas oficiais cobrem documentação para implementar, administrar e proteger a solução.\n- Segurança envolve dados, autenticação, permissões, compliance, integrações e governança de acesso.\n\nEntidades e documentos relevantes:\n- cloud\n- on premises\n- mobile\n- hardware\n- compliance\n- security\n- trust\n- deployment\n\nFluxos principais:\n- Entender modelo de implantação.\n- Validar requisitos técnicos oficiais e suporte do parceiro.\n- Revisar segurança, backup, integrações e acesso.\n\nRegras e observações para resposta da IA:\n- Não estimar sizing sem hardware guide e escopo real.\n- Não recomendar exposição pública de serviços internos sem arquitetura segura.\n\nDependências/correlações com outros módulos:\n- Administração, Integrações, Segurança.\n\nQuando sinalizar lacuna de conhecimento:\n- Quando a dúvida exigir campo específico, atalho de tela, regra legal local ou comportamento de versão não coberto pela fonte resumida.\n- Quando houver divergência entre parametrização real do cliente e documentação genérica.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "domain": "SAP Business One",
+      "module_slug": "tecnico",
+      "granularity": "module_chunk",
+      "language": "pt-BR",
+      "created_at": "2026-04-29T00:00:00Z",
+      "version": "sap_b1_seed_v1_2026-04-29",
+      "confidence_level": "média",
+      "curation_status": "seed_externo_precisa_validacao_humana_antes_de_base_oficial",
+      "source_count": 1,
+      "aliases": [
+        "HANA",
+        "SAP B1",
+        "SAP Business One",
+        "SQL Server",
+        "Web Client, Mobile e Extensibilidade",
+        "cloud",
+        "compliance",
+        "data security",
+        "deployment",
+        "hardware requirements",
+        "infraestrutura",
+        "on premises",
+        "security"
+      ],
+      "suggested_collection": "sap_b1",
+      "import_path_recommendation": "backend/knowledge/json/sap_b1/sap_b1_13_web_mobile_extensibilidade.sagai.json",
+      "source_license_handling": "summary_only_do_not_treat_as_full_sap_documentation",
+      "validation_required": true
+    }
+  }
+]

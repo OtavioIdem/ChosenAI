@@ -1,0 +1,42 @@
+[
+  {
+    "id": "overview-unimed",
+    "title": "Visão geral - Unimed",
+    "category": "Categorias",
+    "module": "Unimed",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Unimed",
+      "file": "categorias/unimed.json",
+      "url": null,
+      "status": "sem_publicacoes"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Unimed?",
+      "Quando usar Unimed?"
+    ],
+    "keywords": [
+      "sem conteúdo publicado no momento da coleta",
+      "unimed"
+    ],
+    "process": {
+      "name": "Unimed",
+      "objective": "Orientar dúvidas relacionadas a Unimed.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Não inferir regras desta aba sem nova coleta.",
+      "Tratar como reservado para expansão futura."
+    ],
+    "content": "Módulo/Aba: Categorias > Unimed\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: sem_publicacoes\n\nQuantidade de publicações observadas no Community Max: 0\n\nFoco funcional:\n- sem conteúdo publicado no momento da coleta\n\nInstruções para resposta da IA:\n- Não inferir regras desta aba sem nova coleta.\n- Tratar como reservado para expansão futura.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.091537Z",
+      "original_file": "categorias/unimed.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

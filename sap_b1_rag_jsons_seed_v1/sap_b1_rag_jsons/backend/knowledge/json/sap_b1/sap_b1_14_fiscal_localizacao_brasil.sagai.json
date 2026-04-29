@@ -1,0 +1,193 @@
+[
+  {
+    "id": "fiscal_br::localizacao_brasil",
+    "title": "Localização Brasil no SAP Business One",
+    "category": "SAP B1 > Fiscal Brasil",
+    "module": "Fiscal e Localização Brasil",
+    "source_type": "sap_official_web_summary_rag_seed",
+    "source": {
+      "name": "SAP Business One 10.0 - Localization for Brazil + SAP Business One 10.0 - Nota Fiscal: Brazil + SAP Business One 10.0 - CFOP Codes: Brazil",
+      "urls": [
+        "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html",
+        "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/c87d5602d5ba4850864cba8e5a3e571e.html",
+        "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/c8fbc54d53cb4c24b102124406f41bf2.html"
+      ],
+      "publishers": [
+        "SAP Help Portal"
+      ],
+      "status": "fonte_externa_resumida_para_seed_rag",
+      "copyright_note": "Conteúdo resumido/parafraseado para treinamento RAG; não é transcrição integral da documentação."
+    },
+    "document_type": "localization_overview",
+    "question_examples": [
+      "SAP B1 tem localização Brasil?",
+      "O que muda no SAP B1 para Brasil?",
+      "Quais temas fiscais existem no SAP B1 Brasil?"
+    ],
+    "keywords": [
+      "Brazil localization",
+      "CFOP",
+      "CST",
+      "NF",
+      "NFe",
+      "Nota Fiscal",
+      "document numbering",
+      "filial",
+      "fiscal",
+      "impostos",
+      "localização Brasil",
+      "tax code"
+    ],
+    "process": {
+      "name": "Localização Brasil no SAP Business One",
+      "objective": "Organizar conhecimento fiscal específico da localização Brasil.",
+      "steps": [
+        "Identificar se a empresa usa localização Brasil.",
+        "Identificar se o documento é relevante para NF.",
+        "Validar parceiro, item, CFOP, imposto, filial/série e dados fiscais.",
+        "Gerar orientação apenas com base documental e parametrização conhecida."
+      ],
+      "critical_rules": [
+        "Sempre responder com ressalva em temas fiscais: legislação, versão, localização e parametrização podem alterar o comportamento.",
+        "Não inventar CFOP, CST, alíquota, regra de imposto ou procedimento de autorização.",
+        "Para NFe, exigir fonte específica antes de orientar operação crítica."
+      ],
+      "dependencies": [
+        "Vendas A/R, Compras A/P, Estoque, Financeiro, Administração e Integrações fiscais."
+      ]
+    },
+    "answer_guidelines": [
+      "Responder como base de conhecimento RAG, citando que a fonte é SAP Business One quando aplicável.",
+      "Se a pergunta pedir passo a passo operacional detalhado e este chunk não trouxer a sequência exata, responder com visão geral e sinalizar necessidade de documentação específica.",
+      "Evitar misturar SAP Business One com SAP S/4HANA, SAP ECC ou Business ByDesign, salvo quando o usuário pedir comparação.",
+      "Para processos fiscais/localização, reforçar que regras dependem de país, versão, parametrização e legislação vigente."
+    ],
+    "content": "Módulo: Fiscal e Localização Brasil\n\nObjetivo: Organizar conhecimento fiscal específico da localização Brasil.\n\nEscopo funcional:\n- A localização Brasil contém funções específicas para requisitos fiscais brasileiros no SAP Business One.\n- Nota Fiscal é tratada como documento/objeto fiscal relevante para transações de entrada e saída que envolvem mercadorias/produtos ou serviços conforme escopo legal.\n- Tópicos como CFOP, códigos de imposto, abas fiscais de documentos e numeração fiscal devem ser tratados com alto cuidado e validação.\n\nEntidades e documentos relevantes:\n- Nota Fiscal\n- NF\n- CFOP\n- CST\n- Tax Code\n- Tax Category\n- Tax Code by Usage\n- Sales Documents NF Tax Tab\n- Purchase Documents NF Tax Tab\n\nFluxos principais:\n- Identificar se a empresa usa localização Brasil.\n- Identificar se o documento é relevante para NF.\n- Validar parceiro, item, CFOP, imposto, filial/série e dados fiscais.\n- Gerar orientação apenas com base documental e parametrização conhecida.\n\nRegras e observações para resposta da IA:\n- Sempre responder com ressalva em temas fiscais: legislação, versão, localização e parametrização podem alterar o comportamento.\n- Não inventar CFOP, CST, alíquota, regra de imposto ou procedimento de autorização.\n- Para NFe, exigir fonte específica antes de orientar operação crítica.\n\nDependências/correlações com outros módulos:\n- Vendas A/R, Compras A/P, Estoque, Financeiro, Administração e Integrações fiscais.\n\nQuando sinalizar lacuna de conhecimento:\n- Quando a dúvida exigir campo específico, atalho de tela, regra legal local ou comportamento de versão não coberto pela fonte resumida.\n- Quando houver divergência entre parametrização real do cliente e documentação genérica.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "domain": "SAP Business One",
+      "module_slug": "fiscal_br",
+      "granularity": "module_chunk",
+      "language": "pt-BR",
+      "created_at": "2026-04-29T00:00:00Z",
+      "version": "sap_b1_seed_v1_2026-04-29",
+      "confidence_level": "alta",
+      "curation_status": "seed_externo_precisa_validacao_humana_antes_de_base_oficial",
+      "source_count": 3,
+      "aliases": [
+        "Brazil localization",
+        "CFOP",
+        "CST",
+        "Fiscal e Localização Brasil",
+        "NF",
+        "NFe",
+        "Nota Fiscal",
+        "SAP B1",
+        "SAP Business One",
+        "document numbering",
+        "filial",
+        "fiscal",
+        "impostos",
+        "localização Brasil",
+        "tax code"
+      ],
+      "suggested_collection": "sap_b1",
+      "import_path_recommendation": "backend/knowledge/json/sap_b1/sap_b1_14_fiscal_localizacao_brasil.sagai.json",
+      "source_license_handling": "summary_only_do_not_treat_as_full_sap_documentation",
+      "validation_required": true
+    }
+  },
+  {
+    "id": "fiscal_br::nota_fiscal_documentos",
+    "title": "Nota Fiscal em documentos de entrada e saída",
+    "category": "SAP B1 > Fiscal Brasil",
+    "module": "Fiscal e Localização Brasil",
+    "source_type": "sap_official_web_summary_rag_seed",
+    "source": {
+      "name": "SAP Business One 10.0 - Nota Fiscal: Brazil + SAP Business One 10.0 - Localization for Brazil",
+      "urls": [
+        "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/c87d5602d5ba4850864cba8e5a3e571e.html",
+        "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/3c4aeb540463b209e10000000a423f68.html"
+      ],
+      "publishers": [
+        "SAP Help Portal"
+      ],
+      "status": "fonte_externa_resumida_para_seed_rag",
+      "copyright_note": "Conteúdo resumido/parafraseado para treinamento RAG; não é transcrição integral da documentação."
+    },
+    "document_type": "process_overview",
+    "question_examples": [
+      "O que é Nota Fiscal no SAP B1 Brasil?",
+      "Onde ficam dados fiscais da NF?",
+      "Documento de venda tem aba fiscal?"
+    ],
+    "keywords": [
+      "A/P invoice",
+      "A/R invoice",
+      "Delivery",
+      "Goods Receipt PO",
+      "NF de entrada",
+      "NF de saída",
+      "Nota Fiscal",
+      "Purchase Documents NF Tax Tab",
+      "Sales Documents NF Tax Tab",
+      "documento fiscal"
+    ],
+    "process": {
+      "name": "Nota Fiscal em documentos de entrada e saída",
+      "objective": "Dar contexto para dúvidas sobre documentos fiscais brasileiros no SAP B1.",
+      "steps": [
+        "Verificar tipo de documento: venda, compra, entrega, recebimento, devolução ou crédito.",
+        "Confirmar dados fiscais de parceiro e item.",
+        "Validar CFOP/código de imposto conforme operação.",
+        "Gerar/revisar documento fiscal conforme processo autorizado."
+      ],
+      "critical_rules": [
+        "Não fornecer conselho tributário.",
+        "Não assumir integração NFe externa sem documentação do ambiente.",
+        "Quando usuário pedir erro fiscal específico, classificar como lacuna até haver mensagem/tela/fonte."
+      ],
+      "dependencies": [
+        "Cadastros, Vendas, Compras, Estoque, Financeiro, Integrações."
+      ]
+    },
+    "answer_guidelines": [
+      "Responder como base de conhecimento RAG, citando que a fonte é SAP Business One quando aplicável.",
+      "Se a pergunta pedir passo a passo operacional detalhado e este chunk não trouxer a sequência exata, responder com visão geral e sinalizar necessidade de documentação específica.",
+      "Evitar misturar SAP Business One com SAP S/4HANA, SAP ECC ou Business ByDesign, salvo quando o usuário pedir comparação.",
+      "Para processos fiscais/localização, reforçar que regras dependem de país, versão, parametrização e legislação vigente."
+    ],
+    "content": "Módulo: Fiscal e Localização Brasil\n\nObjetivo: Dar contexto para dúvidas sobre documentos fiscais brasileiros no SAP B1.\n\nEscopo funcional:\n- Nota Fiscal é documento legal/fiscal usado em transações brasileiras de entrada e saída conforme regras da localização.\n- Documentos de venda e compra podem conter abas ou dados fiscais específicos para NF, impostos e classificação fiscal.\n- A geração correta depende de dados mestres, configuração fiscal, documento comercial e versão/localização.\n\nEntidades e documentos relevantes:\n- NF\n- NF No.\n- Tax tab\n- A/R document\n- A/P document\n- item\n- business partner\n- tax code\n- CFOP\n\nFluxos principais:\n- Verificar tipo de documento: venda, compra, entrega, recebimento, devolução ou crédito.\n- Confirmar dados fiscais de parceiro e item.\n- Validar CFOP/código de imposto conforme operação.\n- Gerar/revisar documento fiscal conforme processo autorizado.\n\nRegras e observações para resposta da IA:\n- Não fornecer conselho tributário.\n- Não assumir integração NFe externa sem documentação do ambiente.\n- Quando usuário pedir erro fiscal específico, classificar como lacuna até haver mensagem/tela/fonte.\n\nDependências/correlações com outros módulos:\n- Cadastros, Vendas, Compras, Estoque, Financeiro, Integrações.\n\nQuando sinalizar lacuna de conhecimento:\n- Quando a dúvida exigir campo específico, atalho de tela, regra legal local ou comportamento de versão não coberto pela fonte resumida.\n- Quando houver divergência entre parametrização real do cliente e documentação genérica.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "domain": "SAP Business One",
+      "module_slug": "fiscal_br",
+      "granularity": "module_chunk",
+      "language": "pt-BR",
+      "created_at": "2026-04-29T00:00:00Z",
+      "version": "sap_b1_seed_v1_2026-04-29",
+      "confidence_level": "média",
+      "curation_status": "seed_externo_precisa_validacao_humana_antes_de_base_oficial",
+      "source_count": 2,
+      "aliases": [
+        "A/P invoice",
+        "A/R invoice",
+        "Delivery",
+        "Fiscal e Localização Brasil",
+        "Goods Receipt PO",
+        "NF de entrada",
+        "NF de saída",
+        "Nota Fiscal",
+        "Purchase Documents NF Tax Tab",
+        "SAP B1",
+        "SAP Business One",
+        "Sales Documents NF Tax Tab",
+        "documento fiscal"
+      ],
+      "suggested_collection": "sap_b1",
+      "import_path_recommendation": "backend/knowledge/json/sap_b1/sap_b1_14_fiscal_localizacao_brasil.sagai.json",
+      "source_license_handling": "summary_only_do_not_treat_as_full_sap_documentation",
+      "validation_required": true
+    }
+  }
+]

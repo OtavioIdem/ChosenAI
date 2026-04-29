@@ -1,0 +1,48 @@
+[
+  {
+    "id": "overview-release-notes",
+    "title": "Visão geral - Release Notes",
+    "category": "Categorias",
+    "module": "Release Notes",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Release Notes",
+      "file": "categorias/release_notes.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Release Notes?",
+      "Quando usar Release Notes?"
+    ],
+    "keywords": [
+      "histórico de versões",
+      "instalação em clientes",
+      "pacotes de alterações",
+      "release notes",
+      "release notes 04/2017 versão 2.0.0.0",
+      "release notes 09/2017 versões 2.1.0.0 e 2.1.1.0",
+      "release notes 10/2017 versão 2.2.0.0",
+      "release-notes"
+    ],
+    "process": {
+      "name": "Release Notes",
+      "objective": "Orientar dúvidas relacionadas a Release Notes.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Usar esta aba para contexto de evolução de produto e histórico de implementação.",
+      "Não assumir que release notes antigos refletem comportamento atual sem checar data/versão."
+    ],
+    "content": "Módulo/Aba: Categorias > Release Notes\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 3\n\nFoco funcional:\n- histórico de versões\n- pacotes de alterações\n- instalação em clientes\n\nTópicos observados:\n- release notes 10/2017 versão 2.2.0.0\n- release notes 09/2017 versões 2.1.0.0 e 2.1.1.0\n- release notes 04/2017 versão 2.0.0.0\n\nInstruções para resposta da IA:\n- Usar esta aba para contexto de evolução de produto e histórico de implementação.\n- Não assumir que release notes antigos refletem comportamento atual sem checar data/versão.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.087413Z",
+      "original_file": "categorias/release_notes.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]
