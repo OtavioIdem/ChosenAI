@@ -1,0 +1,150 @@
+[
+  {
+    "id": "sapb1-enduser-purchasing-ap-invoice-001",
+    "title": "Criar nota fiscal/fatura de entrada no SAP Business One Web Client",
+    "module": "Compras - Contas a Pagar",
+    "category": "procedimento_operacional",
+    "process": "Criação de A/P Invoice",
+    "audience": "usuario_final",
+    "language": "pt-BR",
+    "keywords": [
+      "SAP Business One",
+      "A/P Invoice",
+      "nota fiscal de entrada",
+      "fatura de fornecedor",
+      "compras",
+      "contas a pagar"
+    ],
+    "content": "Processo: Criação de A/P Invoice\n\nObjetivo:\nCriar nota fiscal/fatura de entrada no SAP Business One Web Client\n\nPré-requisitos:\n- Fornecedor/parceiro de negócio deve estar cadastrado.\n- Itens ou serviços devem estar cadastrados e configurados.\n- Usuário deve ter autorização para criar A/P Invoice.\n- Condições de pagamento, impostos, depósitos e contas contábeis devem estar parametrizados.\n- Se o documento for baseado em pedido de compra ou recebimento de mercadoria, o documento base deve existir.\n\nCaminhos de menu / apps relacionados:\n- Web Client > Home > A/P Invoices\n- Web Client > Home > Create A/P Invoice\n- Client Desktop > Purchasing - A/P > A/P Invoice, quando aplicável\n\nPasso a passo:\n1. No Web Client, acesse Create A/P Invoice ou abra A/P Invoices e escolha criar novo documento.\n2. Informe o fornecedor/parceiro de negócio.\n3. Preencha datas, condições de pagamento, moeda e demais campos obrigatórios.\n4. Informe itens ou serviços, quantidades, preços, impostos e depósitos.\n5. Quando aplicável, copie dados de documento anterior, como pedido de compra ou recebimento de mercadoria.\n6. Revise total a pagar, vencimento, impostos e dados fiscais.\n7. Salve/adicone o documento.\n8. Se houver regra de aprovação, aguarde aprovação antes da geração definitiva.\n\nPontos de validação:\n- Documento aparece na lista de A/P Invoices.\n- Total a pagar e vencimento conferem.\n- Documento gerou contas a pagar/lançamento contábil conforme parametrização.\n- Itens de estoque, quando aplicável, refletem movimentação compatível com o fluxo adotado.\n\nObservações:\n- No Brasil, nota de entrada pode depender de localização fiscal, XML, impostos, add-ons ou processo fiscal específico.\n- A IA deve diferenciar A/P Invoice operacional de validações fiscais brasileiras.\n",
+    "structured_answer": {
+      "prerequisites": [
+        "Fornecedor/parceiro de negócio deve estar cadastrado.",
+        "Itens ou serviços devem estar cadastrados e configurados.",
+        "Usuário deve ter autorização para criar A/P Invoice.",
+        "Condições de pagamento, impostos, depósitos e contas contábeis devem estar parametrizados.",
+        "Se o documento for baseado em pedido de compra ou recebimento de mercadoria, o documento base deve existir."
+      ],
+      "menu_paths": [
+        "Web Client > Home > A/P Invoices",
+        "Web Client > Home > Create A/P Invoice",
+        "Client Desktop > Purchasing - A/P > A/P Invoice, quando aplicável"
+      ],
+      "steps": [
+        "No Web Client, acesse Create A/P Invoice ou abra A/P Invoices e escolha criar novo documento.",
+        "Informe o fornecedor/parceiro de negócio.",
+        "Preencha datas, condições de pagamento, moeda e demais campos obrigatórios.",
+        "Informe itens ou serviços, quantidades, preços, impostos e depósitos.",
+        "Quando aplicável, copie dados de documento anterior, como pedido de compra ou recebimento de mercadoria.",
+        "Revise total a pagar, vencimento, impostos e dados fiscais.",
+        "Salve/adicone o documento.",
+        "Se houver regra de aprovação, aguarde aprovação antes da geração definitiva."
+      ],
+      "validation_points": [
+        "Documento aparece na lista de A/P Invoices.",
+        "Total a pagar e vencimento conferem.",
+        "Documento gerou contas a pagar/lançamento contábil conforme parametrização.",
+        "Itens de estoque, quando aplicável, refletem movimentação compatível com o fluxo adotado."
+      ],
+      "observations": [
+        "No Brasil, nota de entrada pode depender de localização fiscal, XML, impostos, add-ons ou processo fiscal específico.",
+        "A IA deve diferenciar A/P Invoice operacional de validações fiscais brasileiras."
+      ],
+      "related_modules": [
+        "Financeiro",
+        "Fiscal Brasil",
+        "Estoque",
+        "Compras"
+      ]
+    },
+    "source": {
+      "name": "SAP Help Portal - User Guide for SAP Business One, Web Client 10.0 SP 2311",
+      "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2311/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+      "authority": "official",
+      "source_type": "sap_help_pdf"
+    },
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap_b1_end_user_ops_v3",
+    "created_at": "2026-04-29",
+    "curation_status": "candidate_seed",
+    "intended_use": "Treinamento RAG para IA especialista em SAP Business One, com foco em orientação operacional ao usuário final.",
+    "training_questions": [
+      "Como lançar nota fiscal de entrada no SAP B1?",
+      "Como criar uma A/P Invoice?",
+      "Como faço uma fatura de fornecedor?",
+      "Como lançar uma nota de entrada baseada em pedido de compra?"
+    ],
+    "answer_style_hint": "Responder em português brasileiro, com resposta direta, passo a passo, observações, fonte e nível de confiança."
+  },
+  {
+    "id": "sapb1-enduser-purchasing-ap-list-002",
+    "title": "Consultar e pagar faturas de fornecedor",
+    "module": "Compras - Contas a Pagar",
+    "category": "procedimento_operacional",
+    "process": "Gestão de A/P Invoices",
+    "audience": "usuario_final",
+    "language": "pt-BR",
+    "keywords": [
+      "SAP Business One",
+      "A/P Invoices",
+      "contas a pagar",
+      "pagamento fornecedor",
+      "Pay",
+      "Create Payment"
+    ],
+    "content": "Processo: Gestão de A/P Invoices\n\nObjetivo:\nConsultar e pagar faturas de fornecedor\n\nPré-requisitos:\n- Usuário deve ter autorização para consultar A/P Invoices.\n- Para pagamento, usuário deve ter autorização de pagamentos de saída.\n- Faturas devem estar abertas e elegíveis para pagamento.\n\nCaminhos de menu / apps relacionados:\n- Web Client > Home > A/P Invoices\n- Web Client > A/P Invoice detail > Pay\n- Web Client > A/P Invoices list > Create Payment\n\nPasso a passo:\n1. Abra o tile A/P Invoices.\n2. Filtre documentos abertos, meus documentos ou todos os documentos conforme a necessidade.\n3. Selecione uma ou mais faturas do mesmo fornecedor, quando for criar pagamento pela lista.\n4. Use Create Payment na lista ou Pay na visão detalhada da fatura.\n5. Revise meio de pagamento, valor, vencimento e contas.\n6. Adicione o pagamento se as informações estiverem corretas.\n\nPontos de validação:\n- Pagamento vinculado à fatura correta.\n- Valor pago e saldo conferem.\n- Meio de pagamento foi preenchido corretamente.\n- Documento financeiro foi criado conforme autorização.\n\nObservações:\n- A criação do pagamento pode exigir que faturas sejam do mesmo parceiro de negócio ou possuam relação de consolidação.\n- Ações disponíveis variam conforme autorização do usuário.\n",
+    "structured_answer": {
+      "prerequisites": [
+        "Usuário deve ter autorização para consultar A/P Invoices.",
+        "Para pagamento, usuário deve ter autorização de pagamentos de saída.",
+        "Faturas devem estar abertas e elegíveis para pagamento."
+      ],
+      "menu_paths": [
+        "Web Client > Home > A/P Invoices",
+        "Web Client > A/P Invoice detail > Pay",
+        "Web Client > A/P Invoices list > Create Payment"
+      ],
+      "steps": [
+        "Abra o tile A/P Invoices.",
+        "Filtre documentos abertos, meus documentos ou todos os documentos conforme a necessidade.",
+        "Selecione uma ou mais faturas do mesmo fornecedor, quando for criar pagamento pela lista.",
+        "Use Create Payment na lista ou Pay na visão detalhada da fatura.",
+        "Revise meio de pagamento, valor, vencimento e contas.",
+        "Adicione o pagamento se as informações estiverem corretas."
+      ],
+      "validation_points": [
+        "Pagamento vinculado à fatura correta.",
+        "Valor pago e saldo conferem.",
+        "Meio de pagamento foi preenchido corretamente.",
+        "Documento financeiro foi criado conforme autorização."
+      ],
+      "observations": [
+        "A criação do pagamento pode exigir que faturas sejam do mesmo parceiro de negócio ou possuam relação de consolidação.",
+        "Ações disponíveis variam conforme autorização do usuário."
+      ],
+      "related_modules": [
+        "Pagamentos",
+        "Financeiro",
+        "Bancos"
+      ]
+    },
+    "source": {
+      "name": "SAP Help Portal - User Guide for SAP Business One, Web Client 10.0 SP 2311",
+      "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2311/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+      "authority": "official",
+      "source_type": "sap_help_pdf"
+    },
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap_b1_end_user_ops_v3",
+    "created_at": "2026-04-29",
+    "curation_status": "candidate_seed",
+    "intended_use": "Treinamento RAG para IA especialista em SAP Business One, com foco em orientação operacional ao usuário final.",
+    "training_questions": [
+      "Como pagar uma nota de entrada no SAP B1?",
+      "Como baixar uma fatura de fornecedor?",
+      "Como usar o botão Pay em uma A/P Invoice?"
+    ],
+    "answer_style_hint": "Responder em português brasileiro, com resposta direta, passo a passo, observações, fonte e nível de confiança."
+  }
+]

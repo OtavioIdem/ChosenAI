@@ -1,0 +1,149 @@
+[
+  {
+    "id": "sapb1-enduser-payments-001",
+    "title": "Dar baixa de títulos por pagamento no SAP Business One Web Client",
+    "module": "Bancos e Pagamentos",
+    "category": "procedimento_operacional",
+    "process": "Criação de pagamentos de entrada e saída",
+    "audience": "usuario_final",
+    "language": "pt-BR",
+    "keywords": [
+      "SAP Business One",
+      "baixa",
+      "pagamento",
+      "incoming payment",
+      "outgoing payment",
+      "contas a receber",
+      "contas a pagar"
+    ],
+    "content": "Processo: Criação de pagamentos de entrada e saída\n\nObjetivo:\nDar baixa de títulos por pagamento no SAP Business One Web Client\n\nPré-requisitos:\n- Documento financeiro deve existir e estar aberto, salvo lançamento avulso em conta contábil.\n- Usuário deve ter autorização para pagamento de entrada ou saída.\n- Meios de pagamento e contas devem estar configurados.\n- Para baixa por parceiro de negócio, selecionar cliente/fornecedor correto.\n\nCaminhos de menu / apps relacionados:\n- Web Client > Home > Create Payment for Business Partner\n- Web Client > Home > Create Payment for Accounts\n- Web Client > A/R Invoice ou A/P Invoice > Pay\n- Web Client > Manage A/R Invoices ou Manage A/P Invoices > Create Payment\n\nPasso a passo:\n1. Escolha Create Payment for Business Partner para baixar documento de cliente/fornecedor, ou Create Payment for Accounts para contas contábeis.\n2. Na aba General, informe se o pagamento será para parceiro de negócio ou conta contábil.\n3. Na aba Contents, selecione as faturas/documentos que serão baixados ou informe valores avulsos conforme o caso.\n4. Na aba Payment Means, informe meio de pagamento: dinheiro, transferência, cheque, cartão ou outro configurado.\n5. Revise valor total, diferença, encargos bancários e referências.\n6. Adicione o pagamento para gravar a baixa.\n7. Confirme se o documento original reduziu o saldo aberto.\n\nPontos de validação:\n- Saldo do documento foi atualizado.\n- Pagamento está vinculado ao documento correto.\n- Conta bancária/caixa/meio de pagamento correto foi usado.\n- Diferenças, descontos ou encargos foram tratados conforme política da empresa.\n\nObservações:\n- No SAP B1, 'dar baixa' pode significar baixa financeira por pagamento ou baixa de estoque por saída de mercadoria; a IA deve perguntar ou inferir pelo contexto.\n- Pagamentos podem ser criados diretamente a partir da lista de invoices ou da visão detalhada pelo botão Pay.\n",
+    "structured_answer": {
+      "prerequisites": [
+        "Documento financeiro deve existir e estar aberto, salvo lançamento avulso em conta contábil.",
+        "Usuário deve ter autorização para pagamento de entrada ou saída.",
+        "Meios de pagamento e contas devem estar configurados.",
+        "Para baixa por parceiro de negócio, selecionar cliente/fornecedor correto."
+      ],
+      "menu_paths": [
+        "Web Client > Home > Create Payment for Business Partner",
+        "Web Client > Home > Create Payment for Accounts",
+        "Web Client > A/R Invoice ou A/P Invoice > Pay",
+        "Web Client > Manage A/R Invoices ou Manage A/P Invoices > Create Payment"
+      ],
+      "steps": [
+        "Escolha Create Payment for Business Partner para baixar documento de cliente/fornecedor, ou Create Payment for Accounts para contas contábeis.",
+        "Na aba General, informe se o pagamento será para parceiro de negócio ou conta contábil.",
+        "Na aba Contents, selecione as faturas/documentos que serão baixados ou informe valores avulsos conforme o caso.",
+        "Na aba Payment Means, informe meio de pagamento: dinheiro, transferência, cheque, cartão ou outro configurado.",
+        "Revise valor total, diferença, encargos bancários e referências.",
+        "Adicione o pagamento para gravar a baixa.",
+        "Confirme se o documento original reduziu o saldo aberto."
+      ],
+      "validation_points": [
+        "Saldo do documento foi atualizado.",
+        "Pagamento está vinculado ao documento correto.",
+        "Conta bancária/caixa/meio de pagamento correto foi usado.",
+        "Diferenças, descontos ou encargos foram tratados conforme política da empresa."
+      ],
+      "observations": [
+        "No SAP B1, 'dar baixa' pode significar baixa financeira por pagamento ou baixa de estoque por saída de mercadoria; a IA deve perguntar ou inferir pelo contexto.",
+        "Pagamentos podem ser criados diretamente a partir da lista de invoices ou da visão detalhada pelo botão Pay."
+      ],
+      "related_modules": [
+        "Financeiro",
+        "Vendas - A/R",
+        "Compras - A/P",
+        "Bancos"
+      ]
+    },
+    "source": {
+      "name": "SAP Help Portal - User Guide for SAP Business One, Web Client 10.0 SP 2311",
+      "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2311/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+      "authority": "official",
+      "source_type": "sap_help_pdf"
+    },
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap_b1_end_user_ops_v3",
+    "created_at": "2026-04-29",
+    "curation_status": "candidate_seed",
+    "intended_use": "Treinamento RAG para IA especialista em SAP Business One, com foco em orientação operacional ao usuário final.",
+    "training_questions": [
+      "Como dar baixa em uma nota no SAP B1?",
+      "Como registrar pagamento de cliente?",
+      "Como registrar pagamento de fornecedor?",
+      "Qual a diferença entre Create Payment for Business Partner e Create Payment for Accounts?"
+    ],
+    "answer_style_hint": "Responder em português brasileiro, com resposta direta, passo a passo, observações, fonte e nível de confiança."
+  },
+  {
+    "id": "sapb1-enduser-payments-002",
+    "title": "Baixa financeira a partir da fatura aberta",
+    "module": "Bancos e Pagamentos",
+    "category": "procedimento_operacional",
+    "process": "Pagamento a partir de A/R ou A/P Invoice",
+    "audience": "usuario_final",
+    "language": "pt-BR",
+    "keywords": [
+      "SAP Business One",
+      "Pay",
+      "Create Payment",
+      "A/R Invoice",
+      "A/P Invoice",
+      "baixa financeira"
+    ],
+    "content": "Processo: Pagamento a partir de A/R ou A/P Invoice\n\nObjetivo:\nBaixa financeira a partir da fatura aberta\n\nPré-requisitos:\n- A fatura de cliente ou fornecedor deve estar aberta.\n- Usuário deve ter permissão para visualizar a fatura e criar pagamento.\n- Meio de pagamento precisa estar configurado.\n\nCaminhos de menu / apps relacionados:\n- Web Client > A/R Invoice detail > Pay\n- Web Client > A/P Invoice detail > Pay\n- Web Client > Manage A/R Invoices ou Manage A/P Invoices > Create Payment\n\nPasso a passo:\n1. Abra a fatura de cliente ou fornecedor.\n2. Clique em Pay na visão detalhada, ou selecione faturas na lista e clique em Create Payment.\n3. Confirme o parceiro de negócio e os documentos selecionados.\n4. Preencha o meio de pagamento e dados bancários/caixa.\n5. Confira valor, desconto, diferença ou encargos.\n6. Adicione o pagamento.\n7. Volte à fatura e confirme o saldo pendente.\n\nPontos de validação:\n- Pagamento usa o mesmo parceiro de negócio da fatura.\n- Faturas selecionadas são elegíveis para pagamento conjunto.\n- Saldo aberto após a baixa está correto.\n\nObservações:\n- Na lista, o pagamento em lote pode exigir documentos do mesmo parceiro de negócio ou relação de consolidação.\n- A localização e configuração podem alterar campos disponíveis.\n",
+    "structured_answer": {
+      "prerequisites": [
+        "A fatura de cliente ou fornecedor deve estar aberta.",
+        "Usuário deve ter permissão para visualizar a fatura e criar pagamento.",
+        "Meio de pagamento precisa estar configurado."
+      ],
+      "menu_paths": [
+        "Web Client > A/R Invoice detail > Pay",
+        "Web Client > A/P Invoice detail > Pay",
+        "Web Client > Manage A/R Invoices ou Manage A/P Invoices > Create Payment"
+      ],
+      "steps": [
+        "Abra a fatura de cliente ou fornecedor.",
+        "Clique em Pay na visão detalhada, ou selecione faturas na lista e clique em Create Payment.",
+        "Confirme o parceiro de negócio e os documentos selecionados.",
+        "Preencha o meio de pagamento e dados bancários/caixa.",
+        "Confira valor, desconto, diferença ou encargos.",
+        "Adicione o pagamento.",
+        "Volte à fatura e confirme o saldo pendente."
+      ],
+      "validation_points": [
+        "Pagamento usa o mesmo parceiro de negócio da fatura.",
+        "Faturas selecionadas são elegíveis para pagamento conjunto.",
+        "Saldo aberto após a baixa está correto."
+      ],
+      "observations": [
+        "Na lista, o pagamento em lote pode exigir documentos do mesmo parceiro de negócio ou relação de consolidação.",
+        "A localização e configuração podem alterar campos disponíveis."
+      ],
+      "related_modules": [
+        "Contas a Receber",
+        "Contas a Pagar"
+      ]
+    },
+    "source": {
+      "name": "SAP Help Portal - User Guide for SAP Business One, Web Client 10.0 SP 2311",
+      "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2311/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+      "authority": "official",
+      "source_type": "sap_help_pdf"
+    },
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap_b1_end_user_ops_v3",
+    "created_at": "2026-04-29",
+    "curation_status": "candidate_seed",
+    "intended_use": "Treinamento RAG para IA especialista em SAP Business One, com foco em orientação operacional ao usuário final.",
+    "training_questions": [
+      "Como usar o botão Pay no SAP B1?",
+      "Como baixar várias faturas de uma vez?",
+      "Por que não consigo criar pagamento para faturas de fornecedores diferentes?"
+    ],
+    "answer_style_hint": "Responder em português brasileiro, com resposta direta, passo a passo, observações, fonte e nível de confiança."
+  }
+]

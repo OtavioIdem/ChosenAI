@@ -1,0 +1,145 @@
+[
+  {
+    "id": "sapb1-enduser-sales-ar-invoice-001",
+    "title": "Criar nota fiscal/fatura de saída no SAP Business One Web Client",
+    "module": "Vendas - Contas a Receber",
+    "category": "procedimento_operacional",
+    "process": "Criação de A/R Invoice",
+    "audience": "usuario_final",
+    "language": "pt-BR",
+    "keywords": [
+      "SAP Business One",
+      "A/R Invoice",
+      "nota fiscal de saída",
+      "fatura de cliente",
+      "vendas",
+      "contas a receber",
+      "invoice"
+    ],
+    "content": "Processo: Criação de A/R Invoice\n\nObjetivo:\nCriar nota fiscal/fatura de saída no SAP Business One Web Client\n\nPré-requisitos:\n- Cliente/parceiro de negócio deve estar cadastrado.\n- Itens ou serviços devem estar cadastrados e parametrizados.\n- Usuário deve ter autorização para criar A/R Invoice.\n- Séries de numeração, impostos, depósitos e contas contábeis devem estar configurados conforme localização.\n\nCaminhos de menu / apps relacionados:\n- Web Client > Home > A/R Invoices\n- Web Client > Home > Create A/R Invoice\n- Client Desktop > Sales - A/R > A/R Invoice, quando aplicável\n\nPasso a passo:\n1. No Web Client, acesse o tile Create A/R Invoice ou A/R Invoices e escolha criar novo documento.\n2. Informe o cliente/parceiro de negócio.\n3. Preencha datas, moeda, condições de pagamento e demais campos obrigatórios.\n4. Na aba de conteúdo, informe itens ou serviços, quantidades, preços, depósitos e impostos, conforme o cenário.\n5. Revise totais, impostos, vencimentos e informações fiscais.\n6. Inclua anexos ou observações quando necessário.\n7. Escolha Add & View, Add & New ou opção equivalente para gravar o documento.\n8. Se houver aprovação configurada, o documento pode ser salvo como rascunho até aprovação.\n\nPontos de validação:\n- Documento aparece na lista de A/R Invoices.\n- Total do documento e impostos conferem.\n- Documento gerou contas a receber/lançamento contábil conforme parametrização.\n- Se aplicável no Brasil, NF-e/documento fiscal deve seguir o fluxo fiscal/localização antes de transmissão.\n\nObservações:\n- No SAP B1, A/R Invoice é documento de venda/contas a receber. Em localização brasileira, a emissão fiscal pode envolver etapas adicionais de NF-e, add-ons ou parametrizações fiscais.\n- Não confundir fatura/nota de saída operacional do SAP B1 com autorização fiscal eletrônica; a IA deve checar a fonte de localização Brasil antes de orientar transmissão.\n",
+    "structured_answer": {
+      "prerequisites": [
+        "Cliente/parceiro de negócio deve estar cadastrado.",
+        "Itens ou serviços devem estar cadastrados e parametrizados.",
+        "Usuário deve ter autorização para criar A/R Invoice.",
+        "Séries de numeração, impostos, depósitos e contas contábeis devem estar configurados conforme localização."
+      ],
+      "menu_paths": [
+        "Web Client > Home > A/R Invoices",
+        "Web Client > Home > Create A/R Invoice",
+        "Client Desktop > Sales - A/R > A/R Invoice, quando aplicável"
+      ],
+      "steps": [
+        "No Web Client, acesse o tile Create A/R Invoice ou A/R Invoices e escolha criar novo documento.",
+        "Informe o cliente/parceiro de negócio.",
+        "Preencha datas, moeda, condições de pagamento e demais campos obrigatórios.",
+        "Na aba de conteúdo, informe itens ou serviços, quantidades, preços, depósitos e impostos, conforme o cenário.",
+        "Revise totais, impostos, vencimentos e informações fiscais.",
+        "Inclua anexos ou observações quando necessário.",
+        "Escolha Add & View, Add & New ou opção equivalente para gravar o documento.",
+        "Se houver aprovação configurada, o documento pode ser salvo como rascunho até aprovação."
+      ],
+      "validation_points": [
+        "Documento aparece na lista de A/R Invoices.",
+        "Total do documento e impostos conferem.",
+        "Documento gerou contas a receber/lançamento contábil conforme parametrização.",
+        "Se aplicável no Brasil, NF-e/documento fiscal deve seguir o fluxo fiscal/localização antes de transmissão."
+      ],
+      "observations": [
+        "No SAP B1, A/R Invoice é documento de venda/contas a receber. Em localização brasileira, a emissão fiscal pode envolver etapas adicionais de NF-e, add-ons ou parametrizações fiscais.",
+        "Não confundir fatura/nota de saída operacional do SAP B1 com autorização fiscal eletrônica; a IA deve checar a fonte de localização Brasil antes de orientar transmissão."
+      ],
+      "related_modules": [
+        "Financeiro",
+        "Fiscal Brasil",
+        "Estoque",
+        "Aprovações"
+      ]
+    },
+    "source": {
+      "name": "SAP Help Portal - User Guide for SAP Business One, Web Client 10.0 SP 2311",
+      "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2311/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+      "authority": "official",
+      "source_type": "sap_help_pdf"
+    },
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap_b1_end_user_ops_v3",
+    "created_at": "2026-04-29",
+    "curation_status": "candidate_seed",
+    "intended_use": "Treinamento RAG para IA especialista em SAP Business One, com foco em orientação operacional ao usuário final.",
+    "training_questions": [
+      "Como criar uma nota de saída no SAP Business One?",
+      "Como criar uma A/R Invoice no Web Client?",
+      "Onde vejo minhas notas/faturas de venda abertas?",
+      "Por que minha nota de saída entrou em aprovação?"
+    ],
+    "answer_style_hint": "Responder em português brasileiro, com resposta direta, passo a passo, observações, fonte e nível de confiança."
+  },
+  {
+    "id": "sapb1-enduser-sales-ar-list-002",
+    "title": "Consultar, filtrar e gerenciar notas/faturas de saída",
+    "module": "Vendas - Contas a Receber",
+    "category": "procedimento_operacional",
+    "process": "Gestão de A/R Invoices",
+    "audience": "usuario_final",
+    "language": "pt-BR",
+    "keywords": [
+      "SAP Business One",
+      "A/R Invoices",
+      "consultar faturas",
+      "filtrar notas",
+      "lista",
+      "open sales invoices"
+    ],
+    "content": "Processo: Gestão de A/R Invoices\n\nObjetivo:\nConsultar, filtrar e gerenciar notas/faturas de saída\n\nPré-requisitos:\n- Usuário deve ter acesso ao app A/R Invoices.\n- Existirem documentos cadastrados ou permissão para visualizar todos/minhas notas.\n\nCaminhos de menu / apps relacionados:\n- Web Client > Home > A/R Invoices\n\nPasso a passo:\n1. Abra o tile A/R Invoices.\n2. Escolha uma visão da lista, como documentos abertos, meus documentos ou todos os documentos, conforme disponível.\n3. Use filtros para localizar por cliente, data, status, total ou número do documento.\n4. Clique na linha do documento ou no ícone de detalhes para abrir a visão detalhada.\n5. Use ações disponíveis, como cancelar, copiar para documento relacionado, criar rascunho ou processar pagamento, se autorizado.\n\nPontos de validação:\n- Filtro retorna os documentos esperados.\n- Usuário visualiza apenas documentos permitidos por autorização.\n- Ação escolhida é compatível com status do documento.\n\nObservações:\n- As visões e ações podem variar por autorização, versão, localização e configuração.\n- Documentos em aprovação podem aparecer como rascunhos até serem aprovados.\n",
+    "structured_answer": {
+      "prerequisites": [
+        "Usuário deve ter acesso ao app A/R Invoices.",
+        "Existirem documentos cadastrados ou permissão para visualizar todos/minhas notas."
+      ],
+      "menu_paths": [
+        "Web Client > Home > A/R Invoices"
+      ],
+      "steps": [
+        "Abra o tile A/R Invoices.",
+        "Escolha uma visão da lista, como documentos abertos, meus documentos ou todos os documentos, conforme disponível.",
+        "Use filtros para localizar por cliente, data, status, total ou número do documento.",
+        "Clique na linha do documento ou no ícone de detalhes para abrir a visão detalhada.",
+        "Use ações disponíveis, como cancelar, copiar para documento relacionado, criar rascunho ou processar pagamento, se autorizado."
+      ],
+      "validation_points": [
+        "Filtro retorna os documentos esperados.",
+        "Usuário visualiza apenas documentos permitidos por autorização.",
+        "Ação escolhida é compatível com status do documento."
+      ],
+      "observations": [
+        "As visões e ações podem variar por autorização, versão, localização e configuração.",
+        "Documentos em aprovação podem aparecer como rascunhos até serem aprovados."
+      ],
+      "related_modules": [
+        "Aprovações",
+        "Pagamentos",
+        "Relatórios"
+      ]
+    },
+    "source": {
+      "name": "SAP Help Portal - User Guide for SAP Business One, Web Client 10.0 SP 2311",
+      "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2311/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+      "authority": "official",
+      "source_type": "sap_help_pdf"
+    },
+    "confidence": "high",
+    "requires_human_validation": false,
+    "version": "sap_b1_end_user_ops_v3",
+    "created_at": "2026-04-29",
+    "curation_status": "candidate_seed",
+    "intended_use": "Treinamento RAG para IA especialista em SAP Business One, com foco em orientação operacional ao usuário final.",
+    "training_questions": [
+      "Como consultar notas de saída no SAP B1?",
+      "Como filtrar faturas de venda abertas?",
+      "Como abrir detalhes de uma A/R Invoice?"
+    ],
+    "answer_style_hint": "Responder em português brasileiro, com resposta direta, passo a passo, observações, fonte e nível de confiança."
+  }
+]

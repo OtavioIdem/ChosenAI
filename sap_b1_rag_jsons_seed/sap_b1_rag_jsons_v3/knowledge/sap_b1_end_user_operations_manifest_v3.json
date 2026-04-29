@@ -1,0 +1,62 @@
+{
+  "package": "sap_b1_end_user_rag_operations_v3",
+  "created_at": "2026-04-29",
+  "version": "sap_b1_end_user_ops_v3",
+  "description": "Pacote de conhecimento RAG orientado a procedimentos de usuário final no SAP Business One.",
+  "record_count": 14,
+  "files": [
+    {
+      "file": "administracao_usuarios_e_autorizacoes.json",
+      "records": 3
+    },
+    {
+      "file": "vendas_ar_nota_saida.json",
+      "records": 2
+    },
+    {
+      "file": "compras_ap_nota_entrada.json",
+      "records": 2
+    },
+    {
+      "file": "financeiro_baixa_pagamentos.json",
+      "records": 2
+    },
+    {
+      "file": "estoque_baixa_movimentacoes.json",
+      "records": 2
+    },
+    {
+      "file": "aprovacoes_documentos.json",
+      "records": 2
+    },
+    {
+      "file": "roteamento_intencoes_operacionais.json",
+      "records": 1
+    }
+  ],
+  "main_sources": [
+    {
+      "name": "SAP Help Portal - User Guide for SAP Business One, Web Client 10.0 SP 2311",
+      "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2311/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf"
+    },
+    {
+      "name": "SAP Help Portal - SAP Business One Administrator's Guide 10.0 SP 2311",
+      "url": "https://help.sap.com/doc/f971ebb2d51940f597f9e746d5aa019b/10.0_SP_2311/en-US/9a2e1e4e14b3486099852acf7a8bcd84.pdf"
+    },
+    {
+      "name": "SAP Learning - Managing Users and User Groups",
+      "url": "https://learning.sap.com/courses/implementing-sap-business-one/managing-users-and-user-groups"
+    },
+    {
+      "name": "SAP Help Portal / SAP Business One How-To - How to Define Authorizations in SAP Business One 10.0",
+      "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE"
+    }
+  ],
+  "recommended_path": "backend/knowledge/json/sap_b1/end_user_operations/",
+  "recommended_next_step": "Copiar a pasta para o projeto e executar POST /api/v1/knowledge/reindex.",
+  "curation_notes": [
+    "Conteúdos são resumos estruturados e não cópia integral da documentação.",
+    "Procedimentos fiscais brasileiros exigem validação humana antes de uso em produção.",
+    "Menus podem variar por versão, localização, autorização e customização do cliente."
+  ]
+}

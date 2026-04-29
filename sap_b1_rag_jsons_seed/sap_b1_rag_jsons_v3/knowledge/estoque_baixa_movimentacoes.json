@@ -1,0 +1,146 @@
+[
+  {
+    "id": "sapb1-enduser-inventory-goods-issue-001",
+    "title": "Dar baixa de estoque por saída de mercadoria",
+    "module": "Estoque",
+    "category": "procedimento_operacional",
+    "process": "Goods Issue",
+    "audience": "usuario_final",
+    "language": "pt-BR",
+    "keywords": [
+      "SAP Business One",
+      "baixa de estoque",
+      "Goods Issue",
+      "saída de mercadoria",
+      "inventory",
+      "estoque"
+    ],
+    "content": "Processo: Goods Issue\n\nObjetivo:\nDar baixa de estoque por saída de mercadoria\n\nPré-requisitos:\n- Item deve estar cadastrado e controlado no estoque.\n- Depósito deve estar definido.\n- Usuário deve ter autorização para criar Goods Issue.\n- Se houver lote, série ou localização, as informações devem estar disponíveis.\n\nCaminhos de menu / apps relacionados:\n- Web Client > Home > Goods Issues\n- Web Client > Home > Create Goods Issue\n- Client Desktop > Inventory > Inventory Transactions > Goods Issue, quando aplicável\n\nPasso a passo:\n1. Acesse Create Goods Issue ou Goods Issues e crie novo documento.\n2. Informe data, depósito e demais informações gerais.\n3. Na aba de conteúdo, informe item, quantidade e depósito de saída.\n4. Preencha lote, número de série ou bin location se o item exigir.\n5. Revise a quantidade e o impacto esperado no estoque.\n6. Adicione o documento.\n7. Verifique se o saldo do item foi reduzido corretamente.\n\nPontos de validação:\n- Quantidade disponível era suficiente antes da saída.\n- Depósito correto foi utilizado.\n- Lotes/séries/localizações foram informados quando obrigatórios.\n- Documento de saída aparece na lista de Goods Issues.\n\nObservações:\n- Baixa de estoque não é o mesmo que baixa financeira.\n- Algumas saídas de estoque podem ser resultado de documentos de venda, produção ou ajuste; a IA deve orientar conforme o tipo de baixa informado pelo usuário.\n",
+    "structured_answer": {
+      "prerequisites": [
+        "Item deve estar cadastrado e controlado no estoque.",
+        "Depósito deve estar definido.",
+        "Usuário deve ter autorização para criar Goods Issue.",
+        "Se houver lote, série ou localização, as informações devem estar disponíveis."
+      ],
+      "menu_paths": [
+        "Web Client > Home > Goods Issues",
+        "Web Client > Home > Create Goods Issue",
+        "Client Desktop > Inventory > Inventory Transactions > Goods Issue, quando aplicável"
+      ],
+      "steps": [
+        "Acesse Create Goods Issue ou Goods Issues e crie novo documento.",
+        "Informe data, depósito e demais informações gerais.",
+        "Na aba de conteúdo, informe item, quantidade e depósito de saída.",
+        "Preencha lote, número de série ou bin location se o item exigir.",
+        "Revise a quantidade e o impacto esperado no estoque.",
+        "Adicione o documento.",
+        "Verifique se o saldo do item foi reduzido corretamente."
+      ],
+      "validation_points": [
+        "Quantidade disponível era suficiente antes da saída.",
+        "Depósito correto foi utilizado.",
+        "Lotes/séries/localizações foram informados quando obrigatórios.",
+        "Documento de saída aparece na lista de Goods Issues."
+      ],
+      "observations": [
+        "Baixa de estoque não é o mesmo que baixa financeira.",
+        "Algumas saídas de estoque podem ser resultado de documentos de venda, produção ou ajuste; a IA deve orientar conforme o tipo de baixa informado pelo usuário."
+      ],
+      "related_modules": [
+        "Inventário",
+        "Vendas",
+        "Produção",
+        "Aprovações"
+      ]
+    },
+    "source": {
+      "name": "SAP Help Portal - User Guide for SAP Business One, Web Client 10.0 SP 2311",
+      "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2311/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+      "authority": "official",
+      "source_type": "sap_help_pdf"
+    },
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap_b1_end_user_ops_v3",
+    "created_at": "2026-04-29",
+    "curation_status": "candidate_seed",
+    "intended_use": "Treinamento RAG para IA especialista em SAP Business One, com foco em orientação operacional ao usuário final.",
+    "training_questions": [
+      "Como dar baixa no estoque no SAP B1?",
+      "Como criar uma Goods Issue?",
+      "Como registrar saída manual de mercadoria?",
+      "Baixa no SAP é financeira ou de estoque?"
+    ],
+    "answer_style_hint": "Responder em português brasileiro, com resposta direta, passo a passo, observações, fonte e nível de confiança."
+  },
+  {
+    "id": "sapb1-enduser-inventory-goods-receipt-002",
+    "title": "Registrar entrada de mercadoria sem vínculo fiscal direto",
+    "module": "Estoque",
+    "category": "procedimento_operacional",
+    "process": "Goods Receipt",
+    "audience": "usuario_final",
+    "language": "pt-BR",
+    "keywords": [
+      "SAP Business One",
+      "entrada de estoque",
+      "Goods Receipt",
+      "recebimento de mercadoria",
+      "estoque"
+    ],
+    "content": "Processo: Goods Receipt\n\nObjetivo:\nRegistrar entrada de mercadoria sem vínculo fiscal direto\n\nPré-requisitos:\n- Item deve estar cadastrado.\n- Depósito de entrada deve estar configurado.\n- Usuário deve ter autorização para entrada de mercadoria.\n- Validar se a entrada correta deveria ser feita por compra, recebimento de mercadoria de pedido ou ajuste.\n\nCaminhos de menu / apps relacionados:\n- Web Client > Inventory Transactions > Goods Receipts\n- Client Desktop > Inventory > Inventory Transactions > Goods Receipt, quando aplicável\n\nPasso a passo:\n1. Acesse o app de Goods Receipts.\n2. Crie novo documento.\n3. Informe item, quantidade e depósito.\n4. Preencha lote, série ou localização quando aplicável.\n5. Revise o impacto no estoque.\n6. Adicione o documento.\n7. Consulte o saldo do item para confirmar a entrada.\n\nPontos de validação:\n- Entrada aumentou o saldo esperado.\n- Depósito correto foi utilizado.\n- Movimento é compatível com a política fiscal/contábil da empresa.\n\nObservações:\n- Para entrada fiscal de fornecedor, normalmente o processo envolve compras/A/P e localização fiscal; Goods Receipt simples pode não substituir nota fiscal de entrada.\n- Exige validação do fluxo específico da empresa.\n",
+    "structured_answer": {
+      "prerequisites": [
+        "Item deve estar cadastrado.",
+        "Depósito de entrada deve estar configurado.",
+        "Usuário deve ter autorização para entrada de mercadoria.",
+        "Validar se a entrada correta deveria ser feita por compra, recebimento de mercadoria de pedido ou ajuste."
+      ],
+      "menu_paths": [
+        "Web Client > Inventory Transactions > Goods Receipts",
+        "Client Desktop > Inventory > Inventory Transactions > Goods Receipt, quando aplicável"
+      ],
+      "steps": [
+        "Acesse o app de Goods Receipts.",
+        "Crie novo documento.",
+        "Informe item, quantidade e depósito.",
+        "Preencha lote, série ou localização quando aplicável.",
+        "Revise o impacto no estoque.",
+        "Adicione o documento.",
+        "Consulte o saldo do item para confirmar a entrada."
+      ],
+      "validation_points": [
+        "Entrada aumentou o saldo esperado.",
+        "Depósito correto foi utilizado.",
+        "Movimento é compatível com a política fiscal/contábil da empresa."
+      ],
+      "observations": [
+        "Para entrada fiscal de fornecedor, normalmente o processo envolve compras/A/P e localização fiscal; Goods Receipt simples pode não substituir nota fiscal de entrada.",
+        "Exige validação do fluxo específico da empresa."
+      ],
+      "related_modules": [
+        "Compras",
+        "Fiscal Brasil"
+      ]
+    },
+    "source": {
+      "name": "SAP Help Portal - User Guide for SAP Business One, Web Client 10.0 SP 2311",
+      "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2311/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+      "authority": "official",
+      "source_type": "sap_help_pdf"
+    },
+    "confidence": "medium",
+    "requires_human_validation": true,
+    "version": "sap_b1_end_user_ops_v3",
+    "created_at": "2026-04-29",
+    "curation_status": "candidate_seed",
+    "intended_use": "Treinamento RAG para IA especialista em SAP Business One, com foco em orientação operacional ao usuário final.",
+    "training_questions": [
+      "Como registrar entrada de estoque no SAP B1?",
+      "Qual a diferença entre Goods Receipt e nota fiscal de entrada?",
+      "Como fazer ajuste de entrada de mercadoria?"
+    ],
+    "answer_style_hint": "Responder em português brasileiro, com resposta direta, passo a passo, observações, fonte e nível de confiança."
+  }
+]

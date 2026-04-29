@@ -1,0 +1,150 @@
+[
+  {
+    "id": "sapb1-enduser-approval-decisions-001",
+    "title": "Acessar e decidir aprovações de pedidos/documentos no Web Client",
+    "module": "Aprovações",
+    "category": "procedimento_operacional",
+    "process": "Approval Decisions",
+    "audience": "aprovador",
+    "language": "pt-BR",
+    "keywords": [
+      "SAP Business One",
+      "aprovação",
+      "Approval Decisions",
+      "pedido de compra",
+      "pedido de venda",
+      "draft",
+      "authorizer"
+    ],
+    "content": "Processo: Approval Decisions\n\nObjetivo:\nAcessar e decidir aprovações de pedidos/documentos no Web Client\n\nPré-requisitos:\n- Processo de aprovação deve estar configurado e habilitado no SAP Business One Client.\n- Usuário deve ser aprovador/authorizer no fluxo aplicável.\n- Deve existir documento em aprovação.\n\nCaminhos de menu / apps relacionados:\n- Web Client > Home > Approval Decisions\n- Web Client > Manage Approval Decisions\n\nPasso a passo:\n1. Acesse o tile Approval Decisions no Web Client.\n2. A lista Manage Approval Decisions será aberta com as solicitações compatíveis com a visão selecionada.\n3. Use a visão My Pending Requests for Approval ou filtros para localizar solicitações pendentes.\n4. Abra ou selecione uma ou mais solicitações.\n5. Revise dados do rascunho/documento, valores, parceiro de negócio, itens e observações.\n6. Escolha aprovar ou rejeitar conforme política interna.\n7. O originador recebe notificação e pode prosseguir conforme o status.\n\nPontos de validação:\n- Solicitação estava pendente para o usuário aprovador.\n- Documento revisado corresponde à política de aprovação.\n- Após decisão, status mudou para aprovado ou rejeitado.\n- Originador recebeu notificação.\n\nObservações:\n- O Web Client suporta decisões de aprovação para vários documentos de vendas, compras, pagamentos e inventário, mas depende do processo estar habilitado no client SAP Business One.\n- A IA deve diferenciar configurar aprovação de decidir uma aprovação já pendente.\n",
+    "structured_answer": {
+      "prerequisites": [
+        "Processo de aprovação deve estar configurado e habilitado no SAP Business One Client.",
+        "Usuário deve ser aprovador/authorizer no fluxo aplicável.",
+        "Deve existir documento em aprovação."
+      ],
+      "menu_paths": [
+        "Web Client > Home > Approval Decisions",
+        "Web Client > Manage Approval Decisions"
+      ],
+      "steps": [
+        "Acesse o tile Approval Decisions no Web Client.",
+        "A lista Manage Approval Decisions será aberta com as solicitações compatíveis com a visão selecionada.",
+        "Use a visão My Pending Requests for Approval ou filtros para localizar solicitações pendentes.",
+        "Abra ou selecione uma ou mais solicitações.",
+        "Revise dados do rascunho/documento, valores, parceiro de negócio, itens e observações.",
+        "Escolha aprovar ou rejeitar conforme política interna.",
+        "O originador recebe notificação e pode prosseguir conforme o status."
+      ],
+      "validation_points": [
+        "Solicitação estava pendente para o usuário aprovador.",
+        "Documento revisado corresponde à política de aprovação.",
+        "Após decisão, status mudou para aprovado ou rejeitado.",
+        "Originador recebeu notificação."
+      ],
+      "observations": [
+        "O Web Client suporta decisões de aprovação para vários documentos de vendas, compras, pagamentos e inventário, mas depende do processo estar habilitado no client SAP Business One.",
+        "A IA deve diferenciar configurar aprovação de decidir uma aprovação já pendente."
+      ],
+      "related_modules": [
+        "Compras",
+        "Vendas",
+        "Pagamentos",
+        "Estoque"
+      ]
+    },
+    "source": {
+      "name": "SAP Help Portal - User Guide for SAP Business One, Web Client 10.0 SP 2311",
+      "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2311/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+      "authority": "official",
+      "source_type": "sap_help_pdf"
+    },
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap_b1_end_user_ops_v3",
+    "created_at": "2026-04-29",
+    "curation_status": "candidate_seed",
+    "intended_use": "Treinamento RAG para IA especialista em SAP Business One, com foco em orientação operacional ao usuário final.",
+    "training_questions": [
+      "Como aprovar pedido no SAP Business One?",
+      "Onde vejo aprovações pendentes no Web Client?",
+      "Como rejeitar uma solicitação de aprovação?",
+      "Por que não aparece nada em Approval Decisions?"
+    ],
+    "answer_style_hint": "Responder em português brasileiro, com resposta direta, passo a passo, observações, fonte e nível de confiança."
+  },
+  {
+    "id": "sapb1-enduser-approval-originator-002",
+    "title": "Entender o que acontece quando um documento entra em aprovação",
+    "module": "Aprovações",
+    "category": "conceito_operacional",
+    "process": "Documento em aprovação",
+    "audience": "usuario_final",
+    "language": "pt-BR",
+    "keywords": [
+      "SAP Business One",
+      "approval process",
+      "draft",
+      "originator",
+      "authorizer",
+      "documento em aprovação"
+    ],
+    "content": "Processo: Documento em aprovação\n\nObjetivo:\nEntender o que acontece quando um documento entra em aprovação\n\nPré-requisitos:\n- Processo de aprovação precisa estar habilitado.\n- Documento precisa atender uma condição de aprovação configurada.\n- Usuário deve estar criando ou atualizando documento sujeito a aprovação.\n\nCaminhos de menu / apps relacionados:\n- Web Client > Documento em criação/edição\n- Web Client > Drafts\n- Web Client > Approval Decisions\n\nPasso a passo:\n1. Usuário cria ou atualiza um documento.\n2. O sistema identifica que a ação requer aprovação.\n3. O usuário se torna originador do processo.\n4. O SAP cria um rascunho/draft do documento.\n5. O aprovador recebe a solicitação para revisar.\n6. Após aprovação, o originador pode gerar o documento final ou prosseguir conforme fluxo.\n7. Após rejeição, o originador deve ajustar ou cancelar o processo conforme a situação.\n\nPontos de validação:\n- Documento ficou como draft e não como documento final.\n- Aprovador correto recebeu a solicitação.\n- Status de aprovação está visível para acompanhamento.\n- Usuário entende que não deve recriar documento duplicado antes de verificar o status.\n\nObservações:\n- Aprovação não é erro; é um controle configurado.\n- Documentos podem ficar pendentes até decisão do aprovador.\n- Se a solicitação não aparece para o aprovador, revisar regra de aprovação, usuário e permissões.\n",
+    "structured_answer": {
+      "prerequisites": [
+        "Processo de aprovação precisa estar habilitado.",
+        "Documento precisa atender uma condição de aprovação configurada.",
+        "Usuário deve estar criando ou atualizando documento sujeito a aprovação."
+      ],
+      "menu_paths": [
+        "Web Client > Documento em criação/edição",
+        "Web Client > Drafts",
+        "Web Client > Approval Decisions"
+      ],
+      "steps": [
+        "Usuário cria ou atualiza um documento.",
+        "O sistema identifica que a ação requer aprovação.",
+        "O usuário se torna originador do processo.",
+        "O SAP cria um rascunho/draft do documento.",
+        "O aprovador recebe a solicitação para revisar.",
+        "Após aprovação, o originador pode gerar o documento final ou prosseguir conforme fluxo.",
+        "Após rejeição, o originador deve ajustar ou cancelar o processo conforme a situação."
+      ],
+      "validation_points": [
+        "Documento ficou como draft e não como documento final.",
+        "Aprovador correto recebeu a solicitação.",
+        "Status de aprovação está visível para acompanhamento.",
+        "Usuário entende que não deve recriar documento duplicado antes de verificar o status."
+      ],
+      "observations": [
+        "Aprovação não é erro; é um controle configurado.",
+        "Documentos podem ficar pendentes até decisão do aprovador.",
+        "Se a solicitação não aparece para o aprovador, revisar regra de aprovação, usuário e permissões."
+      ],
+      "related_modules": [
+        "Rascunhos",
+        "Workflow",
+        "Autorização"
+      ]
+    },
+    "source": {
+      "name": "SAP Help Portal - User Guide for SAP Business One, Web Client 10.0 SP 2311",
+      "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_SP_2311/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+      "authority": "official",
+      "source_type": "sap_help_pdf"
+    },
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap_b1_end_user_ops_v3",
+    "created_at": "2026-04-29",
+    "curation_status": "candidate_seed",
+    "intended_use": "Treinamento RAG para IA especialista em SAP Business One, com foco em orientação operacional ao usuário final.",
+    "training_questions": [
+      "Minha nota entrou em aprovação, o que faço?",
+      "O que significa draft no processo de aprovação?",
+      "Quem aprova um pedido no SAP B1?",
+      "Depois de aprovado, como gero o documento final?"
+    ],
+    "answer_style_hint": "Responder em português brasileiro, com resposta direta, passo a passo, observações, fonte e nível de confiança."
+  }
+]

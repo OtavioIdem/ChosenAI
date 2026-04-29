@@ -1,0 +1,216 @@
+[
+  {
+    "id": "sapb1-enduser-admin-users-001",
+    "title": "Criar ou manter usuário de empresa no SAP Business One",
+    "module": "Administração",
+    "category": "procedimento_usuario",
+    "process": "Criação e manutenção de usuários",
+    "audience": "administrador_sap_b1",
+    "language": "pt-BR",
+    "keywords": [
+      "SAP Business One",
+      "usuário",
+      "Users - Setup",
+      "criar usuário",
+      "licença",
+      "autorização",
+      "senha",
+      "administração"
+    ],
+    "content": "Processo: Criação e manutenção de usuários\n\nObjetivo:\nCriar ou manter usuário de empresa no SAP Business One\n\nPré-requisitos:\n- Ter perfil administrativo ou superusuário autorizado.\n- Definir previamente se o usuário será interno, externo/IDP ou usuário de empresa.\n- Definir licença e autorizações gerais após a criação, pois apenas criar a conta não garante acesso funcional.\n\nCaminhos de menu / apps relacionados:\n- SAP Business One Client > Administration > Setup > General > Users\n- SLD Control Center > Users > Add, para cenários com usuários do Authentication Server ou IDP\n\nPasso a passo:\n1. Acesse o SAP Business One Client com usuário autorizado.\n2. Abra o caminho Administration > Setup > General > Users.\n3. Entre em modo de inclusão, quando aplicável, e informe o código do usuário, nome e demais dados obrigatórios.\n4. Defina senha ou vínculo de autenticação conforme o modelo adotado pela empresa.\n5. Atribua licença compatível com o papel do usuário.\n6. Configure autorizações gerais e, se necessário, permissões por propriedade de dados.\n7. Salve/atualize o cadastro.\n8. Teste o login e valide se o usuário acessa apenas menus e funções necessários.\n\nPontos de validação:\n- Usuário consegue autenticar.\n- Usuário possui licença atribuída.\n- Usuário possui autorizações gerais compatíveis com sua função.\n- Usuário não recebeu permissão superior ao necessário.\n\nObservações:\n- A criação de usuário deve ser tratada como processo administrativo e auditável.\n- Para novos colaboradores, recomenda-se criar novo usuário em vez de reutilizar login antigo.\n- Em ambientes com IDP, pode existir etapa adicional de vínculo entre usuário externo e usuário de empresa.\n",
+    "structured_answer": {
+      "prerequisites": [
+        "Ter perfil administrativo ou superusuário autorizado.",
+        "Definir previamente se o usuário será interno, externo/IDP ou usuário de empresa.",
+        "Definir licença e autorizações gerais após a criação, pois apenas criar a conta não garante acesso funcional."
+      ],
+      "menu_paths": [
+        "SAP Business One Client > Administration > Setup > General > Users",
+        "SLD Control Center > Users > Add, para cenários com usuários do Authentication Server ou IDP"
+      ],
+      "steps": [
+        "Acesse o SAP Business One Client com usuário autorizado.",
+        "Abra o caminho Administration > Setup > General > Users.",
+        "Entre em modo de inclusão, quando aplicável, e informe o código do usuário, nome e demais dados obrigatórios.",
+        "Defina senha ou vínculo de autenticação conforme o modelo adotado pela empresa.",
+        "Atribua licença compatível com o papel do usuário.",
+        "Configure autorizações gerais e, se necessário, permissões por propriedade de dados.",
+        "Salve/atualize o cadastro.",
+        "Teste o login e valide se o usuário acessa apenas menus e funções necessários."
+      ],
+      "validation_points": [
+        "Usuário consegue autenticar.",
+        "Usuário possui licença atribuída.",
+        "Usuário possui autorizações gerais compatíveis com sua função.",
+        "Usuário não recebeu permissão superior ao necessário."
+      ],
+      "observations": [
+        "A criação de usuário deve ser tratada como processo administrativo e auditável.",
+        "Para novos colaboradores, recomenda-se criar novo usuário em vez de reutilizar login antigo.",
+        "Em ambientes com IDP, pode existir etapa adicional de vínculo entre usuário externo e usuário de empresa."
+      ],
+      "related_modules": [
+        "Licenciamento",
+        "Autorização",
+        "Segurança"
+      ]
+    },
+    "source": {
+      "name": "SAP Help Portal - SAP Business One Administrator's Guide 10.0 SP 2311",
+      "url": "https://help.sap.com/doc/f971ebb2d51940f597f9e746d5aa019b/10.0_SP_2311/en-US/9a2e1e4e14b3486099852acf7a8bcd84.pdf",
+      "authority": "official",
+      "source_type": "sap_help_pdf"
+    },
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap_b1_end_user_ops_v3",
+    "created_at": "2026-04-29",
+    "curation_status": "candidate_seed",
+    "intended_use": "Treinamento RAG para IA especialista em SAP Business One, com foco em orientação operacional ao usuário final.",
+    "training_questions": [
+      "Como criar um usuário no SAP Business One?",
+      "Onde cadastro um novo usuário no SAP B1?",
+      "Depois de criar o usuário, por que ele não consegue acessar os menus?",
+      "Qual a relação entre usuário, licença e autorização?"
+    ],
+    "answer_style_hint": "Responder em português brasileiro, com resposta direta, passo a passo, observações, fonte e nível de confiança."
+  },
+  {
+    "id": "sapb1-enduser-admin-auth-002",
+    "title": "Configurar autorizações gerais para usuários e grupos",
+    "module": "Administração",
+    "category": "procedimento_usuario",
+    "process": "Autorização de usuários e grupos",
+    "audience": "administrador_sap_b1",
+    "language": "pt-BR",
+    "keywords": [
+      "SAP Business One",
+      "autorizações",
+      "General Authorizations",
+      "grupo de usuários",
+      "full authorization",
+      "read only",
+      "no authorization"
+    ],
+    "content": "Processo: Autorização de usuários e grupos\n\nObjetivo:\nConfigurar autorizações gerais para usuários e grupos\n\nPré-requisitos:\n- Usuário ou grupo já deve existir.\n- Somente usuário com permissão adequada, normalmente superusuário, deve alterar autorizações.\n- Entender o papel operacional do usuário antes de conceder acesso.\n\nCaminhos de menu / apps relacionados:\n- SAP Business One Client > Administration > System Initialization > Authorizations > General Authorizations\n\nPasso a passo:\n1. Acesse Administration > System Initialization > Authorizations > General Authorizations.\n2. Selecione a aba de usuários ou grupos.\n3. Escolha o usuário ou grupo que receberá permissões.\n4. Expanda o módulo ou função desejada na árvore de autorizações.\n5. Defina o nível de acesso: Full Authorization, Read-Only ou No Authorization, conforme a necessidade.\n6. Revise autorizações herdadas de grupos e autorizações efetivas.\n7. Atualize/salve a configuração.\n8. Peça ao usuário para testar o acesso nas telas necessárias.\n\nPontos de validação:\n- Usuário acessa somente os módulos autorizados.\n- Permissões efetivas refletem combinações entre usuário e grupos.\n- Funções críticas não foram liberadas inadvertidamente.\n\nObservações:\n- Autorizações em nível superior podem afetar subfunções.\n- A autorização efetiva pode ser resultado da combinação entre permissões individuais e grupos.\n- Mudanças de autorização devem ser documentadas para auditoria.\n",
+    "structured_answer": {
+      "prerequisites": [
+        "Usuário ou grupo já deve existir.",
+        "Somente usuário com permissão adequada, normalmente superusuário, deve alterar autorizações.",
+        "Entender o papel operacional do usuário antes de conceder acesso."
+      ],
+      "menu_paths": [
+        "SAP Business One Client > Administration > System Initialization > Authorizations > General Authorizations"
+      ],
+      "steps": [
+        "Acesse Administration > System Initialization > Authorizations > General Authorizations.",
+        "Selecione a aba de usuários ou grupos.",
+        "Escolha o usuário ou grupo que receberá permissões.",
+        "Expanda o módulo ou função desejada na árvore de autorizações.",
+        "Defina o nível de acesso: Full Authorization, Read-Only ou No Authorization, conforme a necessidade.",
+        "Revise autorizações herdadas de grupos e autorizações efetivas.",
+        "Atualize/salve a configuração.",
+        "Peça ao usuário para testar o acesso nas telas necessárias."
+      ],
+      "validation_points": [
+        "Usuário acessa somente os módulos autorizados.",
+        "Permissões efetivas refletem combinações entre usuário e grupos.",
+        "Funções críticas não foram liberadas inadvertidamente."
+      ],
+      "observations": [
+        "Autorizações em nível superior podem afetar subfunções.",
+        "A autorização efetiva pode ser resultado da combinação entre permissões individuais e grupos.",
+        "Mudanças de autorização devem ser documentadas para auditoria."
+      ],
+      "related_modules": [
+        "Segurança",
+        "Auditoria",
+        "Grupos de usuários"
+      ]
+    },
+    "source": {
+      "name": "SAP Help Portal / SAP Business One How-To - How to Define Authorizations in SAP Business One 10.0",
+      "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE",
+      "authority": "official",
+      "source_type": "sap_how_to"
+    },
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap_b1_end_user_ops_v3",
+    "created_at": "2026-04-29",
+    "curation_status": "candidate_seed",
+    "intended_use": "Treinamento RAG para IA especialista em SAP Business One, com foco em orientação operacional ao usuário final.",
+    "training_questions": [
+      "Como liberar acesso para um usuário no SAP B1?",
+      "Como dar permissão somente leitura para um módulo?",
+      "Por que a autorização aparece como Various Authorizations?",
+      "Como copiar permissões de um usuário para outro?"
+    ],
+    "answer_style_hint": "Responder em português brasileiro, com resposta direta, passo a passo, observações, fonte e nível de confiança."
+  },
+  {
+    "id": "sapb1-enduser-admin-password-003",
+    "title": "Alterar senha de usuário no SAP Business One",
+    "module": "Administração",
+    "category": "procedimento_usuario",
+    "process": "Alteração de senha",
+    "audience": "administrador_sap_b1",
+    "language": "pt-BR",
+    "keywords": [
+      "SAP Business One",
+      "senha",
+      "change password",
+      "segurança",
+      "usuário"
+    ],
+    "content": "Processo: Alteração de senha\n\nObjetivo:\nAlterar senha de usuário no SAP Business One\n\nPré-requisitos:\n- Usuário deve estar ativo.\n- Política de senha da empresa deve estar definida.\n- Em cenários com IDP, a troca de senha pode ocorrer fora do SAP B1.\n\nCaminhos de menu / apps relacionados:\n- SAP Business One Client > Administration > Setup > General > Security > Change Password\n\nPasso a passo:\n1. Acesse Administration > Setup > General > Security > Change Password.\n2. Informe a senha atual e a nova senha conforme a política vigente.\n3. Confirme a nova senha.\n4. Salve a alteração.\n5. Efetue novo login para validar a alteração.\n\nPontos de validação:\n- Senha atende à política de segurança.\n- Usuário consegue logar novamente.\n- Em ambiente com IDP, confirmar se a senha deve ser alterada no provedor externo.\n\nObservações:\n- A política de senha pode bloquear acesso se a senha expirar.\n- Administradores devem evitar compartilhar senhas.\n",
+    "structured_answer": {
+      "prerequisites": [
+        "Usuário deve estar ativo.",
+        "Política de senha da empresa deve estar definida.",
+        "Em cenários com IDP, a troca de senha pode ocorrer fora do SAP B1."
+      ],
+      "menu_paths": [
+        "SAP Business One Client > Administration > Setup > General > Security > Change Password"
+      ],
+      "steps": [
+        "Acesse Administration > Setup > General > Security > Change Password.",
+        "Informe a senha atual e a nova senha conforme a política vigente.",
+        "Confirme a nova senha.",
+        "Salve a alteração.",
+        "Efetue novo login para validar a alteração."
+      ],
+      "validation_points": [
+        "Senha atende à política de segurança.",
+        "Usuário consegue logar novamente.",
+        "Em ambiente com IDP, confirmar se a senha deve ser alterada no provedor externo."
+      ],
+      "observations": [
+        "A política de senha pode bloquear acesso se a senha expirar.",
+        "Administradores devem evitar compartilhar senhas."
+      ],
+      "related_modules": [
+        "Segurança",
+        "Usuários"
+      ]
+    },
+    "source": {
+      "name": "SAP Help Portal - SAP Business One Administrator's Guide 10.0 SP 2311",
+      "url": "https://help.sap.com/doc/f971ebb2d51940f597f9e746d5aa019b/10.0_SP_2311/en-US/9a2e1e4e14b3486099852acf7a8bcd84.pdf",
+      "authority": "official",
+      "source_type": "sap_help_pdf"
+    },
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap_b1_end_user_ops_v3",
+    "created_at": "2026-04-29",
+    "curation_status": "candidate_seed",
+    "intended_use": "Treinamento RAG para IA especialista em SAP Business One, com foco em orientação operacional ao usuário final.",
+    "training_questions": [
+      "Como trocar a senha no SAP Business One?",
+      "Onde fica a opção de Change Password no SAP B1?",
+      "Por que não consigo alterar senha se uso IDP?"
+    ],
+    "answer_style_hint": "Responder em português brasileiro, com resposta direta, passo a passo, observações, fonte e nível de confiança."
+  }
+]

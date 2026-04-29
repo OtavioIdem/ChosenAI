@@ -1,0 +1,32 @@
+[
+  {
+    "name": "SAP Business One — Web Client User Guide",
+    "authority": "official_sap",
+    "url": "https://help.sap.com/doc/ceedc4fe720a4fc19a8e1fa75bdf02f7/10.0_FP_2305/en-US/ab9cf61542fb4359ae1ee7a972f920d5.pdf",
+    "notes": "Base operacional para Web Client: documentos de vendas, compras, pagamentos, aprovações, drafts e movimentações."
+  },
+  {
+    "name": "SAP Business One Administrator's Guide 10.0 SP 2505",
+    "authority": "official_sap",
+    "url": "https://help.sap.com/doc/f971ebb2d51940f597f9e746d5aa019b/10.0_SP_2505/en-US/9a2e1e4e14b3486099852acf7a8bcd84.pdf",
+    "notes": "Base administrativa para instalação, segurança, usuários, autenticação e administração do ambiente."
+  },
+  {
+    "name": "SAP Learning — Managing Users and User Groups",
+    "authority": "official_sap_learning",
+    "url": "https://learning.sap.com/courses/implementing-sap-business-one/managing-users-and-user-groups",
+    "notes": "Conceitos sobre usuário, licença, grupos, superusuário e autorizações."
+  },
+  {
+    "name": "SAP Learning — Defining General Authorizations",
+    "authority": "official_sap_learning",
+    "url": "https://learning.sap.com/courses/implementing-sap-business-one/defining-general-authorizations",
+    "notes": "Conceitos sobre autorização geral, grupos de autorização e cópia de permissões."
+  },
+  {
+    "name": "SAP Help Portal — Nota Fiscal: Brazil",
+    "authority": "official_sap",
+    "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE/4228b3b6daa64784b4eed1ff2d9a350e/c87d5602d5ba4850864cba8e5a3e571e.html",
+    "notes": "Contexto de localização Brasil e conceito de Nota Fiscal em transações de entrada e saída."
+  }
+]

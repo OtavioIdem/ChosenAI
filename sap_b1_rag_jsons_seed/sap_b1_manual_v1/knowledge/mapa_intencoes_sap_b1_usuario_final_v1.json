@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Roteamento de intenção — criar usuário SAP B1",
+    "module": "Administração",
+    "category": "intent_router",
+    "content": "Quando o usuário perguntar 'como criar usuário', 'novo usuário no SAP', 'cadastrar login', 'adicionar usuário', roteie para o procedimento sap_b1_user_create_desktop. Responder com menu Administration > Setup > General > Users, licença, permissões e cautela com superuser.",
+    "keywords": [
+      "criar usuário",
+      "novo usuário",
+      "cadastrar login",
+      "superuser",
+      "licença"
+    ]
+  },
+  {
+    "title": "Roteamento de intenção — aprovação de pedido",
+    "module": "Aprovações",
+    "category": "intent_router",
+    "content": "Quando o usuário perguntar 'como aprovar pedido', 'onde vejo aprovações', 'pedido pendente de aprovação', roteie para sap_b1_approval_decisions. Responder com Approval Decisions no Web Client e explicar origem/aprovador/draft.",
+    "keywords": [
+      "aprovar pedido",
+      "aprovações",
+      "approval decisions",
+      "pedido pendente"
+    ]
+  },
+  {
+    "title": "Roteamento de intenção — baixa no SAP",
+    "module": "Roteamento",
+    "category": "intent_router",
+    "content": "Quando o usuário disser apenas 'dar baixa', não assumir. Diferenciar baixa financeira de cliente (Incoming Payment), baixa financeira de fornecedor (Outgoing Payment), baixa de estoque (Goods Issue) ou baixa/aprovação de documento.",
+    "keywords": [
+      "baixa",
+      "dar baixa",
+      "baixar documento",
+      "baixar estoque",
+      "baixar fatura"
+    ]
+  },
+  {
+    "title": "Roteamento de intenção — nota fiscal de saída Brasil",
+    "module": "Vendas - Contas a Receber",
+    "category": "intent_router",
+    "content": "Quando o usuário perguntar sobre nota fiscal de saída, responder com o processo base de A/R Invoice, mas alertar que no Brasil NF-e/Nota Fiscal depende de localização fiscal, impostos, CFOP, CST, série, modelo, add-ons e transmissão fiscal. Exigir validação humana para configuração fiscal.",
+    "keywords": [
+      "nota fiscal de saída",
+      "NF-e saída",
+      "A/R invoice",
+      "faturamento"
+    ]
+  },
+  {
+    "title": "Roteamento de intenção — nota fiscal de entrada Brasil",
+    "module": "Compras - Contas a Pagar",
+    "category": "intent_router",
+    "content": "Quando o usuário perguntar sobre nota fiscal de entrada, responder com o processo base de A/P Invoice, mas alertar que no Brasil nota fiscal de entrada envolve localização fiscal, documento recebido, impostos, CFOP, CST, escrituração e validação fiscal.",
+    "keywords": [
+      "nota fiscal de entrada",
+      "A/P invoice",
+      "entrada fiscal",
+      "compras"
+    ]
+  }
+]

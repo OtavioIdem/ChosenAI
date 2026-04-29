@@ -1,0 +1,55 @@
+[
+  {
+    "question": "Como eu crio um novo usuário no SAP Business One?",
+    "expected_module": "Administração",
+    "expected_source": "manual_operacional_sap_b1_usuario_final_v1",
+    "must_include": [
+      "Administration > Setup > General > Users",
+      "licença",
+      "autorizações",
+      "superuser"
+    ]
+  },
+  {
+    "question": "Como aprovo um pedido que ficou pendente?",
+    "expected_module": "Aprovações",
+    "expected_source": "manual_operacional_sap_b1_usuario_final_v1",
+    "must_include": [
+      "Approval Decisions",
+      "draft",
+      "aprovar ou rejeitar"
+    ]
+  },
+  {
+    "question": "Como faço baixa de uma nota de cliente?",
+    "expected_module": "Bancos e Pagamentos",
+    "expected_source": "manual_operacional_sap_b1_usuario_final_v1",
+    "must_include": [
+      "Incoming Payment",
+      "cliente",
+      "documentos em aberto"
+    ]
+  },
+  {
+    "question": "Como dou baixa de estoque?",
+    "expected_module": "Estoque",
+    "expected_source": "manual_operacional_sap_b1_usuario_final_v1",
+    "must_include": [
+      "Goods Issue",
+      "item",
+      "depósito",
+      "quantidade"
+    ]
+  },
+  {
+    "question": "Como emito nota fiscal de saída?",
+    "expected_module": "Vendas - Contas a Receber",
+    "expected_source": "manual_operacional_sap_b1_usuario_final_v1",
+    "must_include": [
+      "A/R Invoice",
+      "Brasil",
+      "localização fiscal",
+      "validação"
+    ]
+  }
+]

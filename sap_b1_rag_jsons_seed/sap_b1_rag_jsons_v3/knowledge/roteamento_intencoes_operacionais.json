@@ -1,0 +1,35 @@
+[
+  {
+    "id": "sapb1-router-enduser-ops-001",
+    "title": "Roteamento de intenções para perguntas operacionais de usuário final",
+    "module": "Roteamento",
+    "category": "intent_router",
+    "language": "pt-BR",
+    "keywords": [
+      "roteamento",
+      "intenção",
+      "usuário final",
+      "SAP B1",
+      "passo a passo",
+      "como fazer"
+    ],
+    "content": "Use este registro para classificar perguntas operacionais de SAP Business One.\n\nRegras:\n- Se o usuário perguntar como criar login, cadastrar usuário, trocar senha, liberar menu ou permissão: módulo Administração.\n- Se perguntar sobre nota de saída, fatura de cliente, venda, A/R Invoice: módulo Vendas - Contas a Receber.\n- Se perguntar sobre nota de entrada, fornecedor, compra, A/P Invoice: módulo Compras - Contas a Pagar.\n- Se perguntar 'baixa' sem contexto, verificar se é baixa financeira ou baixa de estoque. Se houver cliente, fornecedor, título, pagamento, boleto ou fatura: Bancos e Pagamentos. Se houver item, depósito, quantidade ou mercadoria: Estoque.\n- Se perguntar aprovar pedido, solicitações pendentes, Approval Decisions ou documento em aprovação: módulo Aprovações.\n- Se a pergunta envolver NF-e, NFS-e, SPED, CFOP, CST ou impostos brasileiros, consultar também Localização Brasil/Fiscal e exigir validação humana.\n\nFormato de resposta:\n1. Resposta direta.\n2. Passo a passo.\n3. Observações importantes.\n4. Fonte consultada.\n5. Confiança.",
+    "source": {
+      "name": "Curadoria SAGAI / SAP B1 End User Operations",
+      "url": "curated_from_official_sources",
+      "authority": "curated"
+    },
+    "confidence": "high",
+    "requires_human_validation": true,
+    "version": "sap_b1_end_user_ops_v3",
+    "created_at": "2026-04-29",
+    "curation_status": "candidate_seed",
+    "training_questions": [
+      "Como faço uma baixa no SAP?",
+      "Como crio uma nota?",
+      "Como aprovo um pedido?",
+      "Como libero acesso para usuário?",
+      "Como lanço uma nota de fornecedor?"
+    ]
+  }
+]
