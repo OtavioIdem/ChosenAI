@@ -1,0 +1,532 @@
+[
+  {
+    "id": "overview-faturamento",
+    "title": "Visão geral - Faturamento",
+    "category": "Especial",
+    "module": "Faturamento",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Faturamento",
+      "file": "especiais/faturamento.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Faturamento?",
+      "Quando usar Faturamento?"
+    ],
+    "keywords": [
+      "adequação à emissão de nfse no ambiente nacional",
+      "certificado digital",
+      "certificado digital vencido",
+      "cfop",
+      "cfop 5.101 não aparece na nota fiscal de saída",
+      "comissões",
+      "controle de impressão e envio de lotes danfe e xml",
+      "danfe/xml",
+      "emissão de nota fiscal de saída complementar de imposto ou preço",
+      "faturamento",
+      "guia de configuração da reforma tributária",
+      "guia de cálculo de comissões de vendas",
+      "mensagem sobre cclasstrib e classificação tributária",
+      "nfse nacional",
+      "nota complementar",
+      "obtenção do resultado do faturamento",
+      "reforma tributária",
+      "reprogramação de entrega",
+      "reprogramação de entregas para pedidos de venda",
+      "resultado do faturamento"
+    ],
+    "process": {
+      "name": "Faturamento",
+      "objective": "Orientar dúvidas relacionadas a Faturamento.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Tratar faturamento como elo entre comercial, fiscal, financeiro e documentos eletrônicos.",
+      "Qualquer orientação deve preservar integridade fiscal da nota e coerência comercial do pedido.",
+      "Quando houver reforma tributária, CFOP ou classificação, elevar rigor tributário."
+    ],
+    "content": "Módulo/Aba: Especial > Faturamento\n\nTipo de fonte: Especial\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 103\n\nFoco funcional:\n- DANFE/XML\n- reprogramação de entrega\n- NFSe nacional\n- nota complementar\n- comissões\n- certificado digital\n- CFOP\n- resultado do faturamento\n- reforma tributária\n\nTópicos observados:\n- controle de impressão e envio de lotes DANFE e XML\n- reprogramação de entregas para pedidos de venda\n- adequação à emissão de NFSe no Ambiente Nacional\n- emissão de nota fiscal de saída complementar de imposto ou preço\n- guia de cálculo de comissões de vendas\n- certificado digital vencido\n- mensagem sobre cClassTrib e classificação tributária\n- guia de configuração da reforma tributária\n- obtenção do resultado do faturamento\n- CFOP 5.101 não aparece na nota fiscal de saída\n\nInstruções para resposta da IA:\n- Tratar faturamento como elo entre comercial, fiscal, financeiro e documentos eletrônicos.\n- Qualquer orientação deve preservar integridade fiscal da nota e coerência comercial do pedido.\n- Quando houver reforma tributária, CFOP ou classificação, elevar rigor tributário.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.093588Z",
+      "original_file": "especiais/faturamento.json",
+      "confidence_level": "base_mapeada"
+    }
+  },
+  {
+    "id": "faturamento-processos_chave-controle-de-impressao-e-envio-de-lotes-danfe-xml",
+    "title": "Controle de impressão e envio de lotes (DANFE/XML) - Faturamento",
+    "category": "Especial",
+    "module": "Faturamento",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Faturamento",
+      "file": "especiais/faturamento.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona Controle de impressão e envio de lotes (DANFE/XML)?",
+      "O que validar em Controle de impressão e envio de lotes (DANFE/XML)?"
+    ],
+    "keywords": [
+      "antigos",
+      "apenas",
+      "aplica-se",
+      "controlar",
+      "controle",
+      "converte",
+      "danfe",
+      "documental",
+      "envio",
+      "estoque",
+      "exposição",
+      "faturamento",
+      "fiscal",
+      "impressão",
+      "informação",
+      "intermediária",
+      "interna",
+      "lote",
+      "lotes",
+      "migração",
+      "nova",
+      "não",
+      "número",
+      "opção",
+      "para",
+      "parâmetro",
+      "rastreabilidade",
+      "saída",
+      "semântica",
+      "separando",
+      "série",
+      "valores",
+      "xml"
+    ],
+    "process": {
+      "name": "Controle de impressão e envio de lotes (DANFE/XML)",
+      "objective": "Controlar a exposição de lote e série em NF de saída, separando rastreabilidade interna da informação fiscal/documental.",
+      "steps": [],
+      "critical_rules": [
+        "A opção intermediária aplica-se apenas a lote, não a número de série.",
+        "Migração converte valores antigos do parâmetro para a nova semântica."
+      ],
+      "dependencies": [
+        "rastreabilidade",
+        "XML fiscal",
+        "impressão do DANFE",
+        "estoque"
+      ]
+    },
+    "answer_guidelines": [
+      "Tratar faturamento como elo entre comercial, fiscal, financeiro e documentos eletrônicos.",
+      "Qualquer orientação deve preservar integridade fiscal da nota e coerência comercial do pedido.",
+      "Quando houver reforma tributária, CFOP ou classificação, elevar rigor tributário."
+    ],
+    "content": "Módulo/Aba: Especial > Faturamento\n\nProcesso/Assunto: Controle de impressão e envio de lotes (DANFE/XML)\n\nObjetivo: Controlar a exposição de lote e série em NF de saída, separando rastreabilidade interna da informação fiscal/documental.\n\nRegras críticas / validações:\n- A opção intermediária aplica-se apenas a lote, não a número de série.\n- Migração converte valores antigos do parâmetro para a nova semântica.\n\nDependências / impactos:\n- rastreabilidade\n- XML fiscal\n- impressão do DANFE\n- estoque\n\nParâmetros relacionados:\n- {\"codigo\": 378, \"escopo\": \"por filial\", \"efeito\": [\"0 = não informar lote/série no XML nem no DANFE\", \"1 = informar lote no XML e não no DANFE\", \"2 = informar no XML e no DANFE\"]}\n- {\"codigo\": 279, \"status\": \"descontinuado\", \"observacao\": \"substituído pela lógica do parâmetro 378\"}\n\nDetalhes estruturados:\nnome: Controle de impressão e envio de lotes (DANFE/XML)\norigem: artigo_recente\nversao minima: 2.26.0.14569\nobjetivo: Controlar a exposição de lote e série em NF de saída, separando rastreabilidade interna da informação fiscal/documental.\nparametros relacionados > codigo: 378\nparametros relacionados > escopo: por filial\n0 = não informar lote/série no XML nem no DANFE\n1 = informar lote no XML e não no DANFE\n2 = informar no XML e no DANFE\nparametros relacionados > codigo: 279\nparametros relacionados > status: descontinuado\nparametros relacionados > observacao: substituído pela lógica do parâmetro 378\nA opção intermediária aplica-se apenas a lote, não a número de série.\nMigração converte valores antigos do parâmetro para a nova semântica.\nrastreabilidade\nXML fiscal\nimpressão do DANFE\nestoque",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.094085Z",
+      "original_file": "especiais/faturamento.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "faturamento-processos_chave-reprogramacao-de-entregas-de-pedidos-de-venda",
+    "title": "Reprogramação de entregas de pedidos de venda - Faturamento",
+    "category": "Especial",
+    "module": "Faturamento",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Faturamento",
+      "file": "especiais/faturamento.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona Reprogramação de entregas de pedidos de venda?",
+      "O que validar em Reprogramação de entregas de pedidos de venda?"
+    ],
+    "keywords": [
+      "ajuste",
+      "comercial",
+      "data",
+      "entrega",
+      "entregas",
+      "faturamento",
+      "fluxo",
+      "pedidos",
+      "permitir",
+      "reabrir",
+      "reprogramação",
+      "sem",
+      "todo",
+      "venda"
+    ],
+    "process": {
+      "name": "Reprogramação de entregas de pedidos de venda",
+      "objective": "Permitir ajuste de data de entrega sem reabrir todo o fluxo comercial.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Tratar faturamento como elo entre comercial, fiscal, financeiro e documentos eletrônicos.",
+      "Qualquer orientação deve preservar integridade fiscal da nota e coerência comercial do pedido.",
+      "Quando houver reforma tributária, CFOP ou classificação, elevar rigor tributário."
+    ],
+    "content": "Módulo/Aba: Especial > Faturamento\n\nProcesso/Assunto: Reprogramação de entregas de pedidos de venda\n\nObjetivo: Permitir ajuste de data de entrega sem reabrir todo o fluxo comercial.\n\nDetalhes estruturados:\nnome: Reprogramação de entregas de pedidos de venda\norigem: artigo_recente\nobjetivo: Permitir ajuste de data de entrega sem reabrir todo o fluxo comercial.\ndesalinhamento entre expedição, comercial e faturamento\npromessa de entrega divergente do pedido original",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.094497Z",
+      "original_file": "especiais/faturamento.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "faturamento-processos_chave-emissao-de-nfse-no-ambiente-nacional",
+    "title": "Emissão de NFSe no Ambiente Nacional - Faturamento",
+    "category": "Especial",
+    "module": "Faturamento",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Faturamento",
+      "file": "especiais/faturamento.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona Emissão de NFSe no Ambiente Nacional?",
+      "O que validar em Emissão de NFSe no Ambiente Nacional?"
+    ],
+    "keywords": [
+      "adequação",
+      "aderentes",
+      "aderência",
+      "ambiente",
+      "centralizada",
+      "conformidade",
+      "deve",
+      "documento",
+      "eletrônico",
+      "elimina",
+      "emissão",
+      "emitir",
+      "específica",
+      "esta",
+      "faturamento",
+      "fiscal",
+      "forma",
+      "integração",
+      "legal",
+      "município",
+      "municípios",
+      "nacional",
+      "necessidade",
+      "nfse",
+      "observar",
+      "operação",
+      "padronizada",
+      "padrão",
+      "para",
+      "por",
+      "prefeitura",
+      "quando",
+      "serviços",
+      "utiliza"
+    ],
+    "process": {
+      "name": "Emissão de NFSe no Ambiente Nacional",
+      "objective": "Emitir NFSe de forma centralizada e padronizada para municípios aderentes ao ambiente nacional.",
+      "steps": [],
+      "critical_rules": [
+        "A adequação elimina a necessidade de integração específica por prefeitura quando esta utiliza o Ambiente Nacional.",
+        "A operação deve observar aderência do município ao padrão nacional."
+      ],
+      "dependencies": [
+        "serviços",
+        "documento fiscal eletrônico",
+        "conformidade legal"
+      ]
+    },
+    "answer_guidelines": [
+      "Tratar faturamento como elo entre comercial, fiscal, financeiro e documentos eletrônicos.",
+      "Qualquer orientação deve preservar integridade fiscal da nota e coerência comercial do pedido.",
+      "Quando houver reforma tributária, CFOP ou classificação, elevar rigor tributário."
+    ],
+    "content": "Módulo/Aba: Especial > Faturamento\n\nProcesso/Assunto: Emissão de NFSe no Ambiente Nacional\n\nObjetivo: Emitir NFSe de forma centralizada e padronizada para municípios aderentes ao ambiente nacional.\n\nRegras críticas / validações:\n- A adequação elimina a necessidade de integração específica por prefeitura quando esta utiliza o Ambiente Nacional.\n- A operação deve observar aderência do município ao padrão nacional.\n\nDependências / impactos:\n- serviços\n- documento fiscal eletrônico\n- conformidade legal\n\nDetalhes estruturados:\nnome: Emissão de NFSe no Ambiente Nacional\norigem: artigo_recente\nobjetivo: Emitir NFSe de forma centralizada e padronizada para municípios aderentes ao ambiente nacional.\nA adequação elimina a necessidade de integração específica por prefeitura quando esta utiliza o Ambiente Nacional.\nA operação deve observar aderência do município ao padrão nacional.\nserviços\ndocumento fiscal eletrônico\nconformidade legal",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.095870Z",
+      "original_file": "especiais/faturamento.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "faturamento-processos_chave-nota-fiscal-complementar-de-imposto-ou-preco",
+    "title": "Nota fiscal complementar de imposto ou preço - Faturamento",
+    "category": "Especial",
+    "module": "Faturamento",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Faturamento",
+      "file": "especiais/faturamento.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona Nota fiscal complementar de imposto ou preço?",
+      "O que validar em Nota fiscal complementar de imposto ou preço?"
+    ],
+    "keywords": [
+      "ainda",
+      "análise",
+      "após",
+      "cadastral",
+      "cenário",
+      "complementar",
+      "complemento",
+      "consistente",
+      "correção",
+      "divergência",
+      "emitir",
+      "erro",
+      "exigem",
+      "faturamento",
+      "fiscal",
+      "gerou",
+      "imposto",
+      "mas",
+      "mascarar",
+      "nota",
+      "não",
+      "original",
+      "para",
+      "preço",
+      "que",
+      "resolvido",
+      "semelhança",
+      "técnica",
+      "têm",
+      "usar"
+    ],
+    "process": {
+      "name": "Nota fiscal complementar de imposto ou preço",
+      "objective": "Emitir complemento fiscal após correção do cenário que gerou a divergência na nota original.",
+      "steps": [],
+      "critical_rules": [
+        "Não usar a nota complementar para mascarar erro cadastral ainda não resolvido.",
+        "Complemento de imposto e de preço têm semelhança técnica, mas exigem análise fiscal consistente."
+      ],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Tratar faturamento como elo entre comercial, fiscal, financeiro e documentos eletrônicos.",
+      "Qualquer orientação deve preservar integridade fiscal da nota e coerência comercial do pedido.",
+      "Quando houver reforma tributária, CFOP ou classificação, elevar rigor tributário."
+    ],
+    "content": "Módulo/Aba: Especial > Faturamento\n\nProcesso/Assunto: Nota fiscal complementar de imposto ou preço\n\nObjetivo: Emitir complemento fiscal após correção do cenário que gerou a divergência na nota original.\n\nRegras críticas / validações:\n- Não usar a nota complementar para mascarar erro cadastral ainda não resolvido.\n- Complemento de imposto e de preço têm semelhança técnica, mas exigem análise fiscal consistente.\n\nDetalhes estruturados:\nnome: Nota fiscal complementar de imposto ou preço\norigem: artigo_recente\nobjetivo: Emitir complemento fiscal após correção do cenário que gerou a divergência na nota original.\nCadastros e parametrizações fiscais que originaram o erro da nota original devem ser corrigidos antes da emissão do complemento.\nNão usar a nota complementar para mascarar erro cadastral ainda não resolvido.\nComplemento de imposto e de preço têm semelhança técnica, mas exigem análise fiscal consistente.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.095956Z",
+      "original_file": "especiais/faturamento.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "faturamento-processos_chave-analise-do-resultado-do-faturamento",
+    "title": "Análise do resultado do faturamento - Faturamento",
+    "category": "Especial",
+    "module": "Faturamento",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Faturamento",
+      "file": "especiais/faturamento.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona Análise do resultado do faturamento?",
+      "O que validar em Análise do resultado do faturamento?"
+    ],
+    "keywords": [
+      "acompanhamento",
+      "análise",
+      "emitidas",
+      "extrair",
+      "faturamento",
+      "módulo",
+      "nf-e",
+      "para",
+      "relatórios",
+      "resultado"
+    ],
+    "process": {
+      "name": "Análise do resultado do faturamento",
+      "objective": "Extrair relatórios do módulo de Faturamento para acompanhamento de NF-e emitidas.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Tratar faturamento como elo entre comercial, fiscal, financeiro e documentos eletrônicos.",
+      "Qualquer orientação deve preservar integridade fiscal da nota e coerência comercial do pedido.",
+      "Quando houver reforma tributária, CFOP ou classificação, elevar rigor tributário."
+    ],
+    "content": "Módulo/Aba: Especial > Faturamento\n\nProcesso/Assunto: Análise do resultado do faturamento\n\nObjetivo: Extrair relatórios do módulo de Faturamento para acompanhamento de NF-e emitidas.\n\nDetalhes estruturados:\nnome: Análise do resultado do faturamento\norigem: artigo_recente\nobjetivo: Extrair relatórios do módulo de Faturamento para acompanhamento de NF-e emitidas.\ncaminho funcional: MaxManager > Suprimentos > Faturamento > Relatórios\nFaturamento Diário\nfiltros por empresa, filial e tipo de operação",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.096005Z",
+      "original_file": "especiais/faturamento.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "faturamento-troubleshooting_chave-troubleshooting-chave",
+    "title": "troubleshooting_chave - Faturamento",
+    "category": "Especial",
+    "module": "Faturamento",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Faturamento",
+      "file": "especiais/faturamento.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "reference",
+    "question_examples": [
+      "Como funciona troubleshooting_chave?",
+      "O que validar em troubleshooting_chave?"
+    ],
+    "keywords": [
+      "faturamento",
+      "orientar",
+      "sobre",
+      "troubleshooting_chave"
+    ],
+    "process": {
+      "name": "troubleshooting_chave",
+      "objective": "Orientar sobre troubleshooting_chave.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Tratar faturamento como elo entre comercial, fiscal, financeiro e documentos eletrônicos.",
+      "Qualquer orientação deve preservar integridade fiscal da nota e coerência comercial do pedido.",
+      "Quando houver reforma tributária, CFOP ou classificação, elevar rigor tributário."
+    ],
+    "content": "Módulo/Aba: Especial > Faturamento\n\nProcesso/Assunto: troubleshooting_chave\n\nObjetivo: Orientar sobre troubleshooting_chave.\n\nDetalhes estruturados:\nmensagem ou sintoma: Certificado digital vencido\ncausa provavel: certificado expirado impede assinatura e autorização da NF-e\nNF-e não autorizada\nXML não assinado\nSEFAZ rejeita automaticamente\nrenovar o certificado antes de tentar nova emissão\nvalidar acessos dependentes do certificado",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.096049Z",
+      "original_file": "especiais/faturamento.json",
+      "knowledge_layer": "troubleshooting_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "faturamento-troubleshooting_chave-troubleshooting-chave",
+    "title": "troubleshooting_chave - Faturamento",
+    "category": "Especial",
+    "module": "Faturamento",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Faturamento",
+      "file": "especiais/faturamento.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "reference",
+    "question_examples": [
+      "Como funciona troubleshooting_chave?",
+      "O que validar em troubleshooting_chave?"
+    ],
+    "keywords": [
+      "faturamento",
+      "orientar",
+      "sobre",
+      "troubleshooting_chave"
+    ],
+    "process": {
+      "name": "troubleshooting_chave",
+      "objective": "Orientar sobre troubleshooting_chave.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Tratar faturamento como elo entre comercial, fiscal, financeiro e documentos eletrônicos.",
+      "Qualquer orientação deve preservar integridade fiscal da nota e coerência comercial do pedido.",
+      "Quando houver reforma tributária, CFOP ou classificação, elevar rigor tributário."
+    ],
+    "content": "Módulo/Aba: Especial > Faturamento\n\nProcesso/Assunto: troubleshooting_chave\n\nObjetivo: Orientar sobre troubleshooting_chave.\n\nDetalhes estruturados:\nmensagem ou sintoma: cClassTrib exigido para operação/CFOP\ncausa provavel: classificação tributária da operação exige preenchimento do cClassTrib no produto ou NCM\nrevisar cadastro fiscal do produto\nrevisar cadastro do NCM\npreencher o cClassTrib em pelo menos um dos pontos exigidos\nreforma tributária\ncadastro fiscal\npré-nota",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.096082Z",
+      "original_file": "especiais/faturamento.json",
+      "knowledge_layer": "troubleshooting_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "faturamento-troubleshooting_chave-troubleshooting-chave",
+    "title": "troubleshooting_chave - Faturamento",
+    "category": "Especial",
+    "module": "Faturamento",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Faturamento",
+      "file": "especiais/faturamento.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "reference",
+    "question_examples": [
+      "Como funciona troubleshooting_chave?",
+      "O que validar em troubleshooting_chave?"
+    ],
+    "keywords": [
+      "faturamento",
+      "orientar",
+      "sobre",
+      "troubleshooting_chave"
+    ],
+    "process": {
+      "name": "troubleshooting_chave",
+      "objective": "Orientar sobre troubleshooting_chave.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Tratar faturamento como elo entre comercial, fiscal, financeiro e documentos eletrônicos.",
+      "Qualquer orientação deve preservar integridade fiscal da nota e coerência comercial do pedido.",
+      "Quando houver reforma tributária, CFOP ou classificação, elevar rigor tributário."
+    ],
+    "content": "Módulo/Aba: Especial > Faturamento\n\nProcesso/Assunto: troubleshooting_chave\n\nObjetivo: Orientar sobre troubleshooting_chave.\n\nDetalhes estruturados:\nmensagem ou sintoma: CFOP 5.101 não aparece na nota fiscal de saída\ncausa provavel: cadastro do produto incompatível com operação de fabricação própria\nrevisar o cadastro do produto vinculado\nvalidar enquadramento como produto de fabricação própria",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.096109Z",
+      "original_file": "especiais/faturamento.json",
+      "knowledge_layer": "troubleshooting_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  }
+]

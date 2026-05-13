@@ -1,0 +1,45 @@
+[
+  {
+    "id": "overview-recursos-humanos",
+    "title": "Visão geral - Recursos Humanos",
+    "category": "Categorias",
+    "module": "Recursos Humanos",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Recursos Humanos",
+      "file": "categorias/recursos_humanos.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Recursos Humanos?",
+      "Quando usar Recursos Humanos?"
+    ],
+    "keywords": [
+      "aprovações",
+      "configuração do procedimento de aprovação de orçamento de compras para usuário",
+      "processos internos",
+      "recursos humanos",
+      "recursos-humanos",
+      "usuários responsáveis"
+    ],
+    "process": {
+      "name": "Recursos Humanos",
+      "objective": "Orientar dúvidas relacionadas a Recursos Humanos.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Tratar esta aba como governança de usuários/aprovações, não como folha de pagamento."
+    ],
+    "content": "Módulo/Aba: Categorias > Recursos Humanos\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 8\n\nFoco funcional:\n- aprovações\n- usuários responsáveis\n- processos internos\n\nTópicos observados:\n- configuração do procedimento de aprovação de orçamento de compras para usuário\n\nInstruções para resposta da IA:\n- Tratar esta aba como governança de usuários/aprovações, não como folha de pagamento.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.086263Z",
+      "original_file": "categorias/recursos_humanos.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

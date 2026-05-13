@@ -1,0 +1,15 @@
+.env
+.env.local
+*.log
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+node_modules/
+dist/
+*.tsbuildinfo
+coverage/
+postgres_data/
+.DS_Store

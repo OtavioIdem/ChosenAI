@@ -1,0 +1,47 @@
+[
+  {
+    "id": "overview-crm",
+    "title": "Visão geral - CRM",
+    "category": "Categorias",
+    "module": "CRM",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > CRM",
+      "file": "categorias/crm.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo CRM?",
+      "Quando usar CRM?"
+    ],
+    "keywords": [
+      "cadastro de concorrentes",
+      "cadastro de empresas",
+      "concorrentes",
+      "crm",
+      "empresas",
+      "pipeline comercial",
+      "prospecção"
+    ],
+    "process": {
+      "name": "CRM",
+      "objective": "Orientar dúvidas relacionadas a CRM.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Usar esta aba para processo comercial consultivo e dados de prospecção.",
+      "Separar claramente leads/prospecção de clientes efetivamente aprovados e faturáveis."
+    ],
+    "content": "Módulo/Aba: Categorias > CRM\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 8\n\nFoco funcional:\n- empresas\n- concorrentes\n- prospecção\n- pipeline comercial\n\nTópicos observados:\n- cadastro de empresas\n- cadastro de concorrentes\n\nInstruções para resposta da IA:\n- Usar esta aba para processo comercial consultivo e dados de prospecção.\n- Separar claramente leads/prospecção de clientes efetivamente aprovados e faturáveis.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.071617Z",
+      "original_file": "categorias/crm.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

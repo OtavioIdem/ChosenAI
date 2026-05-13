@@ -1,0 +1,296 @@
+[
+  {
+    "id": "overview-recebimentos",
+    "title": "Visão geral - Recebimentos",
+    "category": "Especial",
+    "module": "Recebimentos",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Recebimentos",
+      "file": "especiais/recebimentos.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Recebimentos?",
+      "Quando usar Recebimentos?"
+    ],
+    "keywords": [
+      "conferência de nf",
+      "conferência de nota fiscal de importação",
+      "importação",
+      "lançamento de nota fiscal complementar de compra",
+      "nota complementar de compra",
+      "recebimento de mercadorias",
+      "recebimentos"
+    ],
+    "process": {
+      "name": "Recebimentos",
+      "objective": "Orientar dúvidas relacionadas a Recebimentos.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Usar esta aba para entrada física/fiscal de mercadorias.",
+      "Ao responder, diferenciar recebimento simples, importação e ajustes complementares da nota."
+    ],
+    "content": "Módulo/Aba: Especial > Recebimentos\n\nTipo de fonte: Especial\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 71\n\nFoco funcional:\n- recebimento de mercadorias\n- nota complementar de compra\n- importação\n- conferência de NF\n\nTópicos observados:\n- lançamento de nota fiscal complementar de compra\n- conferência de nota fiscal de importação\n\nInstruções para resposta da IA:\n- Usar esta aba para entrada física/fiscal de mercadorias.\n- Ao responder, diferenciar recebimento simples, importação e ajustes complementares da nota.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.156416Z",
+      "original_file": "especiais/recebimentos.json",
+      "confidence_level": "base_mapeada"
+    }
+  },
+  {
+    "id": "recebimentos-processos_chave-lancamento-de-nota-fiscal-complementar-de-compra",
+    "title": "Lançamento de nota fiscal complementar de compra - Recebimentos",
+    "category": "Especial",
+    "module": "Recebimentos",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Recebimentos",
+      "file": "especiais/recebimentos.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona Lançamento de nota fiscal complementar de compra?",
+      "O que validar em Lançamento de nota fiscal complementar de compra?"
+    ],
+    "keywords": [
+      "cancelar",
+      "com",
+      "complementar",
+      "complementares",
+      "compra",
+      "contábeis",
+      "direto",
+      "fins",
+      "fiscais",
+      "fiscal",
+      "impostos",
+      "informações",
+      "lançada",
+      "lançamento",
+      "mantém",
+      "nota",
+      "nova",
+      "não",
+      "original",
+      "para",
+      "recebimentos",
+      "representa",
+      "sem",
+      "somam",
+      "uma",
+      "valores",
+      "vínculo"
+    ],
+    "process": {
+      "name": "Lançamento de nota fiscal complementar de compra",
+      "objective": "Complementar valores, impostos ou informações fiscais de uma nota de compra já lançada, sem cancelar a nota original.",
+      "steps": [],
+      "critical_rules": [
+        "A nota complementar não representa nova compra.",
+        "A nota complementar mantém vínculo direto com a nota original.",
+        "Os valores complementares se somam à nota original para fins fiscais e contábeis."
+      ],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Usar esta aba para entrada física/fiscal de mercadorias.",
+      "Ao responder, diferenciar recebimento simples, importação e ajustes complementares da nota."
+    ],
+    "content": "Módulo/Aba: Especial > Recebimentos\n\nProcesso/Assunto: Lançamento de nota fiscal complementar de compra\n\nObjetivo: Complementar valores, impostos ou informações fiscais de uma nota de compra já lançada, sem cancelar a nota original.\n\nRegras críticas / validações:\n- A nota complementar não representa nova compra.\n- A nota complementar mantém vínculo direto com a nota original.\n- Os valores complementares se somam à nota original para fins fiscais e contábeis.\n\nDetalhes estruturados:\nnome: Lançamento de nota fiscal complementar de compra\nobjetivo: Complementar valores, impostos ou informações fiscais de uma nota de compra já lançada, sem cancelar a nota original.\nA nota complementar não representa nova compra.\nA nota complementar mantém vínculo direto com a nota original.\nOs valores complementares se somam à nota original para fins fiscais e contábeis.\nempresa\nfornecedor\nnúmero/série/data/valor da nota original\ndados da nota complementar\nnatureza da operação fiscal\ndatas de emissão, entrada, saída e digitação\nvalores complementares\nbase e valor de ICMS/ICMS ST\nauditoria do vínculo com a nota original\nprevenção de duplicidade\napuração correta de impostos",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.156541Z",
+      "original_file": "especiais/recebimentos.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "recebimentos-processos_chave-conferencia-de-nota-fiscal-de-importacao",
+    "title": "Conferência de nota fiscal de importação - Recebimentos",
+    "category": "Especial",
+    "module": "Recebimentos",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Recebimentos",
+      "file": "especiais/recebimentos.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona Conferência de nota fiscal de importação?",
+      "O que validar em Conferência de nota fiscal de importação?"
+    ],
+    "keywords": [
+      "com",
+      "comércio",
+      "conferir",
+      "conferência",
+      "documental",
+      "exterior",
+      "fiscal",
+      "foco",
+      "importação",
+      "integridade",
+      "nf-i",
+      "nota",
+      "recebimento",
+      "recebimentos"
+    ],
+    "process": {
+      "name": "Conferência de nota fiscal de importação",
+      "objective": "Conferir NF-I com foco em integridade documental, fiscal e de recebimento.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": [
+        "Comércio Exterior",
+        "Fiscal",
+        "Recebimentos"
+      ]
+    },
+    "answer_guidelines": [
+      "Usar esta aba para entrada física/fiscal de mercadorias.",
+      "Ao responder, diferenciar recebimento simples, importação e ajustes complementares da nota."
+    ],
+    "content": "Módulo/Aba: Especial > Recebimentos\n\nProcesso/Assunto: Conferência de nota fiscal de importação\n\nObjetivo: Conferir NF-I com foco em integridade documental, fiscal e de recebimento.\n\nDependências / impactos:\n- Comércio Exterior\n- Fiscal\n- Recebimentos\n\nDetalhes estruturados:\nnome: Conferência de nota fiscal de importação\nobjetivo: Conferir NF-I com foco em integridade documental, fiscal e de recebimento.\nComércio Exterior\nFiscal\nRecebimentos",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.156639Z",
+      "original_file": "especiais/recebimentos.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "recebimentos-processos_chave-configuracao-de-retencoes-de-impostos-em-notas-de-servico",
+    "title": "Configuração de retenções de impostos em notas de serviço - Recebimentos",
+    "category": "Especial",
+    "module": "Recebimentos",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Recebimentos",
+      "file": "especiais/recebimentos.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona Configuração de retenções de impostos em notas de serviço?",
+      "O que validar em Configuração de retenções de impostos em notas de serviço?"
+    ],
+    "keywords": [
+      "configuração",
+      "corretamente",
+      "financeiro",
+      "fiscal",
+      "garantir",
+      "impostos",
+      "lançados",
+      "notas",
+      "que",
+      "recebimento",
+      "recebimentos",
+      "retenções",
+      "retidos",
+      "sejam",
+      "serviço",
+      "serviços"
+    ],
+    "process": {
+      "name": "Configuração de retenções de impostos em notas de serviço",
+      "objective": "Garantir que impostos retidos sejam lançados corretamente no recebimento de serviços.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": [
+        "Fiscal",
+        "Recebimentos",
+        "Financeiro"
+      ]
+    },
+    "answer_guidelines": [
+      "Usar esta aba para entrada física/fiscal de mercadorias.",
+      "Ao responder, diferenciar recebimento simples, importação e ajustes complementares da nota."
+    ],
+    "content": "Módulo/Aba: Especial > Recebimentos\n\nProcesso/Assunto: Configuração de retenções de impostos em notas de serviço\n\nObjetivo: Garantir que impostos retidos sejam lançados corretamente no recebimento de serviços.\n\nDependências / impactos:\n- Fiscal\n- Recebimentos\n- Financeiro\n\nDetalhes estruturados:\nnome: Configuração de retenções de impostos em notas de serviço\nobjetivo: Garantir que impostos retidos sejam lançados corretamente no recebimento de serviços.\nFiscal\nRecebimentos\nFinanceiro",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.156701Z",
+      "original_file": "especiais/recebimentos.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "recebimentos-processos_chave-baixa-de-saldo-de-industrializacao-por-nota-de-retorno-especifica",
+    "title": "Baixa de saldo de industrialização por nota de retorno específica - Recebimentos",
+    "category": "Especial",
+    "module": "Recebimentos",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Especial > Recebimentos",
+      "file": "especiais/recebimentos.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona Baixa de saldo de industrialização por nota de retorno específica?",
+      "O que validar em Baixa de saldo de industrialização por nota de retorno específica?"
+    ],
+    "keywords": [
+      "ajuste",
+      "além",
+      "baixa",
+      "enviado",
+      "específica",
+      "estoque",
+      "indevida",
+      "industrialização",
+      "movimentação",
+      "necessário",
+      "nota",
+      "para",
+      "por",
+      "produção",
+      "provocar",
+      "recebimentos",
+      "regularizar",
+      "retorno",
+      "saldo",
+      "sem"
+    ],
+    "process": {
+      "name": "Baixa de saldo de industrialização por nota de retorno específica",
+      "objective": "Regularizar saldo enviado para industrialização sem provocar movimentação indevida além do ajuste necessário.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": [
+        "Produção",
+        "Estoque",
+        "Recebimentos"
+      ]
+    },
+    "answer_guidelines": [
+      "Usar esta aba para entrada física/fiscal de mercadorias.",
+      "Ao responder, diferenciar recebimento simples, importação e ajustes complementares da nota."
+    ],
+    "content": "Módulo/Aba: Especial > Recebimentos\n\nProcesso/Assunto: Baixa de saldo de industrialização por nota de retorno específica\n\nObjetivo: Regularizar saldo enviado para industrialização sem provocar movimentação indevida além do ajuste necessário.\n\nDependências / impactos:\n- Produção\n- Estoque\n- Recebimentos\n\nDetalhes estruturados:\nnome: Baixa de saldo de industrialização por nota de retorno específica\nobjetivo: Regularizar saldo enviado para industrialização sem provocar movimentação indevida além do ajuste necessário.\nProdução\nEstoque\nRecebimentos",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.156763Z",
+      "original_file": "especiais/recebimentos.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  }
+]
