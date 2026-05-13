@@ -9,6 +9,7 @@ __pycache__/
 venv/
 node_modules/
 dist/
+*.tsbuildinfo
 coverage/
 postgres_data/
 .DS_Store

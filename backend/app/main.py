@@ -10,6 +10,7 @@ from app.api.routes.health import router as health_router
 from app.api.routes.knowledge import router as knowledge_router
 from app.api.routes.learning import router as learning_router
 from app.config.settings import get_settings
+from app.domain.schemas import HealthResponse
 from app.infra.db.session import init_db
 
 
@@ -44,3 +45,8 @@ app.include_router(learning_router)
 @app.get("/health")
 def root_health() -> dict[str, str]:
     return {"status": "ok"}
+
+
+@app.get("/api/v1/health", response_model=HealthResponse)
+def api_v1_health() -> HealthResponse:
+    return HealthResponse(status="ok")

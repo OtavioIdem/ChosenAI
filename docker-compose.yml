@@ -2,7 +2,6 @@
 services:
   postgres:
     image: pgvector/pgvector:pg16
-    container_name: sagai-postgres
     restart: unless-stopped
     environment:
       POSTGRES_DB: ${POSTGRES_DB:-sagai}
@@ -23,7 +22,6 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: sagai-ai-api
     restart: unless-stopped
     env_file:
       - .env
@@ -69,7 +67,7 @@ services:
       postgres:
         condition: service_healthy
     ports:
-      - "8000:8000"
+      - "${API_PORT:-8000}:8000"
     volumes:
       - ./backend/app:/app/app
       - ./backend/knowledge:/app/knowledge
@@ -84,7 +82,6 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    container_name: sagai-frontend
     restart: unless-stopped
     environment:
       VITE_API_BASE_URL: ${VITE_API_BASE_URL:-http://localhost:8000}
@@ -93,7 +90,7 @@ services:
       ai-api:
         condition: service_started
     ports:
-      - "3000:3000"
+      - "${FRONTEND_PORT:-3000}:3000"
     volumes:
       - ./frontend:/app
       - /app/node_modules

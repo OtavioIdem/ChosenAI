@@ -60,6 +60,7 @@ class ChatService:
 
         contexts: list[RetrievedContext] = []
         embedding_warning: str | None = None
+        weak_context_filtered = False
         try:
             embedding_started_at = perf_counter()
             query_embedding = await self.embedding_provider.embed_text(clean_question)
@@ -94,12 +95,15 @@ class ChatService:
                 top_k=effective_top_k,
             )
 
+        contexts, weak_context_filtered = self._filter_contexts_for_answer(contexts)
         confidence_score = max([context.score for context in contexts], default=0.0)
         confidence_status = self._confidence_status(confidence_score)
 
         warnings: list[str] = []
         if embedding_warning:
             warnings.append(embedding_warning)
+        if weak_context_filtered:
+            warnings.append("Os trechos recuperados ficaram abaixo do criterio minimo de confianca contextual.")
         if not contexts:
             warnings.append("Nenhum trecho relevante foi encontrado na base documental indexada.")
         elif confidence_status == "medium":
@@ -157,16 +161,23 @@ class ChatService:
                     for context in contexts
                 ],
                 "warnings": warnings,
-                "retrieval_telemetry": self._retrieval_telemetry(),
+                "retrieval_telemetry": self._retrieval_telemetry(
+                    contexts_used=len(contexts),
+                    weak_context_filtered=weak_context_filtered,
+                ),
+                "weak_context_filtered": weak_context_filtered,
                 "user_message_id": str(user_message.id),
             },
         )
 
         knowledge_gap_id = None
         if confidence_status == "low":
+            gap_reason = "confidence_below_threshold" if contexts else "no_context_found"
+            if weak_context_filtered:
+                gap_reason = "weak_context_filtered"
             gap = self.learning_repository.create_gap(
                 question=clean_question,
-                reason="confidence_below_threshold" if contexts else "no_context_found",
+                reason=gap_reason,
                 session_id=chat_session.id,
                 message_id=assistant_message.id,
                 metadata={
@@ -175,6 +186,7 @@ class ChatService:
                     "top_k": effective_top_k,
                     "embedding_provider": self.embedding_provider.name,
                     "retrieval_strategy": self.settings.retrieval_strategy,
+                    "weak_context_filtered": weak_context_filtered,
                 },
             )
             knowledge_gap_id = gap.id
@@ -191,7 +203,10 @@ class ChatService:
             "confidence_score": round(confidence_score, 4),
             "confidence_status": confidence_status,
             "knowledge_gap_id": knowledge_gap_id,
-            "retrieval": self._retrieval_telemetry(),
+            "retrieval": self._retrieval_telemetry(
+                contexts_used=len(contexts),
+                weak_context_filtered=weak_context_filtered,
+            ),
             "sources": [
                 {
                     "title": context.title,
@@ -206,11 +221,42 @@ class ChatService:
             ],
         }
 
-    def _retrieval_telemetry(self) -> dict:
+    def _filter_contexts_for_answer(self, contexts: list[RetrievedContext]) -> tuple[list[RetrievedContext], bool]:
+        if not contexts:
+            return contexts, False
+
+        confidence_score = max(context.score for context in contexts)
+        if confidence_score >= self.settings.confidence_threshold_medium:
+            return contexts, False
+
+        has_contextual_signal = any(self._has_contextual_signal(context) for context in contexts)
+        if has_contextual_signal:
+            return contexts, False
+
+        return [], True
+
+    @staticmethod
+    def _has_contextual_signal(context: RetrievedContext) -> bool:
+        retrieval = (context.metadata or {}).get("retrieval", {})
+        return any(
+            float(retrieval.get(key) or 0.0) > 0.0
+            for key in ("lexical_score", "metadata_score", "rerank_score")
+        )
+
+    def _retrieval_telemetry(
+        self,
+        *,
+        contexts_used: int | None = None,
+        weak_context_filtered: bool = False,
+    ) -> dict:
         telemetry = self.retriever.last_telemetry
         if telemetry is None:
-            return {"strategy": self.settings.retrieval_strategy, "returned_contexts": 0}
-        return {
+            payload = {"strategy": self.settings.retrieval_strategy, "returned_contexts": 0}
+            if contexts_used is not None:
+                payload["contexts_used"] = contexts_used
+                payload["weak_context_filtered"] = weak_context_filtered
+            return payload
+        payload = {
             "strategy": telemetry.strategy,
             "vector_candidates": telemetry.vector_candidates,
             "lexical_candidates": telemetry.lexical_candidates,
@@ -221,3 +267,7 @@ class ChatService:
             "score_max": round(telemetry.score_max, 4) if telemetry.score_max is not None else None,
             "score_avg": round(telemetry.score_avg, 4) if telemetry.score_avg is not None else None,
         }
+        if contexts_used is not None:
+            payload["contexts_used"] = contexts_used
+            payload["weak_context_filtered"] = weak_context_filtered
+        return payload
