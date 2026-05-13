@@ -1,0 +1,50 @@
+[
+  {
+    "id": "overview-compras",
+    "title": "Visão geral - Compras",
+    "category": "Categorias",
+    "module": "Compras",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Compras",
+      "file": "categorias/compras.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Compras?",
+      "Quando usar Compras?"
+    ],
+    "keywords": [
+      "aprovação",
+      "aprovação de solicitação ou pedido de compras",
+      "compras",
+      "follow-up",
+      "follow-up de compras",
+      "lançamento manual de solicitação de compra",
+      "observação por item",
+      "observação por item na impressão da solicitação de compras",
+      "pedido de compras",
+      "solicitação de compras"
+    ],
+    "process": {
+      "name": "Compras",
+      "objective": "Orientar dúvidas relacionadas a Compras.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Separar fluxo: solicitação -> aprovação -> pedido -> acompanhamento.",
+      "Ao falar de compras, considerar permissões, alçadas e impressão documental."
+    ],
+    "content": "Módulo/Aba: Categorias > Compras\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 26\n\nFoco funcional:\n- solicitação de compras\n- pedido de compras\n- aprovação\n- follow-up\n- observação por item\n\nTópicos observados:\n- observação por item na impressão da solicitação de compras\n- aprovação de solicitação ou pedido de compras\n- lançamento manual de solicitação de compra\n- follow-up de compras\n\nInstruções para resposta da IA:\n- Separar fluxo: solicitação -> aprovação -> pedido -> acompanhamento.\n- Ao falar de compras, considerar permissões, alçadas e impressão documental.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.063826Z",
+      "original_file": "categorias/compras.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

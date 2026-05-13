@@ -1,0 +1,57 @@
+[
+  {
+    "id": "overview-conhecimento-de-transporte",
+    "title": "Visão geral - Conhecimento de Transporte",
+    "category": "Categorias",
+    "module": "Conhecimento de Transporte",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Conhecimento de Transporte",
+      "file": "categorias/conhecimento_de_transporte.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Conhecimento de Transporte?",
+      "Quando usar Conhecimento de Transporte?"
+    ],
+    "keywords": [
+      "conemb",
+      "configuração de parâmetros do edi de conhecimento de transporte",
+      "configuração de transportadoras participantes do edi",
+      "conhecimento de transporte",
+      "conhecimento-de-transporte",
+      "diferença entre imposto calculado e creditado na nota fiscal de entrada",
+      "doccob",
+      "edi crt",
+      "geração do arquivo notfis",
+      "importação de arquivos de transportadoras",
+      "integração de conhecimentos importados",
+      "notfis",
+      "ocorren",
+      "relatório de conhecimentos edi",
+      "relatório de ocorrências edi",
+      "transportadoras",
+      "uso do módulo de edi crt"
+    ],
+    "process": {
+      "name": "Conhecimento de Transporte",
+      "objective": "Orientar dúvidas relacionadas a Conhecimento de Transporte.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Usar esta aba para dúvidas de logística documental e integração com transportadoras.",
+      "Ressaltar interoperabilidade via arquivos e necessidade de parametrização correta do EDI."
+    ],
+    "content": "Módulo/Aba: Categorias > Conhecimento de Transporte\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 15\n\nFoco funcional:\n- EDI CRT\n- transportadoras\n- NOTFIS\n- CONEMB\n- DOCCOB\n- OCORREN\n- conhecimento de transporte\n\nTópicos observados:\n- diferença entre imposto calculado e creditado na nota fiscal de entrada\n- uso do módulo de EDI CRT\n- relatório de ocorrências EDI\n- relatório de conhecimentos EDI\n- integração de conhecimentos importados\n- importação de arquivos de transportadoras\n- geração do arquivo NOTFIS\n- configuração de parâmetros do EDI de conhecimento de transporte\n- configuração de transportadoras participantes do EDI\n\nInstruções para resposta da IA:\n- Usar esta aba para dúvidas de logística documental e integração com transportadoras.\n- Ressaltar interoperabilidade via arquivos e necessidade de parametrização correta do EDI.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.066188Z",
+      "original_file": "categorias/conhecimento_de_transporte.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

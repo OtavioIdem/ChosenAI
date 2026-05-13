@@ -1,0 +1,56 @@
+[
+  {
+    "id": "overview-maxsales",
+    "title": "Visão geral - MaxSales",
+    "category": "Categorias",
+    "module": "MaxSales",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > MaxSales",
+      "file": "categorias/maxsales.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo MaxSales?",
+      "Quando usar MaxSales?"
+    ],
+    "keywords": [
+      "botão desistência",
+      "condição de pagamento",
+      "configurações e aprovação de pré-cadastro de clientes",
+      "consulta de pré-cadastro de clientes",
+      "gerenciamento de condição de pagamento",
+      "maxsales",
+      "orçamentos",
+      "parâmetro para permitir itens com preço unitário zerado",
+      "pedidos com condições faturado e normal",
+      "pedidos online",
+      "prazo de validade para orçamentos",
+      "pré-cadastro",
+      "pré-cadastro de clientes",
+      "tabela de preço em dólar no maxsales/maxmanager",
+      "tabelas de preço",
+      "tipo operação de troca"
+    ],
+    "process": {
+      "name": "MaxSales",
+      "objective": "Orientar dúvidas relacionadas a MaxSales.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Separar claramente comportamento do MaxSales e sincronização com MaxManager.",
+      "Usar esta aba quando a origem do problema for força de vendas, pedido online ou pré-cadastro remoto."
+    ],
+    "content": "Módulo/Aba: Categorias > MaxSales\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 17\n\nFoco funcional:\n- pedidos online\n- pré-cadastro\n- condição de pagamento\n- tabelas de preço\n- orçamentos\n\nTópicos observados:\n- tabela de preço em dólar no MaxSales/MaxManager\n- configurações e aprovação de pré-cadastro de clientes\n- parâmetro para permitir itens com preço unitário zerado\n- botão desistência\n- prazo de validade para orçamentos\n- pedidos com condições faturado e normal\n- tipo operação de troca\n- consulta de pré-cadastro de clientes\n- pré-cadastro de clientes\n- gerenciamento de condição de pagamento\n\nInstruções para resposta da IA:\n- Separar claramente comportamento do MaxSales e sincronização com MaxManager.\n- Usar esta aba quando a origem do problema for força de vendas, pedido online ou pré-cadastro remoto.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.081224Z",
+      "original_file": "categorias/maxsales.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

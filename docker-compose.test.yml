@@ -1,0 +1,42 @@
+services:
+  postgres-test:
+    image: pgvector/pgvector:pg16
+    container_name: sagai-postgres-test
+    environment:
+      POSTGRES_DB: sagai_test
+      POSTGRES_USER: sagai
+      POSTGRES_PASSWORD: change_this_password
+    ports:
+      - "55432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sagai -d sagai_test"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  tests:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_URL: postgresql+psycopg://sagai:change_this_password@postgres-test:5432/sagai_test
+      TEST_DATABASE_URL: postgresql+psycopg://sagai:change_this_password@postgres-test:5432/sagai_test
+      ADMIN_API_KEY: test-admin
+      LLM_PROVIDER: mock
+      EMBEDDINGS_PROVIDER: hash
+      EMBEDDINGS_VECTOR_DIMENSIONS: 16
+      VECTOR_DIMENSIONS: 16
+      RETRIEVAL_STRATEGY: hybrid
+      RETRIEVAL_CANDIDATE_MULTIPLIER: 4
+      RETRIEVAL_MIN_SCORE: 0.0
+      RETRIEVAL_ENABLE_RERANKING: true
+      KNOWLEDGE_DIR: /app/knowledge
+    volumes:
+      - ./backend/app:/app/app
+      - ./backend/tests:/app/tests
+      - ./backend/knowledge:/app/knowledge
+      - ./pytest.ini:/app/pytest.ini
+    depends_on:
+      postgres-test:
+        condition: service_healthy
+    command: pytest /app/tests --ignore=/app/tests/e2e

@@ -1,0 +1,7 @@
+services:
+  sagai-code-scanner:
+    build: .
+    container_name: sagai-code-scanner
+    volumes:
+      - ./source:/source:ro
+      - ./output:/output

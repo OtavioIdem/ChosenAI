@@ -1,0 +1,47 @@
+[
+  {
+    "id": "overview-tutoriais",
+    "title": "Visão geral - Tutoriais",
+    "category": "Categorias",
+    "module": "Tutoriais",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Tutoriais",
+      "file": "categorias/tutoriais.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Tutoriais?",
+      "Quando usar Tutoriais?"
+    ],
+    "keywords": [
+      "adiantamento de viagem",
+      "faturamento futuro",
+      "passo a passo",
+      "processo de adiantamento de viagem",
+      "processo de faturamento futuro",
+      "processos guiados",
+      "tutoriais"
+    ],
+    "process": {
+      "name": "Tutoriais",
+      "objective": "Orientar dúvidas relacionadas a Tutoriais.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Usar esta aba para respostas orientadas a processo ponta a ponta.",
+      "Quando aplicável, complementar com módulos específicos envolvidos."
+    ],
+    "content": "Módulo/Aba: Categorias > Tutoriais\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 26\n\nFoco funcional:\n- processos guiados\n- passo a passo\n- faturamento futuro\n- adiantamento de viagem\n\nTópicos observados:\n- processo de faturamento futuro\n- processo de adiantamento de viagem\n\nInstruções para resposta da IA:\n- Usar esta aba para respostas orientadas a processo ponta a ponta.\n- Quando aplicável, complementar com módulos específicos envolvidos.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.090593Z",
+      "original_file": "categorias/tutoriais.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

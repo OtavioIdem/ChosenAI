@@ -1,0 +1,296 @@
+[
+  {
+    "id": "overview-financeiro",
+    "title": "Visão geral - Financeiro",
+    "category": "Categorias",
+    "module": "Financeiro",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Financeiro",
+      "file": "categorias/financeiro.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Financeiro?",
+      "Quando usar Financeiro?"
+    ],
+    "keywords": [
+      "borderô",
+      "cadastro de categorias financeiras",
+      "cadastro de indexador",
+      "categorias financeiras",
+      "cnab",
+      "comissões",
+      "cálculo de comissões de vendas",
+      "desintegração de nf com movimento financeiro",
+      "financeiro",
+      "geração de remessa cnab",
+      "importação de arquivo de retorno de cobrança",
+      "importação e conciliação ofx",
+      "indexador",
+      "ofx",
+      "rateio",
+      "rateio por centro de custo e categoria financeira no borderô por antecipação",
+      "relatório de remessas de cobrança",
+      "títulos a receber por categoria financeira"
+    ],
+    "process": {
+      "name": "Financeiro",
+      "objective": "Orientar dúvidas relacionadas a Financeiro.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Assumir esta aba como eixo integrador entre pagar, receber, bancos e faturamento.",
+      "Se o problema afetar caixa ou títulos, verificar integrações financeiras antes de orientar correção."
+    ],
+    "content": "Módulo/Aba: Categorias > Financeiro\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 39\n\nFoco funcional:\n- borderô\n- rateio\n- comissões\n- OFX\n- CNAB\n- indexador\n- categorias financeiras\n\nTópicos observados:\n- rateio por centro de custo e categoria financeira no borderô por antecipação\n- cálculo de comissões de vendas\n- importação e conciliação OFX\n- geração de remessa CNAB\n- relatório de remessas de cobrança\n- cadastro de indexador\n- títulos a receber por categoria financeira\n- cadastro de categorias financeiras\n- importação de arquivo de retorno de cobrança\n- desintegração de NF com movimento financeiro\n\nInstruções para resposta da IA:\n- Assumir esta aba como eixo integrador entre pagar, receber, bancos e faturamento.\n- Se o problema afetar caixa ou títulos, verificar integrações financeiras antes de orientar correção.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.073524Z",
+      "original_file": "categorias/financeiro.json",
+      "confidence_level": "base_mapeada"
+    }
+  },
+  {
+    "id": "financeiro-processos_chave-rateio-em-bordero-de-pagamento-por-antecipacao",
+    "title": "Rateio em borderô de pagamento por antecipação - Financeiro",
+    "category": "Categorias",
+    "module": "Financeiro",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Financeiro",
+      "file": "categorias/financeiro.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona Rateio em borderô de pagamento por antecipação?",
+      "O que validar em Rateio em borderô de pagamento por antecipação?"
+    ],
+    "keywords": [
+      "antecipação",
+      "apropriação",
+      "após",
+      "borderô",
+      "categoria",
+      "centro",
+      "classificação",
+      "custo",
+      "financeira",
+      "financeiro",
+      "geração",
+      "gerencial",
+      "pagamento",
+      "permitir",
+      "por",
+      "rateio"
+    ],
+    "process": {
+      "name": "Rateio em borderô de pagamento por antecipação",
+      "objective": "Permitir rateio por centro de custo e categoria financeira após a geração do borderô por antecipação.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": [
+        "apropriação financeira",
+        "centro de custo",
+        "classificação gerencial"
+      ]
+    },
+    "answer_guidelines": [
+      "Assumir esta aba como eixo integrador entre pagar, receber, bancos e faturamento.",
+      "Se o problema afetar caixa ou títulos, verificar integrações financeiras antes de orientar correção."
+    ],
+    "content": "Módulo/Aba: Categorias > Financeiro\n\nProcesso/Assunto: Rateio em borderô de pagamento por antecipação\n\nObjetivo: Permitir rateio por centro de custo e categoria financeira após a geração do borderô por antecipação.\n\nDependências / impactos:\n- apropriação financeira\n- centro de custo\n- classificação gerencial\n\nDetalhes estruturados:\nnome: Rateio em borderô de pagamento por antecipação\nversao minima: 2.25.1.14411\nobjetivo: Permitir rateio por centro de custo e categoria financeira após a geração do borderô por antecipação.\napropriação financeira\ncentro de custo\nclassificação gerencial",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.074174Z",
+      "original_file": "categorias/financeiro.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "financeiro-processos_chave-importacao-e-conciliacao-de-extrato-bancario-via-ofx",
+    "title": "Importação e conciliação de extrato bancário via OFX - Financeiro",
+    "category": "Categorias",
+    "module": "Financeiro",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Financeiro",
+      "file": "categorias/financeiro.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona Importação e conciliação de extrato bancário via OFX?",
+      "O que validar em Importação e conciliação de extrato bancário via OFX?"
+    ],
+    "keywords": [
+      "apoiar",
+      "arquivo",
+      "bancos",
+      "bancário",
+      "bancários",
+      "caixa",
+      "com",
+      "conciliação",
+      "contas",
+      "extrato",
+      "extratos",
+      "financeira",
+      "financeiro",
+      "importar",
+      "importação",
+      "ofx",
+      "pagar",
+      "receber",
+      "via"
+    ],
+    "process": {
+      "name": "Importação e conciliação de extrato bancário via OFX",
+      "objective": "Importar extratos bancários e apoiar conciliação financeira com arquivo OFX.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": [
+        "Bancos e Caixa",
+        "Contas a Pagar",
+        "Contas a Receber"
+      ]
+    },
+    "answer_guidelines": [
+      "Assumir esta aba como eixo integrador entre pagar, receber, bancos e faturamento.",
+      "Se o problema afetar caixa ou títulos, verificar integrações financeiras antes de orientar correção."
+    ],
+    "content": "Módulo/Aba: Categorias > Financeiro\n\nProcesso/Assunto: Importação e conciliação de extrato bancário via OFX\n\nObjetivo: Importar extratos bancários e apoiar conciliação financeira com arquivo OFX.\n\nDependências / impactos:\n- Bancos e Caixa\n- Contas a Pagar\n- Contas a Receber\n\nDetalhes estruturados:\nnome: Importação e conciliação de extrato bancário via OFX\nversao minima: 2.25.1.14242\nobjetivo: Importar extratos bancários e apoiar conciliação financeira com arquivo OFX.\nconceito: OFX é formato de intercâmbio financeiro aberto usado por bancos para armazenamento de informações financeiras.\nBancos e Caixa\nContas a Pagar\nContas a Receber",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.074288Z",
+      "original_file": "categorias/financeiro.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "financeiro-processos_chave-remessa-de-cobranca-padrao-cnab",
+    "title": "Remessa de cobrança padrão CNAB - Financeiro",
+    "category": "Categorias",
+    "module": "Financeiro",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Financeiro",
+      "file": "categorias/financeiro.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona Remessa de cobrança padrão CNAB?",
+      "O que validar em Remessa de cobrança padrão CNAB?"
+    ],
+    "keywords": [
+      "arquivo",
+      "banco",
+      "bancos",
+      "cnab",
+      "cobrança",
+      "contas",
+      "dados",
+      "eletrônico",
+      "empresa",
+      "entre",
+      "financeiro",
+      "gerar",
+      "intercâmbio",
+      "padrão",
+      "para",
+      "receber",
+      "remessa"
+    ],
+    "process": {
+      "name": "Remessa de cobrança padrão CNAB",
+      "objective": "Gerar arquivo de intercâmbio eletrônico entre empresa e banco para cobrança.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": [
+        "Intercâmbio de Dados",
+        "Contas a Receber",
+        "Bancos"
+      ]
+    },
+    "answer_guidelines": [
+      "Assumir esta aba como eixo integrador entre pagar, receber, bancos e faturamento.",
+      "Se o problema afetar caixa ou títulos, verificar integrações financeiras antes de orientar correção."
+    ],
+    "content": "Módulo/Aba: Categorias > Financeiro\n\nProcesso/Assunto: Remessa de cobrança padrão CNAB\n\nObjetivo: Gerar arquivo de intercâmbio eletrônico entre empresa e banco para cobrança.\n\nDependências / impactos:\n- Intercâmbio de Dados\n- Contas a Receber\n- Bancos\n\nDetalhes estruturados:\nnome: Remessa de cobrança padrão CNAB\nobjetivo: Gerar arquivo de intercâmbio eletrônico entre empresa e banco para cobrança.\ncadastros e parametrizações bancárias consistentes\ntítulos elegíveis para cobrança\nconferência do layout de remessa\nIntercâmbio de Dados\nContas a Receber\nBancos",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.074361Z",
+      "original_file": "categorias/financeiro.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  },
+  {
+    "id": "financeiro-processos_chave-calculo-de-comissoes",
+    "title": "Cálculo de comissões - Financeiro",
+    "category": "Categorias",
+    "module": "Financeiro",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Financeiro",
+      "file": "categorias/financeiro.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "process",
+    "question_examples": [
+      "Como funciona Cálculo de comissões?",
+      "O que validar em Cálculo de comissões?"
+    ],
+    "keywords": [
+      "aplicar",
+      "apuração",
+      "comerciais",
+      "comercial",
+      "comissão",
+      "comissões",
+      "cálculo",
+      "faturamento",
+      "financeiras",
+      "financeiro",
+      "flexíveis",
+      "para",
+      "regras",
+      "vendas"
+    ],
+    "process": {
+      "name": "Cálculo de comissões",
+      "objective": "Aplicar regras comerciais e financeiras flexíveis para apuração de comissão de vendas.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": [
+        "Comercial",
+        "Faturamento",
+        "Financeiro"
+      ]
+    },
+    "answer_guidelines": [
+      "Assumir esta aba como eixo integrador entre pagar, receber, bancos e faturamento.",
+      "Se o problema afetar caixa ou títulos, verificar integrações financeiras antes de orientar correção."
+    ],
+    "content": "Módulo/Aba: Categorias > Financeiro\n\nProcesso/Assunto: Cálculo de comissões\n\nObjetivo: Aplicar regras comerciais e financeiras flexíveis para apuração de comissão de vendas.\n\nDependências / impactos:\n- Comercial\n- Faturamento\n- Financeiro\n\nDetalhes estruturados:\nnome: Cálculo de comissões\nobjetivo: Aplicar regras comerciais e financeiras flexíveis para apuração de comissão de vendas.\nComercial\nFaturamento\nFinanceiro",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.074432Z",
+      "original_file": "categorias/financeiro.json",
+      "knowledge_layer": "processos_chave",
+      "confidence_level": "conteudo_estruturado"
+    }
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "overview-noticias-fiscais",
+    "title": "Visão geral - Notícias Fiscais",
+    "category": "Categorias",
+    "module": "Notícias Fiscais",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Notícias Fiscais",
+      "file": "categorias/noticias_fiscais.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Notícias Fiscais?",
+      "Quando usar Notícias Fiscais?"
+    ],
+    "keywords": [
+      "adiamento da nfe 4.0",
+      "cest",
+      "consumo indevido da nf-e",
+      "dctfweb",
+      "devolução",
+      "devolução de mercadorias",
+      "integração manual de notas fiscais de serviço",
+      "manual da dctfweb",
+      "nfe 4.0",
+      "noticias-fiscais",
+      "notícias fiscais",
+      "novas datas do cest",
+      "novidades fiscais",
+      "pauta fiscal",
+      "ressarcimento de icms",
+      "ressarcimento icms",
+      "tributação monofásica"
+    ],
+    "process": {
+      "name": "Notícias Fiscais",
+      "objective": "Orientar dúvidas relacionadas a Notícias Fiscais.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Tratar como material de atualização e contexto fiscal complementar.",
+      "Não assumir vigência atual de normas antigas sem validação adicional quando a pergunta exigir atualidade legal."
+    ],
+    "content": "Módulo/Aba: Categorias > Notícias Fiscais\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 21\n\nFoco funcional:\n- novidades fiscais\n- NFe 4.0\n- tributação monofásica\n- devolução\n- DCTFWeb\n- pauta fiscal\n- ressarcimento ICMS\n- CEST\n\nTópicos observados:\n- integração manual de notas fiscais de serviço\n- adiamento da NFe 4.0\n- tributação monofásica\n- devolução de mercadorias\n- consumo indevido da NF-e\n- manual da DCTFWeb\n- pauta fiscal\n- ressarcimento de ICMS\n- novas datas do CEST\n\nInstruções para resposta da IA:\n- Tratar como material de atualização e contexto fiscal complementar.\n- Não assumir vigência atual de normas antigas sem validação adicional quando a pergunta exigir atualidade legal.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.084025Z",
+      "original_file": "categorias/noticias_fiscais.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]

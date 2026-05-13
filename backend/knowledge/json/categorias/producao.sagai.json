@@ -1,0 +1,54 @@
+[
+  {
+    "id": "overview-producao",
+    "title": "Visão geral - Produção",
+    "category": "Categorias",
+    "module": "Produção",
+    "source_type": "community_max_json_otimizado",
+    "source": {
+      "name": "Categorias > Produção",
+      "file": "categorias/producao.json",
+      "url": null,
+      "status": "mapeado"
+    },
+    "document_type": "module_overview",
+    "question_examples": [
+      "O que existe no módulo Produção?",
+      "Quando usar Produção?"
+    ],
+    "keywords": [
+      "controle de número de série em produção por terceiro",
+      "etiquetas",
+      "fórmulas",
+      "herança de número de série dos produtos",
+      "listagem de ordens de produção e impressão de etiquetas",
+      "mrp",
+      "novo layout da consulta estrutura de fórmulas por produto",
+      "ordens de produção",
+      "ordens de produção subjacentes por terceiro",
+      "planejamento de produção mrp",
+      "producao",
+      "produção",
+      "produção por terceiro",
+      "séries"
+    ],
+    "process": {
+      "name": "Produção",
+      "objective": "Orientar dúvidas relacionadas a Produção.",
+      "steps": [],
+      "critical_rules": [],
+      "dependencies": []
+    },
+    "answer_guidelines": [
+      "Dar atenção à rastreabilidade, terceirização, subcomponentes e planejamento.",
+      "Cruzar com Estoque, Industrial e Expedição quando houver série, lote ou etiqueta."
+    ],
+    "content": "Módulo/Aba: Categorias > Produção\n\nTipo de fonte: Categorias\n\nStatus de mapeamento: mapeado\n\nQuantidade de publicações observadas no Community Max: 40\n\nFoco funcional:\n- ordens de produção\n- séries\n- MRP\n- fórmulas\n- etiquetas\n- produção por terceiro\n\nTópicos observados:\n- herança de número de série dos produtos\n- novo layout da consulta estrutura de fórmulas por produto\n- controle de número de série em produção por terceiro\n- planejamento de produção MRP\n- ordens de produção subjacentes por terceiro\n- listagem de ordens de produção e impressão de etiquetas\n\nInstruções para resposta da IA:\n- Dar atenção à rastreabilidade, terceirização, subcomponentes e planejamento.\n- Cruzar com Estoque, Industrial e Expedição quando houver série, lote ou etiqueta.\n\nUso recomendado: utilizar este conteúdo para classificar dúvidas, identificar o módulo provável e orientar respostas iniciais. Se a pergunta exigir passo a passo detalhado e não houver processo específico nesta base, criar lacuna de conhecimento ou consultar fonte autorizada.",
+    "metadata": {
+      "optimized_for": "SAGAI_RAG",
+      "created_at": "2026-04-24T14:28:08.085655Z",
+      "original_file": "categorias/producao.json",
+      "confidence_level": "base_mapeada"
+    }
+  }
+]
