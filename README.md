@@ -362,3 +362,30 @@ Leia tambem:
 ```txt
 docs/SPRINT_3_AVALIACAO_RAG.md
 ```
+
+## Sprint 4 — Reindexacao Assincrona com Jobs
+
+Esta versao adiciona jobs persistidos para reindexacao em background, mantendo o endpoint sincrono legado.
+
+Criar job:
+
+```bash
+curl -X POST http://localhost:8000/api/v1/knowledge/reindex-jobs \
+  -H "Content-Type: application/json" \
+  -H "X-Admin-Key: change_this_admin_key" \
+  -d '{"requested_by":"admin"}'
+```
+
+Consultar progresso:
+
+```bash
+curl http://localhost:8000/api/v1/knowledge/reindex-jobs/{job_id}
+```
+
+O job registra `status`, `sources_total`, `sources_processed`, `chunks_indexed`, `chunks_failed`, `current_file`, `duration_ms` e metadados do provider usado.
+
+Leia tambem:
+
+```txt
+docs/SPRINT_4_REINDEX_JOBS.md
+```

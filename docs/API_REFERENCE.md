@@ -41,12 +41,39 @@ Body:
 ```txt
 GET  /api/v1/knowledge/stats
 POST /api/v1/knowledge/reindex
+POST /api/v1/knowledge/reindex-jobs
+GET  /api/v1/knowledge/reindex-jobs/{job_id}
 ```
 
-`POST /knowledge/reindex` exige header:
+`POST /api/v1/knowledge/reindex` e `POST /api/v1/knowledge/reindex-jobs` exigem header:
 
 ```txt
 X-Admin-Key: SUA_ADMIN_API_KEY
+```
+
+Criar job de reindexacao:
+
+```json
+{
+  "requested_by": "admin"
+}
+```
+
+Resposta de job:
+
+```json
+{
+  "id": "uuid-do-job",
+  "status": "running",
+  "sources_total": 57,
+  "sources_processed": 12,
+  "chunks_indexed": 20,
+  "current_file": "json/categorias/financeiro.sagai.json",
+  "duration_ms": 1532,
+  "metadata": {
+    "last_event": "source_indexed"
+  }
+}
 ```
 
 ## Feedback
