@@ -320,3 +320,45 @@ Para integração real com PostgreSQL + pgvector:
 ```bash
 TEST_DATABASE_URL=postgresql+psycopg://sagai:change_this_password@localhost:5432/sagai_test pytest backend/tests/integration
 ```
+
+## Sprint 3 — Avaliacao Automatica de Qualidade RAG
+
+Esta versao adiciona uma primeira suite de avaliacao para medir a qualidade da recuperacao antes de alterar pesos, chunking, modelos ou prompts.
+
+Dataset inicial:
+
+```txt
+backend/tests/fixtures/rag_eval_dataset.json
+```
+
+Comando a partir do diretorio `backend`:
+
+```bash
+python -m app.tools.evaluate_rag --dataset tests/fixtures/rag_eval_dataset.json
+```
+
+Metricas geradas:
+
+```txt
+precision_at_1
+precision_at_3
+recall_at_5
+mean_reciprocal_rank
+no_context_rate
+no_relevant_context_rate
+expected_no_context_accuracy
+avg_retrieval_score
+avg_latency_ms
+```
+
+Relatorios sao gravados em:
+
+```txt
+reports/rag_eval_YYYYMMDD_HHMMSS.md
+```
+
+Leia tambem:
+
+```txt
+docs/SPRINT_3_AVALIACAO_RAG.md
+```

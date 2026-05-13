@@ -1,0 +1,37 @@
+{
+  "name": "sagai_sprint_3_seed",
+  "version": "1.0",
+  "top_k": 5,
+  "questions": [
+    {
+      "id": "nf_e_overview",
+      "question": "Como emitir NF-e e validar certificado digital?",
+      "expected_source_files": [
+        "json/categorias/nf_e.sagai.json"
+      ],
+      "notes": "Pergunta de modulo com termos exatos para recuperar NF-e."
+    },
+    {
+      "id": "financeiro_ofx",
+      "question": "Como funciona importacao e conciliacao OFX no financeiro?",
+      "expected_source_files": [
+        "json/categorias/financeiro.sagai.json"
+      ],
+      "notes": "Pergunta de processo financeiro observada na base."
+    },
+    {
+      "id": "erro_efd_varchar",
+      "question": "Como orientar erro ao gerar EFD ICMS IPI por conversao varchar numerico?",
+      "expected_source_files": [
+        "json/especiais/mensagens_de_erro.sagai.json"
+      ],
+      "notes": "Pergunta literal de erro, deve privilegiar fonte de mensagens de erro."
+    },
+    {
+      "id": "sem_contexto_satelite",
+      "question": "Como configurar um satelite orbital dentro do MaxManager?",
+      "expected_no_context": true,
+      "notes": "Pergunta negativa para medir recuperacao sem fonte relevante."
+    }
+  ]
+}
