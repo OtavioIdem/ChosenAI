@@ -157,3 +157,30 @@ class TrainingCandidate(Base):
         onupdate=func.now(),
         nullable=False,
     )
+
+
+class ReindexJob(Base):
+    __tablename__ = "reindex_jobs"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    status: Mapped[str] = mapped_column(String(40), default="pending", index=True)
+    requested_by: Mapped[str | None] = mapped_column(String(120), nullable=True)
+    sources_total: Mapped[int] = mapped_column(Integer, default=0)
+    sources_processed: Mapped[int] = mapped_column(Integer, default=0)
+    sources_failed: Mapped[int] = mapped_column(Integer, default=0)
+    chunks_indexed: Mapped[int] = mapped_column(Integer, default=0)
+    chunks_failed: Mapped[int] = mapped_column(Integer, default=0)
+    chunks_ignored: Mapped[int] = mapped_column(Integer, default=0)
+    current_file: Mapped[str | None] = mapped_column(String(1000), nullable=True)
+    error_message: Mapped[str | None] = mapped_column(Text, nullable=True)
+    job_metadata: Mapped[dict] = mapped_column("metadata", JSONB, default=dict)
+    started_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    finished_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    duration_ms: Mapped[int] = mapped_column(Integer, default=0)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), nullable=False)
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True),
+        server_default=func.now(),
+        onupdate=func.now(),
+        nullable=False,
+    )

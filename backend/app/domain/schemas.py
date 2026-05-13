@@ -73,6 +73,30 @@ class ReindexResponse(BaseModel):
     sources_indexed: int = 0
 
 
+class ReindexJobCreateRequest(BaseModel):
+    requested_by: str | None = Field(default=None, max_length=120)
+
+
+class ReindexJobResponse(BaseModel):
+    id: uuid.UUID
+    status: Literal["pending", "running", "success", "partial_success", "failed", "cancelled"]
+    requested_by: str | None = None
+    sources_total: int = 0
+    sources_processed: int = 0
+    sources_failed: int = 0
+    chunks_indexed: int = 0
+    chunks_failed: int = 0
+    chunks_ignored: int = 0
+    current_file: str | None = None
+    error_message: str | None = None
+    metadata: dict[str, Any] = Field(default_factory=dict)
+    started_at: datetime | None = None
+    finished_at: datetime | None = None
+    duration_ms: int = 0
+    created_at: datetime
+    updated_at: datetime
+
+
 class FeedbackRequest(BaseModel):
     message_id: uuid.UUID
     rating: Literal["useful", "not_useful", "incomplete", "incorrect", "bad_source", "needs_adjustment"]

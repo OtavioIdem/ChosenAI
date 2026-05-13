@@ -1,4 +1,5 @@
 import os
+import time
 from pathlib import Path
 
 import pytest
@@ -50,3 +51,30 @@ def test_reindex_endpoint_returns_contract(tmp_path, monkeypatch):
         assert chat_data["retrieval"]["strategy"] == "hybrid"
         assert chat_data["sources"]
         assert "retrieval" in chat_data["sources"][0]
+
+        job = client.post(
+            "/api/v1/knowledge/reindex-jobs",
+            headers={"X-Admin-Key": "test-admin"},
+            json={"requested_by": "pytest"},
+        )
+        assert job.status_code == 202
+        job_data = job.json()
+        assert job_data["id"]
+        assert job_data["status"] in {"pending", "running", "success", "partial_success", "failed"}
+        assert job_data["requested_by"] == "pytest"
+
+        job_detail = None
+        for _ in range(20):
+            detail = client.get(f"/api/v1/knowledge/reindex-jobs/{job_data['id']}")
+            assert detail.status_code == 200
+            job_detail = detail.json()
+            if job_detail["status"] in {"success", "partial_success", "failed"}:
+                break
+            time.sleep(0.1)
+
+        assert job_detail is not None
+        assert job_detail["status"] in {"success", "partial_success"}
+        assert job_detail["sources_total"] >= 1
+        assert job_detail["sources_processed"] >= 1
+        assert job_detail["chunks_indexed"] >= 1
+        assert job_detail["metadata"]["provider"] == "hash"

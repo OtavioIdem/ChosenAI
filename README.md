@@ -320,3 +320,72 @@ Para integração real com PostgreSQL + pgvector:
 ```bash
 TEST_DATABASE_URL=postgresql+psycopg://sagai:change_this_password@localhost:5432/sagai_test pytest backend/tests/integration
 ```
+
+## Sprint 3 — Avaliacao Automatica de Qualidade RAG
+
+Esta versao adiciona uma primeira suite de avaliacao para medir a qualidade da recuperacao antes de alterar pesos, chunking, modelos ou prompts.
+
+Dataset inicial:
+
+```txt
+backend/tests/fixtures/rag_eval_dataset.json
+```
+
+Comando a partir do diretorio `backend`:
+
+```bash
+python -m app.tools.evaluate_rag --dataset tests/fixtures/rag_eval_dataset.json
+```
+
+Metricas geradas:
+
+```txt
+precision_at_1
+precision_at_3
+recall_at_5
+mean_reciprocal_rank
+no_context_rate
+no_relevant_context_rate
+expected_no_context_accuracy
+avg_retrieval_score
+avg_latency_ms
+```
+
+Relatorios sao gravados em:
+
+```txt
+reports/rag_eval_YYYYMMDD_HHMMSS.md
+```
+
+Leia tambem:
+
+```txt
+docs/SPRINT_3_AVALIACAO_RAG.md
+```
+
+## Sprint 4 — Reindexacao Assincrona com Jobs
+
+Esta versao adiciona jobs persistidos para reindexacao em background, mantendo o endpoint sincrono legado.
+
+Criar job:
+
+```bash
+curl -X POST http://localhost:8000/api/v1/knowledge/reindex-jobs \
+  -H "Content-Type: application/json" \
+  -H "X-Admin-Key: change_this_admin_key" \
+  -d '{"requested_by":"admin"}'
+```
+
+Consultar progresso:
+
+```bash
+curl http://localhost:8000/api/v1/knowledge/reindex-jobs/{job_id}
+```
+
+O job registra `status`, `sources_total`, `sources_processed`, `chunks_indexed`, `chunks_failed`, `current_file`, `duration_ms` e metadados do provider usado.
+
+Leia tambem:
+
+```txt
+docs/SPRINT_4_REINDEX_JOBS.md
+```
